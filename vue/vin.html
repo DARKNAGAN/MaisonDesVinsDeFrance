@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/style.css" media="all" type="text/css"> 
+	<title>MVF | Nos vins</title>
+</head>
+<body>
+	<div class="background">
+	<div class="container">
+		<!--CARD-->
+		<br><div class="card">
+			<!--CORP-CARD-->
+			<div class="card-body">
+				<!--HEAD-CARD-->
+				<div class="row">
+					<div class="col-3">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb bg-white">
+								<li class="breadcrumb-item"><a href="/MVF/home.html">Acceuil</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Vins</li>
+							</ol>
+						</nav>
+					</div>
+					<div class="col-8"><h1 class="text-center">Vins</h1></div>
+				</div>
+				<!--HEAD-CARD-->				
+				<div class="row no-gutters">
+					<!--NAV-CARD-->
+				<div class="col-3">
+						<ul class="nav nav-tabs flex-column  border rounded p-3" id="myTab" role="tablist">
+								<button type="button" class="btn btn-primary" onclick=window.location.href='/MVF/vue/vin.html'>Découvrir</button><br>
+								<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="collapse" data-target="#collapseRegion" aria-expanded="false" aria-controls="collapseRegion">Nos regions</button>
+										<div id="collapseRegion" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">																					
+										<div id="list-example" class="list-group">
+											<a class="dropdown-item" id="list-bordeaux-list" data-toggle="tab" href="#listbordeaux" role="tab" aria-controls="bordeaux" aria-selected="false">Bordeaux</a>
+											<a class="dropdown-item" id="list-bourgogne-list" data-toggle="tab" href="#listbourgogne" role="tab" aria-controls="bourgogne" aria-selected="false">Bourgogne</a>
+											<a class="dropdown-item" id="list-rhone-list-tab" data-toggle="tab" href="#listrhone" role="tab" aria-controls="rhone" aria-selected="false">Rhône</a>
+											<a class="dropdown-item" id="list-languedoc-list" data-toggle="tab" href="#listlanguedoc" role="tab" aria-controls="languedoc" aria-selected="false">Languedoc</a>
+											<a class="dropdown-item" id="list-centre-list" data-toggle="tab" href="#listcentre" role="tab" aria-controls="centre" aria-selected="false">Loire et Centre</a>
+											<a class="dropdown-item" id="list-alsace-list" data-toggle="tab" href="#listalsace" role="tab" aria-controls="alsace">Alsace</a>
+											<a class="dropdown-item" id="list-beaujolais-list" data-toggle="tab" href="#listbeaujolais" role="tab" aria-controls="beaujolais">Beaujolais - Mâconnais</a>
+											<a class="dropdown-item" id="list-jura-list" data-toggle="tab" href="#listjura" role="tab" aria-controls="jura">Jura - Savoie - Bugey(!)</a>
+											<a class="dropdown-item" id="list-savoie-list" data-toggle="tab" href="#listsavoie" role="tab" aria-controls="savoie">Savoie et Bugey(!)</a>
+											<a class="dropdown-item" id="list-provence-list" data-toggle="tab" href="#listprovence" role="tab" aria-controls="provence">Provence</a>
+											<a class="dropdown-item" id="list-sud-list" data-toggle="tab" href="#listsud" role="tab" aria-controls="sud">Sud-ouest</a>
+											<a class="dropdown-item" id="list-corse-list" data-toggle="tab" href="#listcorse" role="tab" aria-controls="corse">Corse</a>										
+										</div>
+								</div>
+						</ul>
+				</div>
+				<!--NAV-CARD-->
+				<!--DESC-CARD-->
+				<div class="col-8 card mx-2 px-4">
+					<div class="tab-content" id="nav-tabContent">
+						<!--ASAVOIR-CARD-->
+						<div class="tab-pane fade  show active" id="listsavoir" role="tabpanel" aria-labelledby="list-savoir-list">
+							<div class="row">
+							<h2>Les différents types de vin</h2><br>
+								<p>"Qu'est-ce-que tu aimes toi comme vin ?"<br>
+								Il peut parfois être difficile de répondre à cette question.<br>
+								Surtout quand on ne sait pas ce qu'on boit. <br>
+								Blanc, rouge, rosé, jusque là, c'est facile.<br>
+								Mais savez-vous si vous préférez un vin "non-dosé" ou un vin doux naturel à un vin cuit...? <br>
+								On vous dit tout, pour enfin pouvoir mettre des mots sur vos bouteilles préférées !<br>
+								<img src="../images/vins/vin1.jpg" class="img-thumbnail" alt="Bordeaux" width="30%"><br>
+								</p>
+							</div>
+							<h2>Les couleurs du vin :</h2><br>
+							<div class="row">
+								<div class="col">
+									<img src="../images/vins/vin2.jpg" class="img-thumbnail" alt="Bordeaux" width="30%"><br>
+									<h2>Les vins rouges</h2>
+									<p>Une chose évidente, mais primordiale : les vins rouges sont faits à partir <b>de cépages de raisins à la peau noire</b>.<br>
+									Chaque région à ses cépages de prédilection en fonction du terroir, et de la résistance de la vigne.<br>
+									Il existe plusieurs nuances de rouge.<br>
+									La couleur change elle aussi en fonction de l’environnement, de l’élevage, et de beaucoup d’autres facteurs.<br>
+									Le vin rouge est obtenu grâce à la macération du raisin en contact avec la peau, qui donne la couleur.<br>
+									</p>
+								</div>
+								<div class="col">
+									<img src="../images/vins/vin3.jpg" class="img-thumbnail" alt="Bordeaux" width="30%"><br>
+									<h2>Les vins rosés</h2>
+									<p>Les vins rosés sont eux aussi issus de cépages noirs.<br>
+									La différence avec le vin rouge est que le raisin n’est pas laissé en contact avec la peau, ou très peu pour des vins un peu plus charpentés, comme le Tavel ou le Clairet.<br>
+									<b>Le vin rosé subit le même processus de vinification</b> que les vins rouges (mais sans élevage, c'est à dire de vieillissement pendant plusieurs mois), d’où cette couleur rosée.<br>
+									</p>
+								</div>								
+						</div>
+						<div class="row">
+							<div class="col-4">
+									<img src="../images/vins/vin4.jpg" class="img-thumbnail" alt="Bordeaux" width="30%"><br>
+									<h2>Les vins blancs</h2>
+									<p>Les vins blancs quant à eux sont fabriqués à base de cépages de raisins blancs.<br>
+									Les raisins sont pressés et le jus est extrait rapidement et séparé des baies (sauf techniques particulières) qui n'apporteront pas beaucoup au nectar.<br>
+									Le jus est ensuite transformé pour produire le vin souhaité par le vigneron.<br>
+									On utilisera exceptionnellement des raisins à peau rouge ou noire, qu'on ne laissera pas en contact avec le jus ;<br>
+									c'est le cas par exemple des Champagnes Blanc de Noirs faits à base de Pinot Noir.<br>	
+									</p>		
+							</div>
+						</div> 
+						<h2>Les textures du vin :</h2><br>
+						<div class="row">
+							<div class="col">
+								<img src="../images/vins/vin5.jpg" class="img-thumbnail" alt="Bordeaux" width="30%"><br>
+								<h2>Les vins tranquilles</h2>
+								<p>Un vin dit tranquille est tout simplement un vin qui n’est pas effervescent.<br>
+								Cela englobe donc une gamme très large de types de vins.<br>
+								</p>
+							</div>
+							<div class="col">
+									<img src="../images/vins/vin6.jpg" class="img-thumbnail" alt="Bordeaux" width="30%"><br>
+									<h2>Les vins effervescents</h2>
+								<p>Les vins effervescents sont les vins à bulles. On parle donc ici des mousseux, des crémants et des champagnes.<br>										
+								</p>
+							</div>
+						</div>			 
+						<div class="row">
+							<div class="col">
+									<img src="../images/vins/vin7.jpg" class="img-thumbnail" alt="Bordeaux" width="30%"><br>
+									<h2>Les vins doux naturels</h2>
+									<p>Ces vins sont vinifiés de la même façon que les vins tranquilles, à la seule différence qu’au moment où les sucres se transforment en alcool, le processus de vinification des vins doux naturels est arrêté pour conserver les sucres naturellement présents dans le moût, et l’on rajoute de l’alcool à 90°.<br>
+									On l’appelle aussi "vin muté".<br>
+									Les vins sucrés : <br>
+									</p>
+							</div>
+							<div class="col">
+								<img src="../images/vins/vin8.jpg" class="img-thumbnail" alt="Bordeaux" width="30%"><br>
+								<h2>Les vins demi-secs</h2>
+								<p>Il existe plusieurs paliers de sucrosité dans le vin.<br>
+								Le demi-sec est le premier palier de taux de sucre dans le vin.<br>
+								Cela se traduit généralement par un goût de sucre léger. Les demi-secs gardent une bonne fraîcheur.<br>
+								Les demi-secs sont forcément des vins blancs, tranquilles ou effervescents.<br>
+								</p>
+							</div>
+
+						</div>
+						<div class="row">
+							<div class="col">
+								<h2>Les vins moelleux</h2><br>
+								<p>Le moelleux est le deuxième palier.<br>
+								Le sucre est déjà beaucoup plus présent, et cela se traduit généralement par une robe d’un jaune plus soutenu, voire dorée.<br>
+								Le vin est un peu plus gras que le vin sec. Seuls les blancs peuvent être moelleux.<br>
+								On en trouve beaucoup en Alsace, avec les vins issus des Vendanges Tardives, ou encore les vins de l'appellation de Sauternes.<br>									
+								</p>
+							</div>
+							<div class="col">
+								<h2>Les vins liquoreux</h2><br>
+								<p>’est le vin qui a le taux de sucre le plus élevé.<br>
+								Les vins sont d’une couleur ambrée, très loin du jaune pâle des vins blancs secs.<br>
+								La star des liquoreux reste le très célèbre Château d’Yquem, dans la région de Sauternes dans le Bordelais, qui a su allier sucre et minéralité.<br>			
+								</p>
+							</div>
+						<div class="row">
+							<div class="col">
+									<img src="../images/vins/vin9.jpg" class="img-thumbnail" alt="Bordeaux" width="30%"><br>
+									<b>Les vins cuits</b><br>
+									<p>Les vins cuits peuvent être rouges et blancs. Ils sont à différencier totalement du vin doux naturel, puisque lors de sa fabrication intervient, comme son nom l’indique, une cuisson.<br>
+									Après la macération du moût, il est chauffé dans un chaudron, afin que l’eau s’évapore, sans ébullition.<br>
+									Une fois que le jus est réduit de moitié, on le laisse fermenter pour ensuite l’élever en barrique.<br>
+									C’est une spécialité des vins de Provence.<br>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<h2>Pour conclure :</h2><br>
+							<p>Le vin est très subjectif.<br> Quelques soient vos goûts et vos préférences, vous trouverez au fil des découvertes les vins que vous aimez.<br>
+							Le plus dur reste de mettre des mots dessus. Donc n'hésitez pas à vous "entraîner" (si si, la dégustation ça s'apprend, c'est un entrainement) et surtout à demander conseil.<br>
+							Chez La Maison des Vins de France, nous sommes une petite équipe, toujours à votre disposition et à votre écoute via notre tchat, les réseaux sociaux ou même ici !<br>
+							Et surtout bonne dégustation !<br>
+							Envie de briller en société autour d'un verre à pied ?<br>											 
+							</p>
+						</div>
+					</div>
+								<!--BORDEAUX-CARD-->
+						<div class="tab-pane fade" id="listbordeaux" role="tabpanel" aria-labelledby="list-bordeaux-list">
+						<img src="../images/Bordeaux.jpeg" class="float-left img-thumbnail" alt="Bordeaux" width="30%">
+						<h3>BORDEAUX</h3>
+							<p>Jouissant d&#39;une renommée internationale, le Bordelais constitue <span class="s1">le plus vaste vignoble d&#39;appellation de France </span>et l&#39;un des plus prestigieux grâce à ses célèbres <b>crus classés</b>. Ce vignoble contrasté aux sols variés s&#39;organise autour de trois axes fluviaux : la <b>Garonne</b>, la <b>Dordogne </b>et leur estuaire commun, la <b>Gironde</b>.<br/>
+							Il offre <span class="s1">tous les styles de vins</span>, issus de l&#39;<b>assemblage de plusieurs cépages</b>. En rouge, dominent le <b>merlot</b>, le <b>cabernet franc </b>et le <b>cabernet- sauvignon </b>; en blanc, le <b>sémillon </b>et le <b>sauvignon</b>.<br/>
+							Outre les <b>appellations régionales</b>, on distingue la <span class="s1">rive gauche de la Garonne </span>(le Médoc et les Graves) et la <span class="s1">rive droite </span>(le Libournais, le Blayais-Bourgeais et l&#39;Entre-deux-Mers), auxquelles il faut ajouter les vignobles des <b>vins doux </b>aux environs du Ciron, affluent de la Garonne.<br/>
+							L&#39;une des particularités des vins rouges, blancs et rosés du Bordelais est qu&#39;ils sont très souvent issus de l&#39;<span class="s1">assemblage de deux à cinq cépages </span>aux qualités complémentaires. En rouge, les <b>cabernets </b>– franc et sauvignon – et le <b>merlot </b>sont les principales variétés, le <b>petit verdot </b>ou encore le <b>malbec </b>parfois en complément. Pour les blancs, le cépage essentiel est le <b>sémillon</b>, complété surtout par le <b>sauvignon</b>, parfois par la <b>muscadelle </b>ou le <b>colombard</b>.<br/>
+							Dans la très large palette des vins bordelais, on distingue les <span class="s1">appellations régionales </span><b>(bordeaux, bordeaux supérieur, crémant</b>), dont les vins peuvent être issus de la quasi-totalité des communes viticoles. Celles-ci expriment une grande variété de terroirs et proposent un bel éventail de style de vins rouges, blancs (secs et doux), rosés, clairets et même effervescents. Base de la pyramide des appellations, elles n&#39;en constituent pas moins un réel gisement pour l&#39;amateur en quête de nouveautés.<br/>
+							Les autres appellations sont généralement classées en fonction de l&#39;organisation géographique et climatique du terroir, scindée en deux ensembles principaux.<br/>
+							Sur la <span class="s1">rive gauche de la Gironde et de Garonne</span>, on trouve les vins rouges du <b>Médoc</b>, puis en descendant, les rouges et les blancs des <b>Graves</b>, et tout à fait au sud les vins du <b>Sauternais</b>.<br/>
+							Sur la <span class="s1">rive droite de la Gironde et de la Dordogne</span>, s&#39;étendent le <b>Blayais et le Bourgeais</b>, et le <b>Libournais</b>, tandis que l&#39;<b>Entre-deux-Mers </b>se situe entre les deux fleuves Dordogne et Garonne.<br/>
+							<!--Exemple CATEGORIE
+							<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseGout" role="button" aria-expanded="true" aria-controls="collapseGout">Goût</h3>
+								<div class="collapse show" id="collapseGout">
+									<div class="card card-body">
+										<div class="row">
+											<div class="col">
+											
+											</div><div class="col">
+
+											</div>
+										</div>										
+									</div>	
+								</div><hr>
+							-->
+								<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseGout" role="button" aria-expanded="true" aria-controls="collapseGout">Goût</h3>
+								<div class="collapse show" id="collapseGout">
+									<div class="card-body">
+										<div class="row">
+											<div class="col">
+												<li>Fruité </li>
+												<li>Puissant</li>
+												<li>Boisé </li>
+												<li>Souple </li>
+												<li>Epicé</li>
+												<li>Sec </li>
+											</div><div class="col">
+												<li>Sucré </li>
+												<li>Floral</li>
+												<li>Floral </li>
+												<li>Animal</li>
+												<li>Minéral</li>
+											</div>
+										</div>										
+									</div>	
+								</div><hr>
+								<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseCepage" role="button" aria-expanded="true" aria-controls="collapseCepage">Cépage</h3>
+								<div class="collapse show" id="collapseCepage">
+									<div class="card-body">
+										<div class="row">
+											<div class="col text-center">
+													<ol>	Grenache noir 	</ol>
+												</div><div class="col">
+													<ol>	Mourvèdre	</ol>
+											</div>
+										</div>										
+									</div>	
+								</div><hr>
+						<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseAppelation" role="button" aria-expanded="false" aria-controls="collapseAppelation">Appelation</h3>
+							<div class="collapse" id="collapseAppelation">
+								<div class="card card-body">
+									<div class="row">
+										<div class="col">
+												<li>	Alicante 	</li>
+												<li>	Allobrogie 	</li>
+												<li>	Aloxe Corton 	</li>
+												<li>	Aloxe Corton 1er Cru 	</li>
+												<li>	Alpilles 	</li>
+												<li>	Alsace 	</li>
+												<li>	Amarone della Valpolicella 	</li>
+												<li>	Anjou 	</li>
+												<li>	Arbois 	</li>
+												<li>	Ardèche	</li>
+											</div><div class="col">
+												<li>	Aude Hauterive 	</li>
+												<li>	Auxey-Duresses 	</li>
+												<li>	Auxey-Duresses 1er cru 	</li>
+												<li>	Bandol 	</li>
+												<li>	Banyuls 	</li>
+												<li>	Barbaresco 	</li>
+												<li>	Barbera d'Alba 	</li>
+												<li>	Barolo 	</li>
+												<li>	Beaujolais 	</li>
+												<li>	Beaujolais Villages	</li>
+											</div><div class="col">
+												<li>	Beaumes de Venise 	</li>
+												<li>	Beaune 1er cru 	</li>
+												<li>	Bergerac 	</li>
+												<li>	Bierzo 	</li>
+												<li>	Blaye - Côtes de bordeaux 	</li>
+												<li>	Bolgheri 	</li>
+												<li>	Bonnes-Mares 	</li>
+												<li>	Bonnes-Mares Grand Cru 	</li>
+												<li>	Bordeaux	</li>
+												<li>	Bordeaux Supérieur 	</li>
+											</div>
+										</div><div class="row">
+											<div class="col">
+												<li>	Bourgogne 	</li>
+												<li>	Bourgueil 	</li>
+												<li>	Brouilly 	</li>
+												<li>	Bullas 	</li>
+												<li>	Cabardès 	</li>
+												<li>	Cabrières 	</li>
+												<li>	Cahors 	</li>
+												<li>	Cairanne 	</li>
+												<li>	Canon Fronsac	</li>
+												<li>	Carcassonne 	</li>
+											</div><div class="col">
+												<li>	Carinena 	</li>
+												<li>	Casablanca 	</li>
+												<li>	Castillon   </li>
+												<li>	Cévennes 	</li>
+												<li>	Chambertin 	</li>
+												<li>	Chambertin-Clos de Bèze 	</li>
+												<li>	Chambolle-Musigny 	</li>
+												<li>	Chambolle-Musigny 1er Cru	</li>
+												<li>	Chapelle Chambertin 	</li>
+												<li>	Charmes Chambertin  	</li>
+											</div><div class="col">
+												<li>	Charmes-Chambertin 	</li>
+												<li>	Chassagne Montrachet 	</li>
+												<li>	Châteauneuf-du-Pape 	</li>
+												<li>	Chénas 	</li>
+												<li>	Chianti Classico 	</li>
+												<li>	Chianti Classico Riserva 	</li>
+												<li>	Chianti Docg	</li>
+												<li>	Chinon 	</li>
+												<li>	Chiroubles 	</li>
+												<li>	Chorey-Lès-Beaune 	</li>
+										</div>
+									</div>										
+								</div>	
+							</div><hr>
+						</div>
+						<!--BOURGOGNE-CARD-->
+						<div class="tab-pane fade" id="listbourgogne" role="tabpanel" aria-labelledby="list-bourgogne-list">
+						<img src="../images/Bourgogne.jpeg" class="float-left img-thumbnail" alt="Bourgogne" width="30%">
+						<h3>BOURGOGNE</h3>
+							<p>Un vignoble historique, l&#39;un des plus anciens de France, modelé au Moyen Age par les <b>moines</b>, puis les <b>Ducs de Bourgogne</b>, et riche de domaines aux apparences souvent modestes, mais de grand prestige.<br/>
+							Celui aussi qui, malgré sa petite taille (3 % du vignoble français), propose le <span class="s1">plus grand nombre d&#39;appellations </span>d&#39;origine : une centaine, du Chablisien au Mâconnais, en passant par la Côte de Nuits, la Côte de Beaune et la Côte chalonnaise.<br/>
+							L&#39;un des plus prestigieux également, synonyme de <b>vins fins</b>. La patrie du <b>pinot noir </b>et du <b>chardonnay</b>, qui y règnent en maître.<br/>
+							La Bourgogne, c&#39;est aussi la quintessence de la notion de <b>terroirs</b>, appelés ici <i><b>climats</b></i>, d&#39;une extrême diversité (plus de 600) et à l&#39;origine de l&#39;immense variété des vins bourguignons.<br/>
+							Reflet de ce vignoble morcelé et d&#39;une grande variété, la <span class="s1">hiérarchisation des vins </span>bourguignons, qui peut paraître complexe, est d&#39;une grande logique et définit quatre niveaux :<br>
+							les <b>appellations régionales </b>(plus de 50 % de la production), les <b>appellations communales</b>, dites aussi <i><b>villages </b></i>(plus de 30 % de la production), les <b>premiers crus </b>(environ 10 % de la production) et, en haut de la pyramide, les <b>grands crus</b>.<br/>
+							Les vins de Bourgogne sont, pour la quasi-totalité, issus de <b>deux cépages </b>: le <span class="s1">chardonnay </span>(vins blancs) et le <span class="s1">pinot noir </span>(vins rouges).<br>
+							On rencontre aussi l&#39;<b>aligoté</b>, cépage blanc produisant le bourgogne-aligoté, qui atteint son sommet qualitatif dans le petit pays de Bouzeron ; le <b>césar</b>, assemblé au pinot noir dans l&#39;irancy ; le <b>gamay </b>qui, associé au pinot, donne du bourgogne-passetoutgrain ; le <b>sauvignon</b>, cultivé dans la région de Saint-Bris-le-Vineux, dans l&#39;Yonne, où il donne l&#39;AOC saint-bris.<br/>
+							On distingue quatre secteurs géographiques. Le <span class="s1">Chablisien </span>est réputé surtout pour ses vins blancs secs élégants et leur <b>minéralité </b>si reconnaissable.<br>
+							La <span class="s1">Côte de Nuits</span>, de Marsannay à Corgoloin, majoritairement plantée de <b>pinot noir</b>, compte une trentaine d&#39;appellations avec des villages aux noms prestigieux (Gevrey-Chambertin, Vosne-Romanée, Nuits-Saint-Georges, Chambolle-Musigny,  Vougeot) et des crus illustres (romanée-conti, chambertin, musingy...).<br>
+							La <span class="s1">Côte de Beaune</span>, de Ladoix-Serrigny au nord à Chagny au sud, est le paradis des « <b>grands blancs </b>», avec des crus de grande renommée comme corton-charlemagne, meursault, montrachet..., mais elle propose aussi de très beaux vins rouges, en premier lieu les grands crus corton, pommard ou encore volnay.<br>
+							La <span class="s1">Côte chalonnaise</span>, entre Chagny et Saint-Gengoux-le-National,<br/>
+							propose des <b>blancs </b>et des <b>rouges </b>de belle qualité (rully, mercurey, givry, montagny). Le <span class="s1">Mâconnais</span>, entre Tournus et Mâcon, est réputé surtout pour ses <b>blancs de chardonnay</b>, notamment ses pouilly-fuissé.<br/>
+							Enfin, la Bourgogne classe ses vins selon une <span class="s1">hiérarchie à quatre niveaux</span>. À la base se trouvent les <b>appellations régionales</b>, dont les vins peuvent être issus de vignes établies sur l&#39;ensemble du territoire de la Bourgogne : AOC bourgogne, bourgogne-aligoté, crémant-de-bourgogne, bourgogne-passetoutgrain...<br>
+							Puis viennent les <b>appellations communales ou </b><i><b>villages </b></i>: le vin porte le nom de la commune (un ou plusieurs villages) où sont plantées les vignes d&#39;où il est issu (Volnay, Nuits-Saint-Georges...).<br>
+							Au troisième étage, on trouve les <b>premiers crus </b>provenant de <i>climats </i>délimités au sein d&#39;un village. Enfin, tout en haut de la pyramide, on trouve les <b>grands crus</b>, sélectionnés parmi les meilleurs <i>climats</i>.<br/>
+							</p>
+						</div>
+						<!--RHONE-CARD-->
+						<div class="tab-pane fade" id="listrhone" role="tabpanel" aria-labelledby="list-rhone-list">
+						<img src="../images/VDR.jpeg" class="float-left img-thumbnail" alt="Vallée du Rhône" width="30%">
+						<h3>VALLÉE DU RHÔNE</h3>
+							<p>L&#39;un des <span class="s1">plus anciens vignobles de France </span>et la seconde région viticole de l&#39;Hexagone après le Bordelais, traversé par le Rhône, fleuve fougueux qui file vers le Midi et voit fleurir la vigne sur chaque rive.<br/>
+							On distingue <b>deux grands secteurs </b>très différenciés : la <span class="s1">vallée du Rhône septentrionale </span>et la <span class="s1">vallée du Rhône méridionale</span>. D&#39;autres secteurs un peu en retrait du Rhône se rattachent à la région, du Vivarais au Luberon, en passant par le Diois.<br/>
+							Dans cette vaste région, naissent des <span class="s1">vins de tous les types</span>, des vins secs dans les trois couleurs, des vins doux naturels et des effervescents.<br/>
+							Des vins rouges en majorité, longtemps assimilés à la « p&#39;tite côte », ce gentil vin de comptoir qu&#39;une brève cuvaison rendait léger et peu tannique, qui figurent aujourd&#39;hui <b>parmi les plus remarquables de France </b>(côte-rôtie, hermitage, châteauneuf-du-pape...).<br/>
+							On trouve dans la Vallée du Rhône <span class="s1">toute la palette des vins </span>: des vins secs dans les trois couleurs (avec une dominante de vins rouges : 80 %), des vins doux naturels et des effervescents.<br/>
+							Dans la <b>partie méridionale</b>, règne le <span class="s1">grenache</span>, à l&#39;origine de vins rouges &quot;solaires&quot;, corsés et chaleureux, d&#39;une rondeur généreuse, mais les excès climatiques obligent les viticulteurs à utiliser plusieurs cépages pour obtenir des vins équilibrés, notamment la syrah, le mourvèdre, le cinsault ou encore le carignan.<br>
+							En blanc, les vins sont en général issus d&#39;assemblage, des vins généreux, gras et expressifs, issus notamment du <b>grenache blanc</b>, de la <b>clairette, </b>du <b>bourboulenc, </b>de la <b>roussanne</b>, de la <b>marsanne </b>ou encore du maccabeo ou du vermentino (ou rolle), du<br/>
+							piquepoul et autres picardan. Côté <b>rosés</b>, issus des mêmes cépages que les vins rouges, se montrent généralement savoureux, à la fois ronds et frais ; avec Tavel, la région détient la plus ancienne AOC de France dédiée exclusivement à ce type de vin.<br/>
+							Dans la <b>partie septentrionnale</b>, la <span class="s1">syrah </span>s&#39;impose dans les vins rouges, à l&#39;origine de vins de garde charpentés mais fins, profonds et épicés. Les vins blancs aromatiques et bien équilibrés entre gras et vivacité, sont quant à eux majoritairement issus des cépages <b>roussanne, marsanne et viognier</b>.<br/>
+							Le <b>Diois </b>et sa fraîcheur montagnarde favorise les vins blancs, secs et effervescents (clairette-de-die, crémant-de-die), issus des cépages <b>clairette et muscat à petits grains</b>.<br/>
+							Enfin, la tradition rhodanienne des <b>vins doux naturels </b>se retrouve dans les AOC rasteau et muscat-beaume-de-venise.<br/>
+							A la base de la <span class="s1">hiérarchie des vins </span>rhodaniens, on trouve l&#39;<b>appellation régionale </b>côte-du-rhône (171 communes, presque toutes situées au Sud), puis les <b>côtes-du-rhône-villages</b>, avec ou sans nom de communes, et, au sommet, les <b>AOC communales </b>(côte-rôtie, condrieu, châteauneuf-du- pape, lirac...). On rattache au vignoble rhodanien des <b>AOC indépendantes </b>(ventoux, luberon, grignan-lès-adhémar...) qui complètent cette large gamme de vins.<br/>
+							</p>
+						</div>
+						<!--LANGUEDOC-CARD-->
+						<div class="tab-pane fade" id="listlanguedoc" role="tabpanel" aria-labelledby="list-languedoc-list">
+						<img src="../images/Languedoc.jpeg" class="float-left img-thumbnail" alt="Languedoc" width="30%">
+						<h3>LANGUEDOC</h3>
+							<p>Ce vignoble immense s&#39;étale le long du littoral méditerranéen, de Leucate, à l&#39;ouest, jusqu&#39;à Nîmes et la Camargue, à l&#39;est, puis couvre les contreforts des Cévennes aux portes de Carcassonne. Il parcourt trois départements : l&#39;Aude, le Gard et l&#39;Hérault.<br>
+							Il offre une diversité de paysages et une mosaïque de terroirs entre mer et montagne (Corbières), sous influence climatique méditerranéenne, à l&#39;origine d&#39;une vaste palette de vins rouges, blancs et rosés, de vins doux naturels et d&#39;effervescents. Des vins, qui après avoir été longtemps assimilés à la viticulture de masse, font l&#39;objet d&#39;un renouveau constant depuis près de trente ans.<br/>
+							Engagé depuis trente ans dans un vaste chantier visant à identifier les terroirs et à y adapter de nouveaux cépages, le Languedoc produit aujourd&#39;hui un panel très complet de vins blancs, rouges et rosés, de vins doux naturels et d&#39;effervescents. Les cépages rouges sont principalement le carignan, le grenache, la syrah, le mourvèdre et le cinsault. Les blancs sont issus du grenache, du picpoul, du bourboulenc, du<br/>
+							macabeu, de la clairette et depuis peu, de la marsanne, de la roussanne et du vermentino. Pour les effervescents, on fait appel au mauzac, au chardonnay et au chenin.<br/>
+							</p>
+						</div>
+						<!--LOIRE-CARD-->
+						<div class="tab-pane fade" id="listcentre" role="tabpanel" aria-labelledby="list-centre-list">
+						<h3>VALLÉE DE LA LOIRE ET CENTRE</h3>
+							<p>La très étendue région viticole de la vallée de la Loire est unie par le fleuve que l&#39;on dit royal et ses affluents, la vigne n&#39;étant jamais bien éloignée de l&#39;eau et des châteaux Renaissance.<br>
+							Les vignobles du pays nantais, de l&#39;Anjou et du Saumurois, de la Touraine et du Centre forment ainsi un vaste ensemble aux terroirs et aux climats variés, où la plupart des types de vins sont déclinés.<br/>
+							Dans le pays nantais, le melon donne naissance au muscadet, vin blanc sec, la folle blanche au gros-plant, autre vin blanc sec, tandis que la région d&#39;Ancenis est colonisée par le gamay noir.<br>
+							En Anjou et en Saumurois, la palette des vins est complète :<br>
+							blancs secs, demi-secs, liquoreux et mousseux, issus de chenin (ou pineau de la Loire), très majoritaire, récemment associé au sauvignon et au chardonnay?; des rosés demi-secs nés de grolleau noir?; des rouges fins et corsés issus de cabernet franc et de cabernet-sauvignon.<br>
+							En Touraine ouest, on trouve des vins rouges de caractère nés de cabernet franc. En blanc, le chenin donne des vins remarquables, comme à Vouvray ou à Montlouis.<br>
+							À l&#39;est, le sauvignon (en blanc) et le gamay (en rouge et rosé) produisent des vins légers et fruités. On trouvera aussi dans les coteaux-du-loir des rouges épicés nés du pineau d&#39;Aunis, ou encore des rouges originaux issus de pinot meunier dans l&#39;Orléanais.<br>
+							Dans les vignobles du Centre, le sauvignon règne à Sancerre, Reuilly, Quincy, Menetou-Salon, Pouilly. En rouge et en rosé, on trouve essentiellement des vins nés de gamay et de pinot noir.<br/>
+							</p>
+						</div>
+						<!--ASLSACE-CARD-->
+						<div class="tab-pane fade" id="listalsace" role="tabpanel" aria-labelledby="list-alsace-list">
+						<h3>ALSACE</h3>						
+							<p>Le vignoble alsacien est un long ruban de 170 km de long, situé au pied du massif vosgien, qui s&#39;étire de Marlenheim au nord à Thann au sud, complété par un îlot viticole à la limite de l&#39;Allemagne, autour de Wissembourg et de Cleebourg.<br>
+							Les nombreuses sinuosités du relief et la variété des sols permettent à l&#39;Alsace de proposer une vaste gamme de vins, secs et doux, tranquilles et effervescents.<br>
+							Mais, grâce à son climat tempéré et frais, le principal atout du vignoble réside dans la maturation optimale des raisins blancs, le pinot noir étant l&#39;exception.<br>
+							L&#39;identification des vins par leur cépage – riesling, gewurztraminer, sylvaner... – est l&#39;une des autres spécificités alsaciennes, ainsi que la présence de grands crus.<br/>
+							La majorité des vins alsaciens sont des blancs secs (environ 80 %), aromatiques, fruités et floraux, bien typés par leur cépage.<br>
+							Des caractéristiques renforcées par le fait que l&#39;élevage ne se fait pas en fût, mais généralement en foudre, gros tonneau ovale qui ne confère pas d&#39;arômes boisés du fait de sa dimension imposante et de son grand âge.<br>
+							La plupart des vins sont issus d&#39;un seul cépage, à l&#39;exception de quelques grands crus (Kaefferkopf ou Altenberg par exemple), du crémant et de l&#39;edelzwicker.<br>
+							Fréquente sur l&#39;étiquette, la mention du cépage n&#39;est toutefois pas obligatoire.<br>
+							Reconnus en 1984, les alsaces « vendanges tardives » et « sélections de grains nobles » sont des vins doux issus de vendanges surmûries et soumis à des conditions de production très strictes, notamment en ce qui concerne le taux de sucre des raisins.<br>
+							On distingue également 51 grands crus en Alsace, correspondant à des terroirs délimités selon des critères géologiques et climatiques, et répondant à des critères stricts de production et d&#39;élaboration (rendements limités, vendanges manuelles, utilisation de cépages limités).<br>
+							Enfin, l&#39;Alsace se situe en tête de la production de crémants en France.<br/>
+							</p>
+						</div>
+						<!--BEAUJOLAIS-CARD-->
+						<div class="tab-pane fade" id="listbeaujolais" role="tabpanel" aria-labelledby="list-beaujolais-list">
+						<img src="../images/Beaujolais.jpeg" class="float-left img-thumbnail" alt="Beaujolais" width="30%">
+						<h3>AOC BEAUJOLAIS</h3>
+							<p>Prolongeant la Bourgogne au sud de Mâcon et s&#39;étendant sur 50 km jusqu&#39;aux <a href="https://www.hachette-vins.com/tout-sur-le-vin/appellations-vins/112/coteaux-du-lyonnais" class="a" target="_blank">coteaux du Lyonnais</a>, le Beaujolais est officiellement rattaché à la Bourgogne viticole.<br>
+							La région, de caractère déjà méridional, doit son nom aux sires de Beaujeu qui en furent les détenteurs jusqu&#39;en 140%.<br>
+							L&#39;appellation beaujolais produit essentiellement des vins rouges à partir du gamay vinifié en grains entiers, selon les principes de la vinification beaujolaise qui apporte des arômes floraux et fruités.<br>
+							Les reliefs anciens aux formes arrondies du nord-ouest de l&#39;aire géographique sont les terrains privilégiés des dix crus du Beaujolais et de <a href="https://www.hachette-vins.com/tout-sur-le-vin/appellations-vins/101/beaujolais-villages" class="a" target="_blank">l&#39;appellation beaujolais-villages</a>.<br>
+							Le vignoble de l&#39;AOC beaujolais est implanté sur des terrains sédimentaires. Ici, la vigne couvre les coteaux en bordure du Massif central, jusqu&#39;à 500 m d&#39;altitude.<br/>
+							</p>
+						</div>
+						<!--JURA-CARD-->
+						<div class="tab-pane fade" id="listjura" role="tabpanel" aria-labelledby="list-jura-list">
+						<img src="../images/Jura.jpeg" class="float-left img-thumbnail" alt="Jura" width="30%">
+						<h3>JURA</h3>
+							<p>Ce vignoble à la géologie tourmentée, pendant de celui de la haute Bourgogne, de l&#39;autre côté de la vallée de la Saône, occupe les pentes qui descendent du premier plateau des monts du Jura vers la plaine.<br>
+							Une bande de 80 km de long, traversant tout le département du Jura, de Salins- les-Bains, au nord, à Saint-Amour, au sud.<br>$
+							Les terroirs les plus favorables se situent en coteaux entre 250 et 40% m d&#39;altitude. Plantés de cépages locaux et d&#39;autres, issus de Bourgogne, ces terroirs voient naître des vins atypiques, à l&#39;image du célèbre vin jaune, du vin de paille ou encore du macvin.<br/>
+							Les cépages locaux sont parfaitement adaptés aux terrains argileux du Jura. On trouve ainsi le poulsard, cépage rouge peu tannique à l&#39;origine de rosés et de rouges légers.<br>
+							Le trousseau, autre cépage local, donne des vins rouges plus colorés et riches en tanins. On trouve aussi le pinot noir, souvent associé au trousseau, dans les rouges ainsi que dans les mousseux blancs de noirs.<br>
+							Autre cépage bourguignon, le chardonnay apporte son riche bouquet aux vins blancs, secs et mousseux. Le savagnin, cépage blanc local, donne naissance au célèbre vin jaune, spécialité jurassienne avec le vin de paille.<br/>
+							</p>
+						</div>
+						<!--SAVOIE-CARD-->
+						<div class="tab-pane fade" id="listsavoie" role="tabpanel" aria-labelledby="list-savoie-list">
+						<img src="../images/Savoie et Bugey.jpeg" class="float-left img-thumbnail" alt="Savoie et Bugey" width="30%">
+						<h3>SAVOIE ET BUGEY</h3>
+							<p>Du lac Léman au sud de Chambéry, le vignoble savoyard occupe les premières pentes alpines, entre 300 et 600 m.<br>
+							Entre lacs, alpages, chalets et vergers, les vignes forment une mosaïque complexe de microclimats et de terroirs aux caractères montagnards plus ou moins accentués, où s&#39;épanouissent une multitude de cépages, majoritairement blancs.<br>
+							Le vignoble du Bugey, quant à lui, s&#39;étend sur les éboulis calcaires abrupts du département de l&#39;Ain. On y produit des vins rouges, rosés et blancs, ainsi que le fameux rouge effervescent de Cerdon.<br/>
+							Du lac Léman à la rive droite de l&#39;Isère, des îlots de vignes, exposés au sud, ponctuent les vallées de la Savoie et de la Haute-Savoie.<br>
+							Le climat est ici tempéré par la proximité des lacs. Sur les premiers coteaux des Alpes sont produits des vins vifs comme l&#39;air de montagne :<br>
+							des vins blancs issus le plus souvent d&#39;un cépage local, la <b>jacquère</b>; des vins rouges à base de mondeuse, du <b>gamay </b>importé du Beaujolais ou même du <b>pinot noir </b>bourguignon; des vins rosés issus de gamay, ou blancs, pétillants à Ayze.<br/>
+							</p>
+						</div>
+						<!--PROVENCE-CARD-->
+						<div class="tab-pane fade" id="listprovence" role="tabpanel" aria-labelledby="list-provence-list">
+						<img src="../images/Provence.jpeg" class="float-left img-thumbnail" alt="Provence" width="30%">
+						<h3>PROVENCE</h3>
+							<p>Le vaste vignoble provençal s&#39;étend sur près de 200 km de long, d&#39;est en ouest, de Nice au sud d&#39;Avignon, et sur 60 km de large entre les Alpilles et la Méditerranée.<br>
+							Aux côtés des pins et des oliviers, la vigne occupe des îlots très diversifiés, et si l&#39;on trouve les trois couleurs de vins dans ce pays de soleil et de vents, c&#39;est le rosé qui règne en maître.<br/>
+							À l&#39;image des autres vignobles méridionaux, la Provence offre une large palette de cépages : grenache, cinsault, carignan, mourvèdre, syrah, tibouren, cabernet-sauvignon... en rouge et rosé, ugni blanc, rolle, grenache blanc, clairette, marsanne, sémillon, bourboulenc... en blanc. On y<br/>
+							produit ainsi toute la gamme des couleurs, mais ce sont les rosés qui dominent largement. La Provence s&#39;impose comme la première région en France : près de 90?% de sa production viticole sont dédiés à cette couleur, avec une production annuelle en moyenne de 150 millions de bouteilles.<br/>
+							</p>
+						</div>
+						<!--SUD-CARD-->
+						<div class="tab-pane fade" id="listsud" role="tabpanel" aria-labelledby="list-sud-list">
+						<img src="../images/Sud-Ouest.jpeg" class="float-left img-thumbnail" alt="Sud-Ouest" width="30%">
+						<h3>SUD-OUEST</h3>
+							<p>Vaste et varié, le vignoble du Sud-Ouest couvre quatre zones principales :<br>
+							le piémont du Massif Central, la moyenne Garonne, le Bergeracois et Duras, et le piémont pyrénéen. Les vignobles du Sud-Ouest devrait-on dire : on en recense plus d&#39;une vingtaine, avec des terroirs, des cépages et des histoires distinctes.<br>
+							Le point commun entre les appellations, aussi éloignées qu&#39;irouléguy, gaillac ou marcillac, réside dans des vins de caractère et dans une incomparable palette de cépages locaux (manseng, tannat, négrette, loin-de-l&#39;œil...).<br/>
+							Le Sud-Ouest est un véritable musée ampélographique des cépages d&#39;autrefois, et nulle part ailleurs on ne trouve une telle diversité de variétés, dont certaines sont sorties de la nuit des temps viticoles :<br>
+							manseng, tannat, négrette, duras, len-de-l&#39;el (loin-de-l&#39;œil), mauzac, fer-servadou, arrufiac et baroque, ou encore raffiat de Moncade et camaralet de Lasseube.<br>
+							Ces cépages donnent aux vins des accents d&#39;authenticité et de typicité inimitable?; des vins de tous types et de toutes les couleurs, à même de combler tous les amateurs : blancs secs ou liquoreux, effervescents, rosés tendres ou vineux, rouges légers ou de garde.<br>
+							Des vins qui côtoient les produits fermiers avec lesquels ils se marient tout naturellement, pour faire du Sud-Ouest une région privilégiée de gastronomie de tradition.<br/>
+							</p>
+						</div>
+						<!--CORSE-CARD-->
+						<div class="tab-pane fade" id="listcorse" role="tabpanel" aria-labelledby="list-corse-list">
+						<img src="../images/Corse.jpeg" class="float-left img-thumbnail" alt="Corse" width="30%">
+						<h3>CORSE</h3>
+							<p>Montagne dans la mer, l&#39;île de Beauté et sa topographie tourmentée offre une multiplication de pentes et de coteaux, de microclimats favorisés par la proximité des montagnes et des vallées et une pauvreté des sols bénéfiques à la vigne.<br>
+							Le vignoble court tout autour de l&#39;île, à proximité des côtes. On y cultive, aux côtés de variétés importées, des cépages introuvables sur le continent, comme le sciaccarello et le nielluccio, à l&#39;origine de vins rouges et rosés typés, très majoritaires, ou comme le vermentino en blanc.<br/>
+							La Corse, largement dominée par les rouges et les rosés, se distingue par sa trentaine de cépages autochtones très diversifiés, qui côtoient des cépages importés.<br>
+							Pour les rouges et les rosés, les cépages phares sont le nielluccio (connu en Italie sous le nom de sangiovese) et le sciacarello, parfois associés aux « locaux » barbarossa et aleatico, au carignan, au cinsault, au grenache, au mourvèdre ou à la syrah?; pour les blancs, le vermentino (malvoisie de Corse) domine, accompagné parfois de l&#39;ugni blanc (ou rossola), du bianco gentile, du codivarta...<br>
+							Le muscat à petit grains engendre le muscat-du-cap-corse.<br/>
+							</p>
+						</div>
+						<!--OLDDD-->
+						<div class="tab-pane fade" id="listblanc" role="tabpanel" aria-labelledby="list-blanc-list">
+						<p>Une envie de fraîcheur ?<br>
+						C’est un vin blanc qu’il vous faut ! Vin blanc sec, vin blanc sucré, plutôt moelleux ou liquoreux, que vous l'aimiez fruité, floral, végétal, épicé, charnu, ciselé, aligoté, il sera raffiné !<br>
+						Pour trouver de quoi combler vos attentes, La Maison des Vins de France vous guide avec sa sélection haute en couleur !<br>
+						<h3>Les vins blancs</h3>
+						Les vins blancs quant à eux sont fabriqués à base de cépages de raisins blancs.<br>
+						Les raisins sont pressés et le jus est extrait rapidement et séparé des baies (sauf techniques particulières) qui n'apporteront pas beaucoup au nectar.<br>
+						Le jus est ensuite transformé pour produire le vin souhaité par le vigneron. On utilisera exceptionnellement des raisins à peau rouge ou noire, qu'on ne laissera pas en contact avec le jus ; c'est le cas par exemple des Champagnes Blanc de Noirs faits à base de Pinot Noir.
+						</p>
+						</div>
+						<div class="tab-pane fade" id="listrose" role="tabpanel" aria-labelledby="list-rose-list">
+						<p>Fraîcheur, finesse, délicatesse, légèreté, douceur, équilibre…<br>
+						Avec notre large choix de rosés, découvrez toutes les tendances de l'année ! Nous avons forcément celui qui sublimera vos dégustations.<br>
+						Chez La Maison des Vins de France, on préfère vous annoncer la couleur : de la qualité et du choix !<br>
+						<h3>Les vins rosés</h3>
+						<br>Les vins rosés sont eux aussi issus de cépages noirs. La différence avec le vin rouge est que le raisin n’est pas laissé en contact avec la peau, ou très peu pour des vins un peu plus charpentés, comme le Tavel ou le Clairet.<br>
+						Le vin rosé subit le même processus de vinification que les vins rouges (mais sans élevage, c'est à dire de vieillissement pendant plusieurs mois), d’où cette couleur rosée.<br>
+						</p>
+						</div>
+						<div class="tab-pane fade" id="listrouge" role="tabpanel" aria-labelledby="list-rouge-list">
+						<p>Une envie de tannins ? C’est un vin rouge qu’il vous faut ! Robuste, corpulent, épicé, généreux, raffiné, léger, avec des arômes floraux ou fruités, vous trouverez de quoi combler vos attentes avec notre sélection haute en couleur !<br>
+						Pour des prix canons pour ne pas mettre votre portefeuille dans le rouge, c'est chez nous que ça se passe : Bordeaux, Côtes du Rhône, Bourgognes, Languedocs ou encore vins de Loire ...<br>
+						Retrouvez des promos jusqu'à -20% et/ou des bouteilles rares en exclusivité !<br>
+						<h2>Les vins rouges</h2>
+						Une chose évidente, mais primordiale : les vins rouges sont faits à partir de cépages de raisins à la peau noire. Chaque région a ses cépages de prédilection en fonction du terroir, et de la résistance de la vigne.<br>
+						Il existe plusieurs nuances de rouge. La couleur change elle aussi en fonction de l’environnement, de l’élevage, et de beaucoup d’autres facteurs. Le vin rouge est obtenu grâce à la macération du raisin en contact avec la peau, qui donne la couleur.<br>
+						</p>
+						</div>
+					</div>
+				</div>
+				<!--DESC-CARD-->
+				</div>
+				<!--CORP-CARD-->
+			</div>
+			<!--CORP-CARD-->
+		</div><br>
+		<!--CARD-->
+	</div>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	</div>
+</body>
+</html>

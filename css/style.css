@@ -1,0 +1,44 @@
+html,body,h1,h2,h3,h4,h5,h6,p {
+
+	}
+body{
+    font-family: open sans,sans-serif;
+	color: #5e5858;
+	width: 90%;
+	margin: auto;
+
+}
+.background{
+    background-color: #a9001f;
+}
+.btn-normal {
+
+}
+.borderdouble {
+	border-style: groove;
+	border-color: #a9001f;
+	border-width: 4px;
+	}
+ .s1 {
+	 color: #930; 
+	 font-weight: bold;
+	 }
+.headfooter{
+	background-color: 	#ffff;
+	}
+.violet {
+	background-color: #1A284C ;
+}
+.textviolet{
+	color: #1A284C;
+}
+.bgcorp{
+background-color: #f0f0f5;
+}
+.borderimg{
+
+}
+.carousel-caption{
+	position: sticky;
+	padding-bottom: inherit;
+}
