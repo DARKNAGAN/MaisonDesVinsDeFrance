@@ -11,3 +11,9 @@ $(document).ready(function(){
 		});
 	});
 })
+function afficher_div_masque() {
+ 
+    var toto = document.getElementById("toto");
+    toto.style.display = "block";
+ 
+}

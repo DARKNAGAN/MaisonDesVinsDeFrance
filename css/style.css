@@ -9,7 +9,7 @@ body{
 
 }
 .background{
-    background-color: #a9001f;
+	background-color: #a9001f;
 }
 .btn-normal {
 
@@ -31,6 +31,10 @@ body{
 }
 .textviolet{
 	color: #1A284C;
+}
+.borderviolet{
+	border-width: 3px;
+	border-color: #1A284C;
 }
 .bgcorp{
 background-color: #f0f0f5;
