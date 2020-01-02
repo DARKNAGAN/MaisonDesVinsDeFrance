@@ -10,250 +10,40 @@
 	<title>MVF | Nos vins</title>
 </head>
 <body>
-	<div class="container textviolet">
+	<div class="container-fluid textviolet">
 		<!--CARD-->
 		<br><div class="card borderviolet">
-			<!--CORP-CARD-->
 			<div class="card-body">
 				<!--HEAD-CARD-->
-				<div class="row">
-					<div class="col-3">
-						<nav aria-label="breadcrumb">
-							<ol class="breadcrumb bg-white">
-								<li class="breadcrumb-item"><a href="/MVF/home.html">Acceuil</a></li>
-								<li class="breadcrumb-item active" aria-current="page">Vins</li>
-							</ol>
-						</nav>
+				<div class="row"><div class="col">
+						<a class="navbar-brand float-left" href="/MVF/home.html">
+							<img src="../images/MVF.png" width="120" height="120" class="d-inline-block align-top float-left" alt=""><br>
+							Acceuil
+					  	</a>
+					<div class="text-center float-center">
+						<h1 class="">Vins</h1>
 					</div>
-					<div class="col-8"><h1 class="text-center">Vins</h1></div>
-				</div>
+				</div></div>
+				<!--NAV-CARD-->
+				<div class="col">
+					<div class="nav nav-fill rounded">
+						<a class="nav-item nav-link active" onclick=window.location.href='/MVF/vue/vin.html'>Découvrir</a>
+						<a class="nav-item nav-link" id="list-rouge-list" data-toggle="tab" href="#vin-rouge" role="tab" aria-controls="rouge" aria-selected="false">Vin rouge</a>
+						<a class="nav-item nav-link" id="list-rose-list" data-toggle="tab" href="#vin-rose" role="tab" aria-controls="rose" aria-selected="false">Vin rosé </a>
+						<a class="nav-item nav-link" id="list-blanc-list" data-toggle="tab" href="#vin-blanc" role="tab" aria-controls="blanc" aria-selected="false">Vin blanc</a>
+					</div>
+				</div><hr><br>
+				<!--NAV-CARD-->
 				<!--HEAD-CARD-->
 				<div class="row no-gutters">
-					<!--NAV-CARD-->
-					<div class="col-3">
-						<div class="list-group border rounded p-3">
-							<button type="button" class="btn btn-primary violet" onclick=window.location.href='/MVF/vue/vin.html'>Découvrir</button><hr>
-							<!--VIN ROUGE LIST-->
-								<h4 type="button" class="btn text-center" id="list-rouge-list" data-toggle="tab" href="#vin-rouge" role="tab" aria-controls="rouge" aria-selected="false">Vin rouge</h4>
-									<button type="button" class="btn btn-primary dropdown-toggle violet" data-toggle="collapse" data-target="#collapsePays1" aria-expanded="false" aria-controls="collapsePays1">Nos Pays</button>
-									<div id="collapsePays1" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">																					
-												<div id="list-example" class="list-group">										
-													<a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="#collapseRegions1" aria-expanded="false" aria-controls="collapseRegions1">France</a>
-													<div id="collapseRegions1" class="collapse" aria-labelledby="headingTree" data-parent="#accordion">
-														<div class="list-group text-right">
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Rhône">	Rhône 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Bordeaux">	Bordeaux 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Bourgogne">	Bourgogne 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Languedoc-Roussillon">	Languedoc-Roussillon 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Beaujolais">	Beaujolais 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Loire">	Loire 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Provence">	Provence 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Sud-Ouest">	Sud-Ouest 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Toscane">	Toscane 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Vallée de Uco Mendoza	">	Vallée de Uco Mendoza	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Californie">	Californie 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Piémont">	Piémont 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Savoie">	Savoie 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Castilla y Leon">	Castilla y Leon 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Murcie">	Murcie 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Sonoma Valley">	Sonoma Valley 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Rioja">	Rioja 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Jura">	Jura 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Catalogne	">	Catalogne	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Douro">	Douro 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Pouilles">	Pouilles 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Napa Valley">	Napa Valley 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Sicile">	Sicile 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Alsace">	Alsace 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-South Australia">	South Australia 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Central Valley">	Central Valley 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Bierzo">	Bierzo 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Victoria	">	Victoria	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Marches">	Marches 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Canton de Vaud">	Canton de Vaud 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Marlborough">	Marlborough 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Corse">	Corse 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Barossa Valley">	Barossa Valley 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Galicia">	Galicia 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Rueda">	Rueda 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Meknés">	Meknés 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Kamptal	">	Kamptal	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Vénétie">	Vénétie 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Vallée de Curico">	Vallée de Curico 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Bot River Valley">	Bot River Valley 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Mancha">	Mancha 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Alicante">	Alicante 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Stellenbosch">	Stellenbosch 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Punta del Este, Garzon">	Punta del Este, Garzon 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Cuenca">	Cuenca 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Aconcagua Valley">	Aconcagua Valley 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Mendoza	">	Mendoza	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Oregon">	Oregon 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Cafayate">	Cafayate 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Coastal Region">	Coastal Region 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Vallée de Casablanca">	Vallée de Casablanca 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Lolol">	Lolol 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Puento Alto">	Puento Alto 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Vallée de Itata">	Vallée de Itata 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Tierra de Castilla">	Tierra de Castilla 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Maule Valley	">	Maule Valley	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Abruzzes">	Abruzzes 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Valencia	">	Valencia	</a>																										   
-														</div>												
-													</div>
-													<a class="dropdown-item" href="#pays-Italie">	Italie 	</a>
-													<a class="dropdown-item" href="#pays-Espagne">	Espagne 	</a>
-													<a class="dropdown-item" href="#pays-Etats-Unis">	Etats-Unis 	</a>
-													<a class="dropdown-item" href="#pays-Argentine">	Argentine 	</a>
-													<a class="dropdown-item" href="#pays-Chili">	Chili 	</a>
-													<a class="dropdown-item" href="#pays-Australie">	Australie 	</a>
-													<a class="dropdown-item" href="#pays-Portugal">	Portugal 	</a>
-													<a class="dropdown-item" href="#pays-Afrique du Sud	">	Afrique du Sud	</a>
-													<a class="dropdown-item" href="#pays-Nouvelle-Zélande">	Nouvelle-Zélande 	</a>
-													<a class="dropdown-item" href="#pays-Suisse">	Suisse 	</a>
-													<a class="dropdown-item" href="#pays-Maroc">	Maroc 	</a>
-													<a class="dropdown-item" href="#pays-Bulgarie">	Bulgarie 	</a>
-													<a class="dropdown-item" href="#pays-Croatie">	Croatie 	</a>
-													<a class="dropdown-item" href="#pays-Uruguay">	Uruguay 	</a>
-													<a class="dropdown-item" href="#pays-Grèce">	Grèce 	</a>
-													<a class="dropdown-item" href="#pays-Roumanie">	Roumanie 	</a>
-													<a class="dropdown-item" href="#pays-Liban	">	Liban	</a>
-													<a class="dropdown-item" href="#pays-Syrie">	Syrie 	</a>																						
-											</div>
-									</div><hr>
-							<!--VIN ROSE LIST-->
-								<h4 type="button" class="btn text-center" id="list-rose-list" data-toggle="tab" href="#vin-rose" role="tab" aria-controls="rose" aria-selected="false">Vin rosé</h4>
-									<button type="button" class="btn btn-primary dropdown-toggle violet" data-toggle="collapse" data-target="#collapsePays2" aria-expanded="false" aria-controls="collapsePays">Nos Pays</button>
-									<div id="collapsePays2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">																					
-												<div id="list-example" class="list-group">										
-														<a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="#collapseRegions2" aria-expanded="false" aria-controls="collapseRegions2">France</a>
-													<div id="collapseRegions2" class="collapse" aria-labelledby="headingTree" data-parent="#accordion">
-														<div class="list-group text-right">
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Provence">	Provence 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Languedoc-Roussillon">	Languedoc-Roussillon 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Sud-Ouest">	Sud-Ouest 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Rhône">	Rhône 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Bordeaux">	Bordeaux 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Loire">	Loire 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Corse">	Corse 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Beaujolais">	Beaujolais 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Emilie - Romagne">	Emilie - Romagne 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Normandie	">	Normandie	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Bourgogne">	Bourgogne 	</a>
-															<a class="dropdown-item" data-toggle="tab" role="tab" aria-selected="false" href="#region-france-Savoie	">	Savoie	</a>																									   
-													</div>
-													
-													</div>
-													<a class="dropdown-item" href="#pays-Italie">	Italie 	</a>
-													<a class="dropdown-item" href="#pays-Espagne">	Espagne 	</a>
-													<a class="dropdown-item" href="#pays-Etats-Unis">	Etats-Unis 	</a>
-													<a class="dropdown-item" href="#pays-Argentine">	Argentine 	</a>
-													<a class="dropdown-item" href="#pays-Chili">	Chili 	</a>
-													<a class="dropdown-item" href="#pays-Australie">	Australie 	</a>
-													<a class="dropdown-item" href="#pays-Portugal">	Portugal 	</a>
-													<a class="dropdown-item" href="#pays-Afrique du Sud	">	Afrique du Sud	</a>
-													<a class="dropdown-item" href="#pays-Nouvelle-Zélande">	Nouvelle-Zélande 	</a>
-													<a class="dropdown-item" href="#pays-Suisse">	Suisse 	</a>
-													<a class="dropdown-item" href="#pays-Maroc">	Maroc 	</a>
-													<a class="dropdown-item" href="#pays-Bulgarie">	Bulgarie 	</a>
-													<a class="dropdown-item" href="#pays-Croatie">	Croatie 	</a>
-													<a class="dropdown-item" href="#pays-Uruguay">	Uruguay 	</a>
-													<a class="dropdown-item" href="#pays-Grèce">	Grèce 	</a>
-													<a class="dropdown-item" href="#pays-Roumanie">	Roumanie 	</a>
-													<a class="dropdown-item" href="#pays-Liban	">	Liban	</a>
-													<a class="dropdown-item" href="#pays-Syrie">	Syrie 	</a>
-																						
-											</div>
-									</div><hr>
-							<!--VIN BLANC LIST-->
-								<h4 type="button" class="btn text-center" id="list-blanc-list" data-toggle="tab" href="#vin-blanc" role="tab" aria-controls="blanc" aria-selected="false">Vin blanc</h4>
-									<button type="button" class="btn btn-primary dropdown-toggle violet" data-toggle="collapse" data-target="#collapsePays3" aria-expanded="false" aria-controls="collapsePays3">Nos Pays</button>
-									<div id="collapsePays3" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">																					
-												<div id="list-example" class="list-group">										
-														<a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="#collapseRegions3" aria-expanded="false" aria-controls="collapseRegions3">France</a>
-													<div id="collapseRegions3" class="collapse" aria-labelledby="headingTree" data-parent="#accordion">
-														<div class="list-group text-right">
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Bourgogne	">	Bourgogne	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Rhône">	Rhône 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Loire">	Loire 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Languedoc-Roussillon">	Languedoc-Roussillon 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Alsace">	Alsace 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Bordeaux">	Bordeaux 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Sud-Ouest">	Sud-Ouest 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Savoie">	Savoie 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Jura">	Jura 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Provence">	Provence 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Marlborough">	Marlborough 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Vénétie">	Vénétie 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Mosel">	Mosel 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Weinviertel">	Weinviertel 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Normandie">	Normandie 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Napa Valley">	Napa Valley 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Coastal Region">	Coastal Region 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Vallée de Uco Mendoza">	Vallée de Uco Mendoza 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Mosel Saar">	Mosel Saar 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Corse">	Corse 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Pouilles">	Pouilles 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Douro">	Douro 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Galicia">	Galicia 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Canton de Vaud">	Canton de Vaud 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Catalogne">	Catalogne 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Burgenland">	Burgenland 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Californie">	Californie 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Central Valley">	Central Valley 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Tokaj">	Tokaj 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Beaujolais">	Beaujolais 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Sicile">	Sicile 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Marches">	Marches 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Rueda">	Rueda 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Baden">	Baden 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Castilla y Leon">	Castilla y Leon 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Stellenbosch">	Stellenbosch 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Vallée de Aconcagua">	Vallée de Aconcagua 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Plateau du Golan">	Plateau du Golan 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Vallée du Limari">	Vallée du Limari 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Kamptal">	Kamptal 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-West Sussex">	West Sussex 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Pfalz">	Pfalz 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Toscane">	Toscane 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Australie Méridionale">	Australie Méridionale 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Murcie">	Murcie 	</a>
-															<a class="dropdown-item"  data-toggle="tab"  role="tab" aria-selected="false" href="#region-france-Lolol">	Lolol 	</a>																																						  
-													</div>
-													
-													</div>
-													<a class="dropdown-item" href="#pays-Italie">	Italie 	</a>
-													<a class="dropdown-item" href="#pays-Nouvelle-Zélande">	Nouvelle-Zélande 	</a>
-													<a class="dropdown-item" href="#pays-Allemagne">	Allemagne 	</a>
-													<a class="dropdown-item" href="#pays-Espagne">	Espagne 	</a>
-													<a class="dropdown-item" href="#pays-Autriche">	Autriche 	</a>
-													<a class="dropdown-item" href="#pays-Etats-Unis">	Etats-Unis 	</a>
-													<a class="dropdown-item" href="#pays-Chili">	Chili 	</a>
-													<a class="dropdown-item" href="#pays-Afrique du Sud">	Afrique du Sud 	</a>
-													<a class="dropdown-item" href="#pays-Portugal	">	Portugal	</a>
-													<a class="dropdown-item" href="#pays-Argentine">	Argentine 	</a>
-													<a class="dropdown-item" href="#pays-Hongrie">	Hongrie 	</a>
-													<a class="dropdown-item" href="#pays-Suisse">	Suisse 	</a>
-													<a class="dropdown-item" href="#pays-Croatie">	Croatie 	</a>
-													<a class="dropdown-item" href="#pays-Angleterre">	Angleterre 	</a>
-													<a class="dropdown-item" href="#pays-Australie	">	Australie	</a>											   
-																						
-											</div>
-									</div>
-						</div>
-					</div>
-					<!--NAV-CARD-->
 					<!--DESC-CARD-->
-					<div class="col mx-2 px-4 card">
+					<div class="col">
 						<div class="tab-content" id="nav-tabContent">
 							<!--ASAVOIR OK-->
 							<div class="tab-pane fade  show active" id="listsavoir" role="tabpanel" aria-labelledby="list-savoir-list">									
-								<div class="row text-center">
-								<div class="col">
-									<div class="row">
-										<div class="col">								
-											<h2>Les différents types de vin</h2><hr>
-												<div class="col">
+									<div class="row text-center">
+										<div class="col card mx-3 p-4">	
+											<h2>Les différents types de vin</h2>
 												<p>"Qu'est-ce-que tu aimes toi comme vin ?"<br>
 												Il peut parfois être difficile de répondre à cette question.<br>
 												Surtout quand on ne sait pas ce qu'on boit. <br>
@@ -261,13 +51,12 @@
 												Mais savez-vous si vous préférez un vin "non-dosé" ou un vin doux naturel à un vin cuit...? <br>
 												On vous dit tout, pour enfin pouvoir mettre des mots sur vos bouteilles préférées !<br>
 												</p>
-												<img src="../images/vins/vin1.jpg" alt="Bordeaux" width="100%"><br>												
-												</div>
+												<img src="../images/vins/vin1.jpg" alt="Bordeaux" width="100%">											
 										</div>	
 									</div><br>	
-									<div class="row">
-										<div class="col">
-										<h2>Les couleurs du vin</h2><hr>		
+									<div class="row text-center">
+										<div class="col card mx-3 p-4">
+										<h2>Les couleurs du vin</h2>	
 											<div class="row">										
 												<div class="col">
 													<img src="../images/vins/vin2.jpg" alt="Bordeaux" width="100%"><br><br>
@@ -297,14 +86,14 @@
 														Le jus est ensuite transformé pour produire le vin souhaité par le vigneron.<br>
 														On utilisera exceptionnellement des raisins à peau rouge ou noire, qu'on ne laissera pas en contact avec le jus ;<br>
 														c'est le cas par exemple des Champagnes Blanc de Noirs faits à base de Pinot Noir.<br>	
-														</p><br>
+														</p>
 												</div>
 											</div>
 										</div>
 									</div><br>
-									<div class="row">
-										<div class="col">
-											<h2>Les textures du vin</h2><hr>
+									<div class="row text-center">
+										<div class="col card mx-3 p-4">
+											<h2>Les textures du vin</h2>
 												<div class="row">
 													<div class="col">
 														<img src="../images/vins/vin5.jpg" alt="Bordeaux" width="100%"><br><br>
@@ -366,26 +155,26 @@
 															C’est une spécialité des vins de Provence.<br>
 															</p>
 													</div>
-												</div><hr>
+												</div>
 										</div>
 									</div><br>
 									<div class="row">
-										<div class="col">
-											<h2>Pour conclure</h2><hr>
+										<div class="col card mx-3 p-4">
+											<h2>Pour conclure</h2>
 											<p>Le vin est très subjectif.<br> Quelques soient vos goûts et vos préférences, vous trouverez au fil des découvertes les vins que vous aimez.<br>
 											Le plus dur reste de mettre des mots dessus. Donc n'hésitez pas à vous "entraîner" (si si, la dégustation ça s'apprend, c'est un entrainement) et surtout à demander conseil.<br>
-											Chez La Maison des Vins de France, nous sommes une petite équipe, toujours à votre disposition et à votre écoute via notre tchat, les réseaux sociaux ou même ici !<br>
+											Chez La Maison des Vins de France, nous sommes une petite équipe, toujours à votre disposition et à votre écoute via notre tchat,<br>
+											les réseaux sociaux ou même ici !<br>
 											Et surtout bonne dégustation !<br>
 											Envie de briller en société autour d'un verre à pied ?<br>											 
 											</p>
 										</div>
 									</div>
-								</div>
-								</div>
 							</div>
 							<!--VIN ROUGE-->
 							<div class="tab-pane fade" id="vin-rouge" role="tabpanel" aria-labelledby="vin-rouge">
-								<h3>Vin rouge</h3>
+								<div class="card mx-3 p-4">
+									<h3>Vin rouge</h3>
 									<p>Une envie de tannins ?<br>
 									C’est un vin rouge qu’il vous faut ! Robuste, corpulent, épicé, généreux, raffiné, léger, avec des arômes floraux ou fruités,<br>
 									vous trouverez de quoi combler vos attentes avec notre sélection haute en couleur !<br>
@@ -397,28 +186,29 @@
 									Il existe plusieurs nuances de rouge. La couleur change elle aussi en fonction de l’environnement, de l’élevage, et de beaucoup d’autres facteurs.<br>
 									Le vin rouge est obtenu grâce à la macération du raisin en contact avec la peau, qui donne la couleur.
 									</p>
-										<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseGout1" role="button" aria-expanded="true" aria-controls="collapseGout1">Goût</h3>
-										<div class="collapse show" id="collapseGout1">
+									</div><br>
+										<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseGout1" role="button" aria-expanded="false" aria-controls="collapseGout1">Goût</h3>
+										<div class="collapse" id="collapseGout1">
 											<div class="card-body">
 												<div class="row">
 														<div class="col">
-															<li>	Fruité 	</li>
-															<li>	Puissant 	</li>
-															<li>	Boisé 	</li>
-															<li>	Souple 	</li>
-															<li>	Epicé 	</li>
+															<ol>	Fruité 	</ol>
+															<ol>	Puissant 	</ol>
+															<ol>	Boisé 	</ol>
+															<ol>	Souple 	</ol>
+															<ol>	Epicé 	</ol>
 														</div><div class="col">
-															<li>	Sec 	</li>
-															<li>	Sucré 	</li>
-															<li>	Floral 	</li>
-															<li>	Animal 	</li>
-															<li>	Minéral	</li>													
+															<ol>	Sec 	</ol>
+															<ol>	Sucré 	</ol>
+															<ol>	Floral 	</ol>
+															<ol>	Animal 	</ol>
+															<ol>	Minéral	</ol>													
 													</div>										
 												</div>	
 											</div>
 										</div><hr>
-										<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseCepage1" role="button" aria-expanded="true" aria-controls="collapseCepage1">Cépage</h3>
-										<div class="collapse show" id="collapseCepage1">
+										<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseCepage1" role="button" aria-expanded="false" aria-controls="collapseCepage1">Cépage</h3>
+										<div class="collapse" id="collapseCepage1">
 											<div class="card-body">
 												<div class="row">
 													<div class="col">
@@ -434,302 +224,397 @@
 											<div class="card card-body">
 												<div class="row">
 														<div class="col">
-															<li>	Alicante 	</li>
-															<li>	Allobrogie 	</li>
-															<li>	Aloxe Corton 	</li>
-															<li>	Aloxe Corton 1er Cru 	</li>
-															<li>	Alpilles 	</li>
-															<li>	Alsace 	</li>
-															<li>	Amarone della Valpolicella 	</li>
-															<li>	Anjou 	</li>
-															<li>	Arbois 	</li>
-															<li>	Ardèche	</li>												
-															<li>	Aude Hauterive 	</li>
-															<li>	Auxey-Duresses 	</li>
-															<li>	Auxey-Duresses 1er cru 	</li>
-															<li>	Bandol 	</li>
-															<li>	Banyuls 	</li>
-															<li>	Barbaresco 	</li>
-															<li>	Barbera d'Alba 	</li>
-															<li>	Barolo 	</li>
-															<li>	Beaujolais 	</li>
-															<li>	Beaujolais Villages	</li>												
-															<li>	Beaumes de Venise 	</li>
-															<li>	Beaune 1er cru 	</li>
-															<li>	Bergerac 	</li>
-															<li>	Bierzo 	</li>
-															<li>	Blaye - Côtes de bordeaux 	</li>
-															<li>	Bolgheri 	</li>
-															<li>	Bonnes-Mares 	</li>
-															<li>	Bonnes-Mares Grand Cru 	</li>
-															<li>	Bordeaux	</li>
-															<li>	Bordeaux Supérieur 	</li>
-															<li>	Bourgogne 	</li>
-															<li>	Bourgueil 	</li>
-															<li>	Brouilly 	</li>
-															<li>	Bullas 	</li>
-															<li>	Cabardès 	</li>
-															<li>	Cabrières 	</li>
-															<li>	Cahors 	</li>
-															<li>	Cairanne 	</li>
-															<li>	Canon Fronsac	</li>
-															<li>	Carcassonne 	</li>
-															<li>	Carinena 	</li>
-															<li>	Casablanca 	</li>
-															<li>	Castillon - Côtes de Bordeaux 	</li>
-															<li>	Cévennes 	</li>
-															<li>	Chambertin 	</li>
-															<li>	Chambertin-Clos de Bèze 	</li>
-															<li>	Chambolle-Musigny 	</li>
-															<li>	Chambolle-Musigny 1er Cru	</li>
-															<li>	Chapelle Chambertin 	</li>
-															<li>	Charmes Chambertin Grand Cru 	</li>
-															<li>	Charmes-Chambertin 	</li>
-															<li>	Chassagne Montrachet 	</li>
-															<li>	Châteauneuf-du-Pape 	</li>
-															<li>	Chénas 	</li>
-															<li>	Chianti Classico 	</li>
-															<li>	Chianti Classico Riserva 	</li>
-															<li>	Chianti Docg	</li>
-															<li>	Chinon 	</li>
-															<li>	Chiroubles 	</li>
-															<li>	Chorey-Lès-Beaune 	</li>
-															<li>	Clos de la Roche Grand Cru 	</li>
-															<li>	Clos de Tart Grand Cru 	</li>
-															<li>	Clos de Vougeot Grand Cru 	</li>
-															<li>	Clos des Lambrays Grand Cru 	</li>
-															<li>	Clos Saint-Denis 	</li>
-															<li>	Collines Rhodaniennes	</li>
-															<li>	Collioure 	</li>
-															<li>	Corbières 	</li>
-															<li>	Corbières Boutenac 	</li>
-															<li>	Cornas 	</li>
-															<li>	Corton Grand Cru 	</li>
-															<li>	Corton-Bressandes 	</li>
-															<li>	Corton-Pougets Grand Cru 	</li>
-															<li>	Costières de Nîmes 	</li>
-															<li>	Côte de Beaune-Villages	</li>
-															<li>	Côte de Brouilly 	</li>
-															<li>	Côte de Nuits-Villages 	</li>
-															<li>	Côte-Rôtie 	</li>
-															<li>	Coteaux Bourguignons 	</li>
-															<li>	Coteaux d'Aix en Provence 	</li>
+															<ol>	Alicante 	</ol>
+															<ol>	Allobrogie 	</ol>
+															<ol>	Aloxe Corton 	</ol>
+															<ol>	Aloxe Corton 1er Cru 	</ol>
+															<ol>	Alpilles 	</ol>
+															<ol>	Alsace 	</ol>
+															<ol>	Amarone della Valpolicella 	</ol>
+															<ol>	Anjou 	</ol>
+															<ol>	Arbois 	</ol>
+															<ol>	Ardèche	</ol>												
+															<ol>	Aude Hauterive 	</ol>
+															<ol>	Auxey-Duresses 	</ol>
+															<ol>	Auxey-Duresses 1er cru 	</ol>
+															<ol>	Bandol 	</ol>
+															<ol>	Banyuls 	</ol>
+															<ol>	Barbaresco 	</ol>
+															<ol>	Barbera d'Alba 	</ol>
+															<ol>	Barolo 	</ol>
+															<ol>	Beaujolais 	</ol>
+															<ol>	Beaujolais Villages	</ol>												
+															<ol>	Beaumes de Venise 	</ol>
+															<ol>	Beaune 1er cru 	</ol>
+															<ol>	Bergerac 	</ol>
+															<ol>	Bierzo 	</ol>
+															<ol>	Blaye - Côtes de bordeaux 	</ol>
+															<ol>	Bolgheri 	</ol>
+															<ol>	Bonnes-Mares 	</ol>
+															<ol>	Bonnes-Mares Grand Cru 	</ol>
+															<ol>	Bordeaux	</ol>
+															<ol>	Bordeaux Supérieur 	</ol>
+															<ol>	Bourgogne 	</ol>
+															<ol>	Bourgueil 	</ol>
+															<ol>	Brouilly 	</ol>
+															<ol>	Bullas 	</ol>
+															<ol>	Cabardès 	</ol>
+															<ol>	Cabrières 	</ol>
+															<ol>	Cahors 	</ol>
+															<ol>	Cairanne 	</ol>
+															<ol>	Canon Fronsac	</ol>
+															<ol>	Carcassonne 	</ol>
+															<ol>	Carinena 	</ol>
+															<ol>	Casablanca 	</ol>
+															<ol>	Castillon - Côtes de Bordeaux 	</ol>
+															<ol>	Cévennes 	</ol>
+															<ol>	Chambertin 	</ol>
+															<ol>	Chambertin-Clos de Bèze 	</ol>
+															<ol>	Chambolle-Musigny 	</ol>
+															<ol>	Chambolle-Musigny 1er Cru	</ol>
+															<ol>	Chapelle Chambertin 	</ol>
+															<ol>	Charmes Chambertin Grand Cru 	</ol>
+															<ol>	Charmes-Chambertin 	</ol>
+															<ol>	Chassagne Montrachet 	</ol>
+															<ol>	Châteauneuf-du-Pape 	</ol>
+															<ol>	Chénas 	</ol>
+															<ol>	Chianti Classico 	</ol>
+															<ol>	Chianti Classico Riserva 	</ol>
+															<ol>	Chianti Docg	</ol>
+															<ol>	Chinon 	</ol>
+															<ol>	Chiroubles 	</ol>
+															<ol>	Chorey-Lès-Beaune 	</ol>
+															<ol>	Clos de la Roche Grand Cru 	</ol>
+															<ol>	Clos de Tart Grand Cru 	</ol>
+															<ol>	Clos de Vougeot Grand Cru 	</ol>
+															<ol>	Clos des Lambrays Grand Cru 	</ol>
+															<ol>	Clos Saint-Denis 	</ol>
+															<ol>	Collines Rhodaniennes	</ol>
+															<ol>	Collioure 	</ol>
+															<ol>	Corbières 	</ol>
+															<ol>	Corbières Boutenac 	</ol>
+															<ol>	Cornas 	</ol>
+															<ol>	Corton Grand Cru 	</ol>
+															<ol>	Corton-Bressandes 	</ol>
+															<ol>	Corton-Pougets Grand Cru 	</ol>
+															<ol>	Costières de Nîmes 	</ol>
+															<ol>	Côte de Beaune-Villages	</ol>
+															<ol>	Côte de Brouilly 	</ol>
+															<ol>	Côte de Nuits-Villages 	</ol>
+															<ol>	Côte-Rôtie 	</ol>
+															<ol>	Coteaux Bourguignons 	</ol>
+															<ol>	Coteaux d'Aix en Provence 	</ol>
+															<ol>	Coteaux de Béziers 	</ol>
+															<ol>	Coteaux du Languedoc 	</ol>
+															<ol>	Côtes Catalanes 	</ol>
+															<ol>	Côtes de Bordeaux 	</ol>
+															<ol>	Côtes de Bourg 	</ol>
+															<ol>	Côtes de Gascogne 	</ol>
 														</div><div class="col">
-															<li>	Coteaux de Béziers 	</li>
-															<li>	Coteaux du Languedoc 	</li>
-															<li>	Côtes Catalanes 	</li>
-															<li>	Côtes de Bordeaux 	</li>
-															<li>	Côtes de Bourg 	</li>
-															<li>	Côtes de Gascogne 	</li>
-															<li>	Côtes de Provence 	</li>
-															<li>	Côtes de Provence Cru Classé 	</li>												
-															<li>	Côtes de Thongue 	</li>
-															<li>	Côtes du Brian 	</li>
-															<li>	Côtes du Jura 	</li>
-															<li>	Côtes du Rhône 	</li>
-															<li>	Côtes du Rhône Villages 	</li>
-															<li>	Côtes du Roussillon 	</li>
-															<li>	Côtes du Roussillon Les Aspres 	</li>
-															<li>	Côtes du Roussillon Villages 	</li>
-															<li>	Côtes du Vivarais 	</li>
-															<li>	Crozes-Hermitage 	</li>
-															<li>	Douro 	</li>
-															<li>	Duché d'Uzès 	</li>
-															<li>	Echezeaux 	</li>
-															<li>	Ermitage 	</li>
-															<li>	Etna 	</li>
-															<li>	Faugères 	</li>
-															<li>	Figari 	</li>
-															<li>	Fitou 	</li>
-															<li>	Fixin 	</li>
-															<li>	Fleurie 	</li>												
-															<li>	Franc - Côtes de Bordeaux 	</li>
-															<li>	Fronton 	</li>
-															<li>	Gard 	</li>
-															<li>	Gevrey Chambertin 	</li>
-															<li>	Gevrey Chambertin 1er cru 	</li>
-															<li>	Gigondas 	</li>
-															<li>	Givry 	</li>
-															<li>	Givry 1er Cru 	</li>
-															<li>	Grands Echezeaux 	</li>
-															<li>	Graves 	</li>
-															<li>	Grès de Montpellier Coteaux du Languedoc 	</li>
-															<li>	Grignan les Adhémar 	</li>
-															<li>	Haut-Médoc 	</li>
-															<li>	Hautes Côtes de Beaune 	</li>
-															<li>	Hautes Côtes de Nuits 	</li>
-															<li>	Hérault 	</li>
-															<li>	Hermitage 	</li>
-															<li>	Ile de Beauté 	</li>
-															<li>	Irancy 	</li>
-															<li>	Itata 	</li>
-															<li>	Julienas 	</li>
-															<li>	Jumilla 	</li>
-															<li>	La Clape Coteaux du Languedoc 	</li>
-															<li>	La Côte 	</li>
-															<li>	La Mancha 	</li>
-															<li>	Lalande de Pomerol 	</li>
-															<li>	Languedoc 	</li>
-															<li>	Languedoc-Quartouze 	</li>
-															<li>	Latricières Chambertin 	</li>
-															<li>	Lirac 	</li>
-															<li>	Listrac-Médoc 	</li>
-															<li>	Luberon 	</li>
-															<li>	Lussac Saint-Emilion 	</li>
-															<li>	Mâcon 	</li>
-															<li>	Mâcon Pierreclos 	</li>
-															<li>	Mâcon Villages 	</li>
-															<li>	Madiran 	</li>
-															<li>	Maranges 	</li>
-															<li>	Maranges 1er Cru 	</li>
-															<li>	Marcillac 	</li>
-															<li>	Margaux 	</li>
-															<li>	Marsannay 	</li>
-															<li>	Maury doux 	</li>
-															<li>	Maury sec 	</li>
-															<li>	Mazis-Chambertin Grand Cru 	</li>
-															<li>	Mazoyères-Chambertin 	</li>
-															<li>	Méditerranée 	</li>
-															<li>	Médoc 	</li>
-															<li>	Mendoza 	</li>
-															<li>	Menetou-Salon 	</li>
-															<li>	Mercurey 	</li>
-															<li>	Mercurey 1er cru 	</li>												
-															<li>	Minervois 	</li>
-															<li>	Minervois-la-Livinière 	</li>
-															<li>	Montagne Saint-Emilion 	</li>
-															<li>	Montepulciano 	</li>
-															<li>	Monterrei 	</li>
-															<li>	Monthélie 1er cru 	</li>
-															<li>	Montpeyroux Coteaux du Languedoc 	</li>
-														</div><div class="col">
-															<li>	Morey Saint Denis 1er Cru 	</li>
-															<li>	Morey Saint Denis 	</li>
-															<li>	Morgon 	</li>
-															<li>	Moulin à Vent 	</li>
-															<li>	Moulis 	</li>
-															<li>	Mount Veeder 	</li>
-															<li>	Musigny 	</li>
-															<li>	Napa Valley 	</li>												
-															<li>	Navarra 	</li>
-															<li>	Nebbiolo d'Alba 	</li>
-															<li>	Nero d'Avola 	</li>
-															<li>	Nuits Saint Georges 	</li>
-															<li>	Nuits Saint Georges 1er Cru 	</li>
-															<li>	Palette 	</li>
-															<li>	Patrimonio 	</li>
-															<li>	Pauillac 	</li>
-															<li>	Pays d'Hérault 	</li>
-															<li>	Pays d'Oc 	</li>
-															<li>	Pays de Caux 	</li>
-															<li>	Pernand-Vergelesses 1er Cru 	</li>
-															<li>	Pessac-Léognan 	</li>												
-															<li>	Pic-Saint-Loup 	</li>
-															<li>	Pomerol 	</li>
-															<li>	Pommard 	</li>
-															<li>	Pommard 1er Cru 	</li>
-															<li>	Priorat 	</li>
-															<li>	Puente Alto 	</li>
-															<li>	Puglia 	</li>
-															<li>	Puisseguin St Emilion 	</li>
-															<li>	Pyrénées 	</li>
-															<li>	Rasteau 	</li>
-															<li>	Régnié 	</li>
-															<li>	Ribera del Duero 	</li>
-															<li>	Ribera del Jucar 	</li>
-															<li>	Richebourg 	</li>
-															<li>	Rioja 	</li>
-															<li>	Rivesaltes 	</li>
-															<li>	Romanée-Saint-Vivant 	</li>
-															<li>	Rosso di Toscana 	</li>
-															<li>	Rosso Piceno 	</li>
-															<li>	Rully 	</li>
-															<li>	Rully 1er cru 	</li>
-															<li>	Saint-Amour 	</li>
-															<li>	Saint-Chinian 	</li>
-															<li>	Saint-Emilion 	</li>												
-															<li>	Saint-Emilion 1er Grand Cru Classé 	</li>
-															<li>	Saint-Emilion Grand Cru 	</li>
-															<li>	Saint-Estèphe 	</li>
-															<li>	Saint-Guilhem-le-Désert 	</li>
-															<li>	Saint-Joseph 	</li>
-															<li>	Saint-Julien 	</li>
-															<li>	Saint-Romain 	</li>
-															<li>	Sainte-Foy-Bordeaux 	</li>
-															<li>	San Severo 	</li>
-															<li>	Sancerre 	</li>
-															<li>	Santenay 	</li>
-															<li>	Santenay 1er cru 	</li>
-															<li>	Saumur 	</li>
-															<li>	Saumur Champigny 	</li>
-															<li>	Savigny-Les-Beaune 	</li>
-															<li>	Savigny-Les-Beaune 1er Cru 	</li>
-															<li>	Savoie 	</li>
-															<li>	Sicilia 	</li>
-															<li>	Sonoma County 	</li>
-															<li>	Saint Nicolas de Bourgueil 	</li>
-															<li>	Terrasses du Larzac 	</li>
-															<li>	Terres du Midi 	</li>
-															<li>	Toscana 	</li>
-															<li>	Toscane 	</li>
-															<li>	Toscane 	</li>
-															<li>	Touraine 	</li>
-															<li>	Tursan 	</li>
-															<li>	Vacqueyras 	</li>
-															<li>	Val de Loire 	</li>
-															<li>	Valencia 	</li>
-															<li>	Vallée de l'Aconcagua 	</li>
-															<li>	Valpolicella Classico 	</li>
-															<li>	Var 	</li>
-															<li>	Vaucluse 	</li>
-															<li>	Ventoux 	</li>
-															<li>	Vin de France 	</li>
-															<li>	Vin de Pays des Bouches du Rhône 	</li>
-															<li>	Vino de la Tierra de Castilla 	</li>
-															<li>	Vinsobres 	</li>
-															<li>	Vistalba Mendoza 	</li>
-															<li>	Volnay 	</li>
-															<li>	Volnay 1er Cru 	</li>
-															<li>	Vosne Romanée 	</li>
-															<li>	Vosne Romanée 1er Cru 	</li>
-															<li>	Vougeot 	</li>
-															<li>	Yecla	</li>													
+															<ol>	Côtes de Provence 	</ol>
+															<ol>	Côtes de Provence Cru Classé 	</ol>												
+															<ol>	Côtes de Thongue 	</ol>
+															<ol>	Côtes du Brian 	</ol>
+															<ol>	Côtes du Jura 	</ol>
+															<ol>	Côtes du Rhône 	</ol>
+															<ol>	Côtes du Rhône Villages 	</ol>
+															<ol>	Côtes du Roussillon 	</ol>
+															<ol>	Côtes du Roussillon Les Aspres 	</ol>
+															<ol>	Côtes du Roussillon Villages 	</ol>
+															<ol>	Côtes du Vivarais 	</ol>
+															<ol>	Crozes-Hermitage 	</ol>
+															<ol>	Douro 	</ol>
+															<ol>	Duché d'Uzès 	</ol>
+															<ol>	Echezeaux 	</ol>
+															<ol>	Ermitage 	</ol>
+															<ol>	Etna 	</ol>
+															<ol>	Faugères 	</ol>
+															<ol>	Figari 	</ol>
+															<ol>	Fitou 	</ol>
+															<ol>	Fixin 	</ol>
+															<ol>	Fleurie 	</ol>												
+															<ol>	Franc - Côtes de Bordeaux 	</ol>
+															<ol>	Fronton 	</ol>
+															<ol>	Gard 	</ol>
+															<ol>	Gevrey Chambertin 	</ol>
+															<ol>	Gevrey Chambertin 1er cru 	</ol>
+															<ol>	Gigondas 	</ol>
+															<ol>	Givry 	</ol>
+															<ol>	Givry 1er Cru 	</ol>
+															<ol>	Grands Echezeaux 	</ol>
+															<ol>	Graves 	</ol>
+															<ol>	Grès de Montpellier Coteaux du Languedoc 	</ol>
+															<ol>	Grignan les Adhémar 	</ol>
+															<ol>	Haut-Médoc 	</ol>
+															<ol>	Hautes Côtes de Beaune 	</ol>
+															<ol>	Hautes Côtes de Nuits 	</ol>
+															<ol>	Hérault 	</ol>
+															<ol>	Hermitage 	</ol>
+															<ol>	Ile de Beauté 	</ol>
+															<ol>	Irancy 	</ol>
+															<ol>	Itata 	</ol>
+															<ol>	Julienas 	</ol>
+															<ol>	Jumilla 	</ol>
+															<ol>	La Clape Coteaux du Languedoc 	</ol>
+															<ol>	La Côte 	</ol>
+															<ol>	La Mancha 	</ol>
+															<ol>	Lalande de Pomerol 	</ol>
+															<ol>	Languedoc 	</ol>
+															<ol>	Languedoc-Quartouze 	</ol>
+															<ol>	Latricières Chambertin 	</ol>
+															<ol>	Lirac 	</ol>
+															<ol>	Listrac-Médoc 	</ol>
+															<ol>	Luberon 	</ol>
+															<ol>	Lussac Saint-Emilion 	</ol>
+															<ol>	Mâcon 	</ol>
+															<ol>	Mâcon Pierreclos 	</ol>
+															<ol>	Mâcon Villages 	</ol>
+															<ol>	Madiran 	</ol>
+															<ol>	Maranges 	</ol>
+															<ol>	Maranges 1er Cru 	</ol>
+															<ol>	Marcillac 	</ol>
+															<ol>	Margaux 	</ol>
+															<ol>	Marsannay 	</ol>
+															<ol>	Maury doux 	</ol>
+															<ol>	Maury sec 	</ol>
+															<ol>	Mazis-Chambertin Grand Cru 	</ol>
+															<ol>	Mazoyères-Chambertin 	</ol>
+															<ol>	Méditerranée 	</ol>
+															<ol>	Médoc 	</ol>
+															<ol>	Mendoza 	</ol>
+															<ol>	Menetou-Salon 	</ol>
+															<ol>	Mercurey 	</ol>
+															<ol>	Mercurey 1er cru 	</ol>												
+															<ol>	Minervois 	</ol>
+															<ol>	Minervois-la-Livinière 	</ol>
+															<ol>	Montagne Saint-Emilion 	</ol>
+															<ol>	Montepulciano 	</ol>
+															<ol>	Monterrei 	</ol>
+															<ol>	Monthélie 1er cru 	</ol>
+															<ol>	Montpeyroux Coteaux du Languedoc 	</ol>														
+															<ol>	Morey Saint Denis 1er Cru 	</ol>
+															<ol>	Morey Saint Denis 	</ol>
+															<ol>	Morgon 	</ol>
+															<ol>	Moulin à Vent 	</ol>
+															<ol>	Moulis 	</ol>
+														</div><div class="col">	
+															<ol>	Mount Veeder 	</ol>
+															<ol>	Musigny 	</ol>
+															<ol>	Napa Valley 	</ol>											
+															<ol>	Navarra 	</ol>
+															<ol>	Nebbiolo d'Alba 	</ol>
+															<ol>	Nero d'Avola 	</ol>
+															<ol>	Nuits Saint Georges 	</ol>
+															<ol>	Nuits Saint Georges 1er Cru 	</ol>
+															<ol>	Palette 	</ol>
+															<ol>	Patrimonio 	</ol>
+															<ol>	Pauillac 	</ol>
+															<ol>	Pays d'Hérault 	</ol>
+															<ol>	Pays d'Oc 	</ol>
+															<ol>	Pays de Caux 	</ol>
+															<ol>	Pernand-Vergelesses 1er Cru 	</ol>
+															<ol>	Pessac-Léognan 	</ol>												
+															<ol>	Pic-Saint-Loup 	</ol>
+															<ol>	Pomerol 	</ol>
+															<ol>	Pommard 	</ol>
+															<ol>	Pommard 1er Cru 	</ol>
+															<ol>	Priorat 	</ol>
+															<ol>	Puente Alto 	</ol>
+															<ol>	Puglia 	</ol>
+															<ol>	Puisseguin St Emilion 	</ol>
+															<ol>	Pyrénées 	</ol>
+															<ol>	Rasteau 	</ol>
+															<ol>	Régnié 	</ol>
+															<ol>	Ribera del Duero 	</ol>
+															<ol>	Ribera del Jucar 	</ol>
+															<ol>	Richebourg 	</ol>
+															<ol>	Rioja 	</ol>
+															<ol>	Rivesaltes 	</ol>
+															<ol>	Romanée-Saint-Vivant 	</ol>
+															<ol>	Rosso di Toscana 	</ol>
+															<ol>	Rosso Piceno 	</ol>
+															<ol>	Rully 	</ol>
+															<ol>	Rully 1er cru 	</ol>
+															<ol>	Saint-Amour 	</ol>
+															<ol>	Saint-Chinian 	</ol>
+															<ol>	Saint-Emilion 	</ol>												
+															<ol>	Saint-Emilion 1er Grand Cru Classé 	</ol>
+															<ol>	Saint-Emilion Grand Cru 	</ol>
+															<ol>	Saint-Estèphe 	</ol>
+															<ol>	Saint-Guilhem-le-Désert 	</ol>
+															<ol>	Saint-Joseph 	</ol>
+															<ol>	Saint-Julien 	</ol>
+															<ol>	Saint-Romain 	</ol>
+															<ol>	Sainte-Foy-Bordeaux 	</ol>
+															<ol>	San Severo 	</ol>
+															<ol>	Sancerre 	</ol>
+															<ol>	Santenay 	</ol>
+															<ol>	Santenay 1er cru 	</ol>
+															<ol>	Saumur 	</ol>
+															<ol>	Saumur Champigny 	</ol>
+															<ol>	Savigny-Les-Beaune 	</ol>
+															<ol>	Savigny-Les-Beaune 1er Cru 	</ol>
+															<ol>	Savoie 	</ol>
+															<ol>	Sicilia 	</ol>
+															<ol>	Sonoma County 	</ol>
+															<ol>	Saint Nicolas de Bourgueil 	</ol>
+															<ol>	Terrasses du Larzac 	</ol>
+															<ol>	Terres du Midi 	</ol>
+															<ol>	Toscana 	</ol>
+															<ol>	Toscane 	</ol>
+															<ol>	Toscane 	</ol>
+															<ol>	Touraine 	</ol>
+															<ol>	Tursan 	</ol>
+															<ol>	Vacqueyras 	</ol>
+															<ol>	Val de Loire 	</ol>
+															<ol>	Valencia 	</ol>
+															<ol>	Vallée de l'Aconcagua 	</ol>
+															<ol>	Valpolicella Classico 	</ol>
+															<ol>	Var 	</ol>
+															<ol>	Vaucluse 	</ol>
+															<ol>	Ventoux 	</ol>
+															<ol>	Vin de France 	</ol>
+															<ol>	Vin de Pays des Bouches du Rhône 	</ol>
+															<ol>	Vino de la Tierra de Castilla 	</ol>
+															<ol>	Vinsobres 	</ol>
+															<ol>	Vistalba Mendoza 	</ol>
+															<ol>	Volnay 	</ol>
+															<ol>	Volnay 1er Cru 	</ol>
+															<ol>	Vosne Romanée 	</ol>
+															<ol>	Vosne Romanée 1er Cru 	</ol>
+															<ol>	Vougeot 	</ol>
+															<ol>	Yecla	</ol>													
 													</div>
 												</div>										
 											</div>	
 										</div><hr>
+										<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapsePays1" role="button" aria-expanded="false" aria-controls="collapsePays1">Pays</h3>
+										<div class="collapse" id="collapsePays1">
+											<div class="card-body">
+												<div class="row">
+														<div class="col">
+															<a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="#collapseRegions1" aria-expanded="false" aria-controls="collapseRegions1">France</a>
+															<div id="collapseRegions1" class="collapse" aria-labelledby="headingTree" data-parent="#accordion"><div class="list-group text-left">
+																<div class="row">
+																	<div class="col">															
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Rhône 	">	Rhône 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Bordeaux 	">	Bordeaux 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Bourgogne 	">	Bourgogne 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Languedoc-Roussillon 	">	Languedoc-Roussillon 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Beaujolais 	">	Beaujolais 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Loire 	">	Loire 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Provence 	">	Provence 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Sud-Ouest 	">	Sud-Ouest 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Toscane 	">	Toscane 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Vallée de Uco Mendoza	">	Vallée de Uco Mendoza	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Californie 	">	Californie 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Piémont 	">	Piémont 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Savoie 	">	Savoie 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Castilla y Leon 	">	Castilla y Leon 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Murcie 	">	Murcie 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Sonoma Valley 	">	Sonoma Valley 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Rioja 	">	Rioja 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Jura 	">	Jura 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Catalogne	">	Catalogne	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Douro 	">	Douro 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Pouilles 	">	Pouilles 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Napa Valley 	">	Napa Valley 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Sicile 	">	Sicile 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Alsace 	">	Alsace 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	South Australia 	">	South Australia 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Central Valley 	">	Central Valley 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Bierzo 	">	Bierzo 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Victoria	">	Victoria	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Marches 	">	Marches 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Canton de Vaud 	">	Canton de Vaud 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Marlborough 	">	Marlborough 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Corse 	">	Corse 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Barossa Valley 	">	Barossa Valley 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Galicia 	">	Galicia 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Rueda 	">	Rueda 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Meknés 	">	Meknés 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Kamptal	">	Kamptal	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Vénétie 	">	Vénétie 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Vallée de Curico 	">	Vallée de Curico 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Bot River Valley 	">	Bot River Valley 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Mancha 	">	Mancha 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Alicante 	">	Alicante 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Stellenbosch 	">	Stellenbosch 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Punta del Este, Garzon 	">	Punta del Este, Garzon 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Cuenca 	">	Cuenca 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Aconcagua Valley 	">	Aconcagua Valley 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Mendoza	">	Mendoza	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Oregon 	">	Oregon 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Cafayate 	">	Cafayate 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Coastal Region 	">	Coastal Region 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Vallée de Casablanca 	">	Vallée de Casablanca 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Lolol 	">	Lolol 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Puento Alto 	">	Puento Alto 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Vallée de Itata 	">	Vallée de Itata 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Tierra de Castilla 	">	Tierra de Castilla 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Maule Valley	">	Maule Valley	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Abruzzes 	">	Abruzzes 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Valencia	">	Valencia	</a>																
+																	</div>
+																</div>
+															</div>
+															</div>																											
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="#collapsePays2	" aria-expanded="false" aria-controls="	collapsePays2	">	Italie 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="#collapsePays3	" aria-expanded="false" aria-controls="	collapsePays3	">	Espagne 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="#collapsePays4	" aria-expanded="false" aria-controls="	collapsePays4	">	Etats-Unis 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="#collapsePays5	" aria-expanded="false" aria-controls="	collapsePays5	">	Argentine 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="#collapsePays6	" aria-expanded="false" aria-controls="	collapsePays6	">	Chili 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="#collapsePays7	" aria-expanded="false" aria-controls="	collapsePays7	">	Australie 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="#collapsePays8	" aria-expanded="false" aria-controls="	collapsePays8	">	Portugal 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="#collapsePays9	" aria-expanded="false" aria-controls="	collapsePays9	">	Afrique du Sud	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="#collapsePays10	" aria-expanded="false" aria-controls="	collapsePays10	">	Nouvelle-Zélande 	</a></ol>																
+														</div><div class="col">
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="#collapsePays11	" aria-expanded="false" aria-controls="	collapsePays11	">	Suisse 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="#collapsePays12	" aria-expanded="false" aria-controls="	collapsePays12	">	Maroc 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="#collapsePays13	" aria-expanded="false" aria-controls="	collapsePays13	">	Bulgarie 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="#collapsePays14	" aria-expanded="false" aria-controls="	collapsePays14	">	Croatie 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="#collapsePays15	" aria-expanded="false" aria-controls="	collapsePays15	">	Uruguay 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="#collapsePays16	" aria-expanded="false" aria-controls="	collapsePays16	">	Grèce 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="#collapsePays17	" aria-expanded="false" aria-controls="	collapsePays17	">	Roumanie 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="#collapsePays18	" aria-expanded="false" aria-controls="	collapsePays18	">	Liban	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="#collapsePays19	" aria-expanded="false" aria-controls="	collapsePays19	">	Syrie 	</a></ol>																										
+													</div>										
+												</div>	
+											</div>
+										</div><hr>
 							</div>
 							<!--VIN ROSE OK-->
 							<div class="tab-pane fade" id="vin-rose" role="tabpanel" aria-labelledby="vin-rose">
+								<div class="card mx-3 p-4">
 								<h3>Vin rosé</h3>
 								<p>Fraîcheur, finesse, délicatesse, légèreté, douceur, équilibre…<br>
 								Avec notre large choix de rosés, découvrez toutes les tendances de l'année !<br>
 								Nous avons forcément celui qui sublimera vos dégustations.<br>
-								Chez La Maison des Vins de France,<br>
-								on préfère vous annoncer la couleur : de la qualité et du choix !<br><br>
+								Chez La Maison des Vins de France, on préfère vous annoncer la couleur : de la qualité et du choix !<br><br>
 								Les vins rosés<br>
 								Les vins rosés sont eux aussi issus de cépages noirs.<br>
 								La différence avec le vin rouge est que le raisin n’est pas laissé en contact avec la peau, ou très peu pour des vins un peu plus charpentés, comme le Tavel ou le Clairet.<br>
 								Le vin rosé subit le même processus de vinification que les vins rouges (mais sans élevage, c'est à dire de vieillissement pendant plusieurs mois), d’où cette couleur rosée. <br>
 								</p>
-									<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseGout2" role="button" aria-expanded="true" aria-controls="collapseGout2">Goût</h3>
-									<div class="collapse show" id="collapseGout2">
+								</div><br>
+									<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseGout2" role="button" aria-expanded="false" aria-controls="collapseGout2">Goût</h3>
+									<div class="collapse" id="collapseGout2">
 										<div class="card-body">
 											<div class="row">
 												<div class="col">
-													<li>	Fruité 	</li>
-													<li>	Puissant 	</li>
-													<li>	Souple 	</li>
+													<ol>	Fruité 	</ol>
+													<ol>	Puissant 	</ol>
+													<ol>	Souple 	</ol>
 												</div><div class="col">
-													<li>	Sucré 	</li>
-													<li>	Sec 	</li>
-													<li>	Minéral	</li>											
+													<ol>	Sucré 	</ol>
+													<ol>	Sec 	</ol>
+													<ol>	Minéral	</ol>											
 												</div>
 											</div>										
 										</div>	
 									</div><hr>
-									<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseCepage2" role="button" aria-expanded="true" aria-controls="collapseCepage2">Cépage</h3>
-									<div class="collapse show" id="collapseCepage2">
+									<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseCepage2" role="button" aria-expanded="false" aria-controls="collapseCepage2">Cépage</h3>
+									<div class="collapse" id="collapseCepage2">
 										<div class="card-body">
 											<div class="row">
 												<div class="col">
@@ -752,133 +637,157 @@
 											</div>										
 											</div>	
 										</div><hr>
-									</div><hr>
+									</div><hr>									
 									<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseAppelation2" role="button" aria-expanded="false" aria-controls="collapseAppelation2">Appelation</h3>
 									<div class="collapse" id="collapseAppelation2">
 										<div class="card card-body">
 											<div class="row">
 												<div class="col">
-													<li>	Alpilles 	</li>
-													<li>	Anjou 	</li>
-													<li>	Bandol 	</li>
-													<li>	Bordeaux 	</li>
-													<li>	Bordeaux Clairet 	</li>
-													<li>	Bugey Cerdon 	</li>
-													<li>	Cabernet d'Anjou 	</li>
-													<li>	Carcassonne 	</li>
-													<li>	Cidre	</li>
-													<li>	Côte de Provence La Londe 	</li>
-													<li>	Coteaux d'Aix en Provence 	</li>
-													<li>	Coteaux d'Aix en Provence 	</li>
-													<li>	Coteaux de Béziers 	</li>
-													<li>	Coteaux Varois 	</li>
-													<li>	Côtes Catalanes 	</li>
-													<li>	Côtes de Gascogne 	</li>
-													<li>	Côtes de Provence 	</li>
-													<li>	Côtes de Provence Cru Classé	</li>
-													<li>	Côtes de Provence Sainte-Victoire 	</li>
-													<li>	Côtes du Rhône 	</li>
-													<li>	Côtes du Roussillon 	</li>
-													<li>	Crémant de Bourgogne 	</li>
-													<li>	Crémant de Limoux 	</li>
-													<li>	Crémant de Loire 	</li>
-													<li>	Figari 	</li>
-													<li>	Gigondas	</li>
-													<li>	Ile de Beauté 	</li>
-													<li>	Lambrusco C 	</li>
-													<li>	Languedoc 	</li>
-													<li>	Luberon 	</li>
-													<li>	Méditerranée 	</li>
-													<li>	Palette 	</li>
-													<li>	Patrimonio 	</li>
-													<li>	Pays d'Oc 	</li>
-													<li>	Pic-Saint-Loup	</li>
-													<li>	Reuilly 	</li>
-													<li>	Sables de Camargue 	</li>
-													<li>	Tavel 	</li>
-													<li>	Var 	</li>
-													<li>	Ventoux 	</li>
-													<li>	Vin de France 	</li>
-													<li>	Vin Mousseux de Qualité 	</li>										
+													<ol>	Alpilles 	</ol>
+													<ol>	Anjou 	</ol>
+													<ol>	Bandol 	</ol>
+													<ol>	Bordeaux 	</ol>
+													<ol>	Bordeaux Clairet 	</ol>
+													<ol>	Bugey Cerdon 	</ol>
+													<ol>	Cabernet d'Anjou 	</ol>
+													<ol>	Carcassonne 	</ol>
+													<ol>	Cidre	</ol>
+													<ol>	Côte de Provence La Londe 	</ol>
+													<ol>	Coteaux d'Aix en Provence 	</ol>
+													<ol>	Coteaux d'Aix en Provence 	</ol>
+													<ol>	Coteaux de Béziers 	</ol>
+													<ol>	Coteaux Varois 	</ol>
+													<ol>	Côtes Catalanes 	</ol>
+													<ol>	Côtes de Gascogne 	</ol>
+													<ol>	Côtes de Provence 	</ol>
+													<ol>	Côtes de Provence Cru Classé	</ol>
+													<ol>	Côtes de Provence Sainte-Victoire 	</ol>
+													<ol>	Côtes du Rhône 	</ol>
+													<ol>	Côtes du Roussillon 	</ol>
+												</div><div class="col">	
+													<ol>	Crémant de Bourgogne 	</ol>
+													<ol>	Crémant de olmoux 	</ol>
+													<ol>	Crémant de Loire 	</ol>
+													<ol>	Figari 	</ol>
+													<ol>	Gigondas	</ol>
+													<ol>	Ile de Beauté 	</ol>
+													<ol>	Lambrusco C 	</ol>
+													<ol>	Languedoc 	</ol>
+													<ol>	Luberon 	</ol>
+													<ol>	Méditerranée 	</ol>
+													<ol>	Palette 	</ol>
+													<ol>	Patrimonio 	</ol>
+													<ol>	Pays d'Oc 	</ol>
+													<ol>	Pic-Saint-Loup	</ol>
+													<ol>	Reuilly 	</ol>
+													<ol>	Sables de Camargue 	</ol>
+													<ol>	Tavel 	</ol>
+													<ol>	Var 	</ol>
+													<ol>	Ventoux 	</ol>
+													<ol>	Vin de France 	</ol>
+													<ol>	Vin Mousseux de Qualité 	</ol>										
 												</div>
 											</div>
 										</div>										
+									</div><hr>
+									<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseRegions2" role="button" aria-expanded="false" aria-controls="collapseRegions2">Régions</h3>
+									<div class="collapse" id="collapseRegions2">
+										<div class="card-body">
+											<div class="row">
+												<div class="col">
+													<ol><a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Provence 	">	Provence 	</a></ol>
+													<ol><a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Languedoc-Roussillon 	">	Languedoc-Roussillon 	</a></ol>
+													<ol><a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Sud-Ouest 	">	Sud-Ouest 	</a></ol>
+													<ol><a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Rhône 	">	Rhône 	</a></ol>
+													<ol><a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Bordeaux 	">	Bordeaux 	</a></ol>
+													<ol><a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Loire 	">	Loire 	</a></ol>
+												</div><div class="col">
+													<ol><a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Corse 	">	Corse 	</a></ol>
+													<ol><a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Beaujolais 	">	Beaujolais 	</a></ol>
+													<ol><a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Emilie - Romagne 	">	Emilie - Romagne 	</a></ol>
+													<ol><a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Normandie	">	Normandie	</a></ol>
+													<ol><a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Bourgogne 	">	Bourgogne 	</a></ol>
+													<ol><a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Savoie	">	Savoie	</a></ol>										
+												</div>
+											</div>										
+										</div>	
 									</div><hr>
 									<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseMaison2" role="button" aria-expanded="false" aria-controls="collapseMaison2">Maison</h3>
 									<div class="collapse" id="collapseMaison2">
 										<div class="card card-body">
 											<div class="row">
 												<div class="col">
-													<li>	Alma Cersius 		Alma Cersius 	</li>
-													<li>	Bernard Rondeau 		Bernard Rondeau 	</li>
-													<li>	Château Henri Bonnaud 		Château Henri Bonnaud 	</li>
-													<li>	Château Auzias 		Château Auzias 	</li>
-													<li>	Château Gassier 		Château Gassier 	</li>
-													<li>	Château Hermitage Saint Martin 		Château Hermitage Saint Martin 	</li>
-													<li>	Château L’Ermitage 		Château L’Ermitage 	</li>
-													<li>	Château Leoube 		Château Leoube 	</li>
-													<li>	Château Penin 		Château Penin 	</li>
-													<li>	Château Pesquie 		Château Pesquie 	</li>
-													<li>	Château Pradeaux 		Château Pradeaux 	</li>
-													<li>	Château Puech-Haut 		Château Puech-Haut 	</li>
-													<li>	Château Sainte Croix 		Château Sainte Croix 	</li>
-													<li>	Château Turcaud 		Château Turcaud 	</li>
-													<li>	Clarendelle, Inspired by Haut-Brion 		Clarendelle, Inspired by Haut-Brion 	</li>
-													<li>	Clos Canarelli 		Clos Canarelli 	</li>
-													<li>	Dom Brial 		Dom Brial 	</li>
-													<li>	Domaine de L’Hortus 		Domaine de L’Hortus 	</li>
-													<li>	Domaine de la Bastide Blanche 		Domaine de la Bastide Blanche 	</li>
-													<li>	Domaine de la Begude 		Domaine de la Begude 	</li>
-													<li>	Domaine de la Rose des Vents 		Domaine de la Rose des Vents 	</li>
-													<li>	Domaine des Nugues 		Domaine des Nugues 	</li>
-													<li>	Domaine des Trottieres 		Domaine des Trottieres 	</li>
-													<li>	Domaine Horgelus 		Domaine Horgelus 	</li>
-													<li>	Domaine La Suffrene 		Domaine La Suffrene 	</li>
-													<li>	Domaine Lafage & Château Saint-Roch by Jean-Marc Lafage 		Domaine Lafage & Château Saint-Roch by Jean-Marc Lafage 	</li>
-													<li>	Domaine Pellehaut 		Domaine Pellehaut 	</li>
-													<li>	Domaines des Terres Dorées  		Domaines des Terres Dorées  	</li>
-													<li>	Domaines Paul Mas 		Domaines Paul Mas 	</li>
-													<li>	Esclan (Caves)		Esclan (Caves)	</li>
-													<li>	Fondreche 		Fondreche 	</li>
-													<li>	Gérard Bertrand 		Gérard Bertrand 	</li>
-													<li>	Gigondas Lacave 		Gigondas Lacave 	</li>
-													<li>	Grand Veneur		Grand Veneur	</li>
-													<li>	Guigal 		Guigal 	</li>
-													<li>	Jean-Luc et Paul Aegerter  		Jean-Luc et Paul Aegerter  	</li>
-													<li>	Jeff Carrel 		Jeff Carrel 	</li>
-													<li>	JM Sorbe 		JM Sorbe 	</li>
-													<li>	La Vieille Ferme 		La Vieille Ferme 	</li>
-													<li>	Lamargue 		Lamargue 	</li>
-													<li>	Langlois Château 		Langlois Château 	</li>
-													<li>	Les Jamelles 		Les Jamelles 	</li>
-													<li>	Lorgeril 		Lorgeril 	</li>
-													<li>	Mathilde Chapoutier 		Mathilde Chapoutier 	</li>
-													<li>	Medici Ermete 		Medici Ermete 	</li>
-													<li>	Minuty (Château) 		Minuty (Château) 	</li>
-													<li>	Minuty S.A. 		Minuty S.A. 	</li>
-													<li>	Mip - Domaine des Diables 		Mip - Domaine des Diables 	</li>
-													<li>	Miraval 		Miraval 	</li>
-													<li>	Moulin de la Roque 		Moulin de la Roque 	</li>
-													<li>	Mouton Cadet 		Mouton Cadet 	</li>
-													<li>	Ott		Ott	</li>
-													<li>	Peyrassol (Château)  		Peyrassol (Château)  	</li>
-													<li>	Pibarnon (Château de) 		Pibarnon (Château de) 	</li>
-													<li>	Roquefort 		Roquefort 	</li>
-													<li>	Saint André de Figuière 		Saint André de Figuière 	</li>
-													<li>	Sainte Marguerite (Château) 		Sainte Marguerite (Château) 	</li>
-													<li>	Sassy 		Sassy 	</li>
-													<li>	Sélections Ott		Sélections Ott	</li>
-													<li>	Simonnet-Febvre  		Simonnet-Febvre  	</li>
-													<li>	Tariquet 		Tariquet 	</li>
-													<li>	Tempier (Domaine) 		Tempier (Domaine) 	</li>
-													<li>	Uby (Domaine) 		Uby (Domaine) 	</li>
-													<li>	Valdition (Domaine de) 		Valdition (Domaine de) 	</li>
-													<li>	Vignerons du Roy René (Les) 		Vignerons du Roy René (Les) 	</li>
-													<li>	Vignerons St Tropez 		Vignerons St Tropez 	</li>
-													<li>	Vignobles Brumont 		Vignobles Brumont 	</li>
-													<li>	Villa Dria		Villa Dria	</li>
-													<li>	Xavier Vignon  		Xavier Vignon  	</li>
-													<li>	Yves Leccia (Domaine) 		Yves Leccia (Domaine) 	</li>																				
+													<ol>	Alma Cersius 		Alma Cersius 	</ol>
+													<ol>	Bernard Rondeau 		Bernard Rondeau 	</ol>
+													<ol>	Château Henri Bonnaud 		Château Henri Bonnaud 	</ol>
+													<ol>	Château Auzias 		Château Auzias 	</ol>
+													<ol>	Château Gassier 		Château Gassier 	</ol>
+													<ol>	Château Hermitage Saint Martin 		Château Hermitage Saint Martin 	</ol>
+													<ol>	Château L’Ermitage 		Château L’Ermitage 	</ol>
+													<ol>	Château Leoube 		Château Leoube 	</ol>
+													<ol>	Château Penin 		Château Penin 	</ol>
+													<ol>	Château Pesquie 		Château Pesquie 	</ol>
+													<ol>	Château Pradeaux 		Château Pradeaux 	</ol>
+													<ol>	Château Puech-Haut 		Château Puech-Haut 	</ol>
+													<ol>	Château Sainte Croix 		Château Sainte Croix 	</ol>
+													<ol>	Château Turcaud 		Château Turcaud 	</ol>
+													<ol>	Clarendelle, Inspired by Haut-Brion 		Clarendelle, Inspired by Haut-Brion 	</ol>
+													<ol>	Clos Canarelli 		Clos Canarelli 	</ol>
+													<ol>	Dom Brial 		Dom Brial 	</ol>
+													<ol>	Domaine de L’Hortus 		Domaine de L’Hortus 	</ol>
+													<ol>	Domaine de la Bastide Blanche 		Domaine de la Bastide Blanche 	</ol>
+													<ol>	Domaine de la Begude 		Domaine de la Begude 	</ol>
+													<ol>	Domaine de la Rose des Vents 		Domaine de la Rose des Vents 	</ol>
+													<ol>	Domaine des Nugues 		Domaine des Nugues 	</ol>
+													<ol>	Domaine des Trottieres 		Domaine des Trottieres 	</ol>
+													<ol>	Domaine Horgelus 		Domaine Horgelus 	</ol>
+													<ol>	Domaine La Suffrene 		Domaine La Suffrene 	</ol>
+													<ol>	Domaine Lafage & Château Saint-Roch by Jean-Marc Lafage 		Domaine Lafage & Château Saint-Roch by Jean-Marc Lafage 	</ol>
+													<ol>	Domaine Pellehaut 		Domaine Pellehaut 	</ol>
+													<ol>	Domaines des Terres Dorées  		Domaines des Terres Dorées  	</ol>
+													<ol>	Domaines Paul Mas 		Domaines Paul Mas 	</ol>
+													<ol>	Esclan (Caves)		Esclan (Caves)	</ol>
+													<ol>	Fondreche 		Fondreche 	</ol>
+													<ol>	Gérard Bertrand 		Gérard Bertrand 	</ol>
+													<ol>	Gigondas Lacave 		Gigondas Lacave 	</ol>
+													<ol>	Grand Veneur		Grand Veneur	</ol>
+													<ol>	Guigal 		Guigal 	</ol>
+												</div><div class="col">	
+													<ol>	Jean-Luc et Paul Aegerter  		Jean-Luc et Paul Aegerter  	</ol>
+													<ol>	Jeff Carrel 		Jeff Carrel 	</ol>
+													<ol>	JM Sorbe 		JM Sorbe 	</ol>
+													<ol>	La Vieille Ferme 		La Vieille Ferme 	</ol>
+													<ol>	Lamargue 		Lamargue 	</ol>
+													<ol>	Langlois Château 		Langlois Château 	</ol>
+													<ol>	Les Jamelles 		Les Jamelles 	</ol>
+													<ol>	Lorgeril 		Lorgeril 	</ol>
+													<ol>	Mathilde Chapoutier 		Mathilde Chapoutier 	</ol>
+													<ol>	Medici Ermete 		Medici Ermete 	</ol>
+													<ol>	Minuty (Château) 		Minuty (Château) 	</ol>
+													<ol>	Minuty S.A. 		Minuty S.A. 	</ol>
+													<ol>	Mip - Domaine des Diables 		Mip - Domaine des Diables 	</ol>
+													<ol>	Miraval 		Miraval 	</ol>
+													<ol>	Moulin de la Roque 		Moulin de la Roque 	</ol>
+													<ol>	Mouton Cadet 		Mouton Cadet 	</ol>
+													<ol>	Ott		Ott	</ol>
+													<ol>	Peyrassol (Château)  		Peyrassol (Château)  	</ol>
+													<ol>	Pibarnon (Château de) 		Pibarnon (Château de) 	</ol>
+													<ol>	Roquefort 		Roquefort 	</ol>
+													<ol>	Saint André de Figuière 		Saint André de Figuière 	</ol>
+													<ol>	Sainte Marguerite (Château) 		Sainte Marguerite (Château) 	</ol>
+													<ol>	Sassy 		Sassy 	</ol>
+													<ol>	Sélections Ott		Sélections Ott	</ol>
+													<ol>	Simonnet-Febvre  		Simonnet-Febvre  	</ol>
+													<ol>	Tariquet 		Tariquet 	</ol>
+													<ol>	Tempier (Domaine) 		Tempier (Domaine) 	</ol>
+													<ol>	Uby (Domaine) 		Uby (Domaine) 	</ol>
+													<ol>	Valdition (Domaine de) 		Valdition (Domaine de) 	</ol>
+													<ol>	Vignerons du Roy René (Les) 		Vignerons du Roy René (Les) 	</ol>
+													<ol>	Vignerons St Tropez 		Vignerons St Tropez 	</ol>
+													<ol>	Vignobles Brumont 		Vignobles Brumont 	</ol>
+													<ol>	Villa Dria		Villa Dria	</ol>
+													<ol>	Xavier Vignon  		Xavier Vignon  	</ol>
+													<ol>	Yves Leccia (Domaine) 		Yves Leccia (Domaine) 	</ol>																				
 												</div>
 											</div>
 										</div>										
@@ -886,37 +795,39 @@
 							</div>
 							<!--VIN BLANC OK -->
 							<div class="tab-pane fade" id="vin-blanc" role="tabpanel" aria-labelledby="vin-blanc">
+								<div class="card mx-3 p-4">
 								<h3>Vin blanc</h3>
 								<p>Une envie de fraîcheur ?<br>
 								C’est un vin blanc qu’il vous faut ! Vin blanc sec, vin blanc sucré, plutôt moelleux ou liquoreux, que vous l'aimiez fruité, floral, végétal, épicé, charnu, ciselé, aligoté, il sera raffiné !<br>
-								Pour trouver de quoi combler vos attentes,<br>
-								La Maison des Vins de France vous guide avec sa sélection haute en couleur !<br><br>
+								Pour trouver de quoi combler vos attentes, la Maison des Vins de France vous guide avec sa sélection haute en couleur !<br><br>
 
 								Les vins blancs<br>
-								Les vins blancs quant à eux sont fabriqués à base de cépages de raisins blancs. Les raisins sont pressés et le jus est extrait rapidement et séparé des baies (sauf techniques particulières) qui n'apporteront pas beaucoup au nectar.<br>
-								Le jus est ensuite transformé pour produire le vin souhaité par le vigneron. On utilisera exceptionnellement des raisins à peau rouge ou noire, qu'on ne laissera pas en contact avec le jus ;<br>
+								Les vins blancs quant à eux sont fabriqués à base de cépages de raisins blancs.<br>
+								Les raisins sont pressés et le jus est extrait rapidement et séparé des baies (sauf techniques particulières) qui n'apporteront pas beaucoup au nectar.<br>
+								Le jus est ensuite transformé pour produire le vin souhaité par le vigneron.<br>
+								On utilisera exceptionnellement des raisins à peau rouge ou noire, qu'on ne laissera pas en contact avec le jus ;<br>
 								c'est le cas par exemple des Champagnes Blanc de Noirs faits à base de Pinot Noir.
 								</p>
-									<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseGout3" role="button" aria-expanded="true" aria-controls="collapseGout3">Goût</h3>
-									<div class="collapse show" id="collapseGout3">
+								</div><br>
+									<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseGout3" role="button" aria-expanded="false" aria-controls="collapseGout3">Goût</h3>
+									<div class="collapse" id="collapseGout3">
 											<div class="row">
 												<div class="col">
-													<li>Fruité </li>
-													<li>Puissant</li>
-													<li>Sec </li>
-												</div><div class="col">
-													<li>Souple </li>												
-													<li>Sucré </li>
-													<li>Floral</li>
-												</div><div class="col">
-													<li>Minéral</li>
-													<li>Boisé</li>
-													<li>Epicé</li>
+													<ol>Fruité </ol>
+													<ol>Puissant</ol>
+													<ol>Sec </ol>
+													<ol>Souple </ol>												
+													<ol>Sucré </ol>
+												</div><div class="col">	
+													<ol>Floral</ol>
+													<ol>Minéral</ol>
+													<ol>Boisé</ol>
+													<ol>Epicé</ol>
 												</div>
 											</div>										
 									</div><hr>
-									<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseCepage3" role="button" aria-expanded="true" aria-controls="collapseCepage3">Cépage</h3>
-									<div class="collapse show" id="collapseCepage3">
+									<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseCepage3" role="button" aria-expanded="false" aria-controls="collapseCepage3">Cépage</h3>
+									<div class="collapse " id="collapseCepage3">
 										<div class="row">
 											<div class="col">
 												<ol>Riesling</ol>
@@ -931,272 +842,352 @@
 									<div class="collapse" id="collapseAppelation3">
 											<div class="row">
 												<div class="col">
-													<li>	Allobroges 	</li>
-													<li>	Allobrogie 	</li>
-													<li>	Alpilles 	</li>
-													<li>	Alsace 	</li>
-													<li>	Alsace Grand Cru 	</li>
-													<li>	Anjou 	</li>
-													<li>	Arbois 	</li>
-													<li>	Ardèche 	</li>
-													<li>	Aude Hauterive 	</li>
-													<li>	Auxey-Duresses	</li>
-													<li>	Bandol 	</li>
-													<li>	Bâtard-Montrachet 	</li>
-													<li>	Bâtard-Montrachet Grand Cru 	</li>
-													<li>	Beaujolais 	</li>
-													<li>	Beaujolais Villages 	</li>
-													<li>	Beaune 1er cru 	</li>
-													<li>	Bergerac 	</li>
-													<li>	Bienvenue Batard Montrachet 	</li>
-													<li>	Bierzo 	</li>
-													<li>	Blaye - Côtes de bordeaux 	</li>
-													<li>	Bordeaux 	</li>
-													<li>	Bourgogne 	</li>
-													<li>	Bourgogne Aligoté 	</li>
-													<li>	Bourgogne Chitry 	</li>
-													<li>	Bouzeron 	</li>
-													<li>	Carcassonne 	</li>
-													<li>	Catalogne 	</li>
-													<li>	Cava 	</li>
-													<li>	Chablis 	</li>
-													<li>	Chablis 1er cru	</li>
-													<li>	Chablis Grand Cru 	</li>
-													<li>	Charlemagne Grand Cru 	</li>
-													<li>	Chassagne Montrachet 	</li>
-													<li>	Chassagne-Montrachet 1er Cru 	</li>
-													<li>	Château-Chalon 	</li>
-													<li>	Châteauneuf-du-Pape 	</li>
-													<li>	Chevalier-Montrachet	</li>
-													<li>	Chignin 	</li>
-													<li>	Chignin-Bergeron 	</li>
-													<li>	Chorey-Lès-Beaune 	</li>
-													<li>	Cidre 	</li>
-													<li>	Clairette de Die 	</li>
-													<li>	Collines Rhodaniennes 	</li>
-													<li>	Collioure 	</li>
-													<li>	Condrieu	</li>
-													<li>	Corbieres 	</li>
-													<li>	Corton Charlemagne 	</li>
-													<li>	Corton Vergennes Grand Cru 	</li>
-													<li>	Costières de Nîmes 	</li>
-													<li>	Coteaux de Béziers 	</li>
-													<li>	Coteaux de l'Aubance 	</li>
-													<li>	Coteaux du Languedoc 	</li>
-													<li>	Coteaux du Layon 	</li>
-													<li>	Coteaux du Layon Beaulieu	</li>
-													<li>	Coteaux du Salagou 	</li>
-													<li>	Côtes Catalanes 	</li>
-													<li>	Côtes de Gascogne 	</li>
-													<li>	Côtes de Provence 	</li>
-													<li>	Côtes de Provence Cru Classé 	</li>
-													<li>	Côtes du Jura 	</li>
-													<li>	Côtes du Rhône 	</li>
-													<li>	Côtes du Rhône Villages 	</li>
-													<li>	Côtes du Roussillon	</li>
-													<li>	Côtes du Roussillon Villages 	</li>
-													<li>	Côtes du Vivarais 	</li>
-													<li>	Coulée de Serrant AOC 	</li>
-													<li>	Crémant d'Alsace 	</li>
-													<li>	Crémant de Bourgogne 	</li>
-													<li>	Crémant de Limoux 	</li>
-													<li>	Crémant de Loire 	</li>
-													<li>	Crémant du Jura	</li>
-													<li>	Criots-Bâtard-Montrachet Grand Cru 	</li>
-													<li>	Crozes-Hermitage 	</li>
-													<li>	Douro 	</li>
-													<li>	Duché d'Uzès 	</li>
-													<li>	Entre-Deux-Mers 	</li>
-													<li>	Ermitage 	</li>
-													<li>	Falerio 	</li>
-													<li>	Figari 	</li>
-													<li>	Fixin	</li>
-													<li>	Gard 	</li>
-													<li>	Givry 	</li>
-													<li>	Givry 1er Cru 	</li>
-													<li>	Graves 	</li>
-													<li>	Grignan les Adhemar 	</li>
-													<li>	Hautes Côtes de Nuits 	</li>
-													<li>	Hérault 	</li>
-													<li>	Hermitage 	</li>
-													<li>	Ile de Beauté	</li>
-													<li>	Jumilla 	</li>
-													<li>	Jurançon 	</li>
-													<li>	La Clape Coteaux du Languedoc 	</li>
-													<li>	La Côte 	</li>
-													<li>	Languedoc 	</li>
-													<li>	Limari Valley 	</li>
-													<li>	Limoux 	</li>
-													<li>	Luberon 	</li>
-													<li>	L’Etoile 	</li>
-													<li>	Mâcon 	</li>
-													<li>	Mâcon Fuissé 	</li>
-													<li>	Mâcon Villages 	</li>
-													<li>	Mâcon-La Roche Vineuse 	</li>
-													<li>	Mâcon-Lugny 	</li>
-													<li>	Mâcon-Verzé 	</li>
-													<li>	Mâcon-Vinzelles 	</li>
-													<li>	Macvin	</li>
-													<li>	Maranges 1er Cru 	</li>
-													<li>	Marsannay 	</li>
-													<li>	Maury doux 	</li>
-													<li>	Méditerranée 	</li>
-													<li>	Mendoza 	</li>
-													<li>	Menetou-salon 	</li>
-													<li>	Mercurey 	</li>
-													<li>	Mercurey 1er cru 	</li>
-													<li>	Meursault 	</li>
-													<li>	Meursault 1er Cru	</li>
-													<li>	Monbazillac 	</li>
-													<li>	Montagny 1er Cru 	</li>
-													<li>	Monterrei 	</li>
-													<li>	Monthelie 	</li>
-													<li>	Montlouis sur Loire 	</li>
-													<li>	Montrachet Grand Cru 	</li>
-													<li>	Montravel 	</li>
-													<li>	Mosel 	</li>
-													<li>	Muscadet Sèvre et Maine	</li>
-													<li>	Muscat de Beaumes de Venise 	</li>
-													<li>	Muscat de Rivesaltes 	</li>
-													<li>	Neusiedlersee 	</li>
-													<li>	Nuits Saint Georges 1er Cru 	</li>
-													<li>	Pacherenc du Vic Bilh 	</li>
-													<li>	Pacherenc du Vic-Bilh Sec 	</li>
-													<li>	Palette 	</li>
-													<li>	Patrimonio 	</li>
-													<li>	Pays d'Aude 	</li>
-													<li>	Pays d'Hérault	</li>
-													<li>	Pays d'Oc 	</li>
-													<li>	Pernand-Vergelesses 	</li>
-													<li>	Pernand-Vergelesses 1er Cru 	</li>
-													<li>	Pessac-Léognan 	</li>
-													<li>	Petit Chablis 	</li>
-													<li>	Picpoul de Pinet 	</li>
-													<li>	Pouilly sur Loire 	</li>
-													<li>	Pouilly-Fuissé 	</li>
-													<li>	Pouilly-Fumé	</li>
-													<li>	Pouilly-Vinzelles 	</li>
-													<li>	Prosecco Doc 	</li>
-													<li>	Prosecco Superiore 	</li>
-													<li>	Puligny-Montrachet 	</li>
-													<li>	Puligny-Montrachet 1er cru 	</li>
-													<li>	Quarts de Chaume 	</li>
-													<li>	Quincy 	</li>
-													<li>	Reuilly 	</li>
-													<li>	Rias Baixas 	</li>
-													<li>	Ribera del Duero	</li>
-													<li>	Riesling 	</li>
-													<li>	Rivesaltes 	</li>
-													<li>	Roussette de Savoie 	</li>
-													<li>	Rueda 	</li>
-													<li>	Rully 	</li>
-													<li>	Rully 1er cru 	</li>
-													<li>	Saint Bris 	</li>
-													<li>	Saint-Aubin 	</li>
-													<li>	Saint-Aubin 1er Cru	</li>
-													<li>	Saint-Guilhem-le-Désert 	</li>
-													<li>	Saint-Joseph 	</li>
-													<li>	Saint-Péray 	</li>
-													<li>	Saint-Romain 	</li>
-													<li>	Saint-Véran 	</li>
-													<li>	San Severo 	</li>
-													<li>	Sancerre 	</li>
-													<li>	Santenay 1er cru 	</li>
-													<li>	Saumur 	</li>
-													<li>	Sauternes	</li>
-													<li>	Savennières 	</li>
-													<li>	Savennières Roche aux Moines 	</li>
-													<li>	Savoie 	</li>
-													<li>	Seyssel 	</li>
-													<li>	Sicilia 	</li>
-													<li>	Tokay, tokaj 	</li>
-													<li>	Toscane 	</li>
-													<li>	Touraine 	</li>
-													<li>	Tursan	</li>
-													<li>	Vacqueyras 	</li>
-													<li>	Val de Loire 	</li>
-													<li>	Val de Montferrand 	</li>
-													<li>	Var 	</li>
-													<li>	Ventoux 	</li>
-													<li>	Vin de France 	</li>
-													<li>	Vin de Savoie 	</li>
-													<li>	Vin Mousseux de Qualité 	</li>
-													<li>	Viré-Clessé	</li>
-													<li>	Vougeot 	</li>
-													<li>	Vougeot 1er Cru 	</li>
-													<li>	Vouvray 	</li>
-													<li>	Weinviertel DAC	</li>
+													<ol>	Allobroges 	</ol>
+													<ol>	Allobrogie 	</ol>
+													<ol>	Alpilles 	</ol>
+													<ol>	Alsace 	</ol>
+													<ol>	Alsace Grand Cru 	</ol>
+													<ol>	Anjou 	</ol>
+													<ol>	Arbois 	</ol>
+													<ol>	Ardèche 	</ol>
+													<ol>	Aude Hauterive 	</ol>
+													<ol>	Auxey-Duresses	</ol>
+													<ol>	Bandol 	</ol>
+													<ol>	Bâtard-Montrachet 	</ol>
+													<ol>	Bâtard-Montrachet Grand Cru 	</ol>
+													<ol>	Beaujolais 	</ol>
+													<ol>	Beaujolais Villages 	</ol>
+													<ol>	Beaune 1er cru 	</ol>
+													<ol>	Bergerac 	</ol>
+													<ol>	Bienvenue Batard Montrachet 	</ol>
+													<ol>	Bierzo 	</ol>
+													<ol>	Blaye - Côtes de bordeaux 	</ol>
+													<ol>	Bordeaux 	</ol>
+													<ol>	Bourgogne 	</ol>
+													<ol>	Bourgogne Aligoté 	</ol>
+													<ol>	Bourgogne Chitry 	</ol>
+													<ol>	Bouzeron 	</ol>
+													<ol>	Carcassonne 	</ol>
+													<ol>	Catalogne 	</ol>
+													<ol>	Cava 	</ol>
+													<ol>	Chablis 	</ol>
+													<ol>	Chablis 1er cru	</ol>
+													<ol>	Chablis Grand Cru 	</ol>
+													<ol>	Charlemagne Grand Cru 	</ol>
+													<ol>	Chassagne Montrachet 	</ol>
+													<ol>	Chassagne-Montrachet 1er Cru 	</ol>
+													<ol>	Château-Chalon 	</ol>
+													<ol>	Châteauneuf-du-Pape 	</ol>
+													<ol>	Chevalier-Montrachet	</ol>
+													<ol>	Chignin 	</ol>
+													<ol>	Chignin-Bergeron 	</ol>
+													<ol>	Chorey-Lès-Beaune 	</ol>
+													<ol>	Cidre 	</ol>
+													<ol>	Clairette de Die 	</ol>
+													<ol>	Collines Rhodaniennes 	</ol>
+													<ol>	Collioure 	</ol>
+													<ol>	Condrieu	</ol>
+													<ol>	Corbieres 	</ol>
+													<ol>	Corton Charlemagne 	</ol>
+													<ol>	Corton Vergennes Grand Cru 	</ol>
+													<ol>	Costières de Nîmes 	</ol>
+													<ol>	Coteaux de Béziers 	</ol>
+													<ol>	Coteaux de l'Aubance 	</ol>
+													<ol>	Coteaux du Languedoc 	</ol>
+													<ol>	Coteaux du Layon 	</ol>
+													<ol>	Coteaux du Layon Beaulieu	</ol>
+													<ol>	Coteaux du Salagou 	</ol>
+													<ol>	Côtes Catalanes 	</ol>
+													<ol>	Côtes de Gascogne 	</ol>
+													<ol>	Côtes de Provence 	</ol>
+													<ol>	Côtes de Provence Cru Classé 	</ol>
+													<ol>	Côtes du Jura 	</ol>
+													<ol>	Côtes du Rhône 	</ol>
+													<ol>	Côtes du Rhône Villages 	</ol>
+													<ol>	Côtes du Roussillon	</ol>
+													<ol>	Côtes du Roussillon Villages 	</ol>
+													<ol>	Côtes du Vivarais 	</ol>
+												</div><div class="col">	
+													<ol>	Coulée de Serrant AOC 	</ol>
+													<ol>	Crémant d'Alsace 	</ol>
+													<ol>	Crémant de Bourgogne 	</ol>
+													<ol>	Crémant de Limoux 	</ol>
+													<ol>	Crémant de Loire 	</ol>
+													<ol>	Crémant du Jura	</ol>
+													<ol>	Criots-Bâtard-Montrachet Grand Cru 	</ol>
+													<ol>	Crozes-Hermitage 	</ol>
+													<ol>	Douro 	</ol>
+													<ol>	Duché d'Uzès 	</ol>
+													<ol>	Entre-Deux-Mers 	</ol>
+													<ol>	Ermitage 	</ol>
+													<ol>	Falerio 	</ol>
+													<ol>	Figari 	</ol>
+													<ol>	Fixin	</ol>
+													<ol>	Gard 	</ol>
+													<ol>	Givry 	</ol>
+													<ol>	Givry 1er Cru 	</ol>
+													<ol>	Graves 	</ol>
+													<ol>	Grignan les Adhemar 	</ol>
+													<ol>	Hautes Côtes de Nuits 	</ol>
+													<ol>	Hérault 	</ol>
+													<ol>	Hermitage 	</ol>
+													<ol>	Ile de Beauté	</ol>
+													<ol>	Jumilla 	</ol>
+													<ol>	Jurançon 	</ol>
+													<ol>	La Clape Coteaux du Languedoc 	</ol>
+													<ol>	La Côte 	</ol>
+													<ol>	Languedoc 	</ol>
+													<ol>	Limari Valley 	</ol>
+													<ol>	Limoux 	</ol>
+													<ol>	Luberon 	</ol>
+													<ol>	L’Etoile 	</ol>
+													<ol>	Mâcon 	</ol>
+													<ol>	Mâcon Fuissé 	</ol>
+													<ol>	Mâcon Villages 	</ol>
+													<ol>	Mâcon-La Roche Vineuse 	</ol>
+													<ol>	Mâcon-Lugny 	</ol>
+													<ol>	Mâcon-Verzé 	</ol>
+													<ol>	Mâcon-Vinzelles 	</ol>
+													<ol>	Macvin	</ol>
+													<ol>	Maranges 1er Cru 	</ol>
+													<ol>	Marsannay 	</ol>
+													<ol>	Maury doux 	</ol>
+													<ol>	Méditerranée 	</ol>
+													<ol>	Mendoza 	</ol>
+													<ol>	Menetou-salon 	</ol>
+													<ol>	Mercurey 	</ol>
+													<ol>	Mercurey 1er cru 	</ol>
+													<ol>	Meursault 	</ol>
+													<ol>	Meursault 1er Cru	</ol>
+													<ol>	Monbazillac 	</ol>
+													<ol>	Montagny 1er Cru 	</ol>
+													<ol>	Monterrei 	</ol>
+													<ol>	Monthelie 	</ol>
+													<ol>	Montlouis sur Loire 	</ol>
+													<ol>	Montrachet Grand Cru 	</ol>
+													<ol>	Montravel 	</ol>
+													<ol>	Mosel 	</ol>
+													<ol>	Muscadet Sèvre et Maine	</ol>
+													<ol>	Muscat de Beaumes de Venise 	</ol>
+													<ol>	Muscat de Rivesaltes 	</ol>
+													<ol>	Neusiedlersee 	</ol>
+													<ol>	Nuits Saint Georges 1er Cru 	</ol>
+													<ol>	Pacherenc du Vic Bilh 	</ol>
+												</div><div class="col">	
+													<ol>	Pacherenc du Vic-Bilh Sec 	</ol>
+													<ol>	Palette 	</ol>
+													<ol>	Patrimonio 	</ol>
+													<ol>	Pays d'Aude 	</ol>
+													<ol>	Pays d'Hérault	</ol>
+													<ol>	Pays d'Oc 	</ol>
+													<ol>	Pernand-Vergelesses 	</ol>
+													<ol>	Pernand-Vergelesses 1er Cru 	</ol>
+													<ol>	Pessac-Léognan 	</ol>
+													<ol>	Petit Chablis 	</ol>
+													<ol>	Picpoul de Pinet 	</ol>
+													<ol>	Pouilly sur Loire 	</ol>
+													<ol>	Pouilly-Fuissé 	</ol>
+													<ol>	Pouilly-Fumé	</ol>
+													<ol>	Pouilly-Vinzelles 	</ol>
+													<ol>	Prosecco Doc 	</ol>
+													<ol>	Prosecco Superiore 	</ol>
+													<ol>	Puligny-Montrachet 	</ol>
+													<ol>	Puligny-Montrachet 1er cru 	</ol>
+													<ol>	Quarts de Chaume 	</ol>
+													<ol>	Quincy 	</ol>
+													<ol>	Reuilly 	</ol>
+													<ol>	Rias Baixas 	</ol>
+													<ol>	Ribera del Duero	</ol>
+													<ol>	Riesling 	</ol>
+													<ol>	Rivesaltes 	</ol>
+													<ol>	Roussette de Savoie 	</ol>
+													<ol>	Rueda 	</ol>
+													<ol>	Rully 	</ol>
+													<ol>	Rully 1er cru 	</ol>
+													<ol>	Saint Bris 	</ol>
+													<ol>	Saint-Aubin 	</ol>
+													<ol>	Saint-Aubin 1er Cru	</ol>
+													<ol>	Saint-Guilhem-le-Désert 	</ol>
+													<ol>	Saint-Joseph 	</ol>
+													<ol>	Saint-Péray 	</ol>
+													<ol>	Saint-Romain 	</ol>
+													<ol>	Saint-Véran 	</ol>
+													<ol>	San Severo 	</ol>
+													<ol>	Sancerre 	</ol>
+													<ol>	Santenay 1er cru 	</ol>
+													<ol>	Saumur 	</ol>
+													<ol>	Sauternes	</ol>
+													<ol>	Savennières 	</ol>
+													<ol>	Savennières Roche aux Moines 	</ol>
+													<ol>	Savoie 	</ol>
+													<ol>	Seyssel 	</ol>
+													<ol>	Sicilia 	</ol>
+													<ol>	Tokay, tokaj 	</ol>
+													<ol>	Toscane 	</ol>
+													<ol>	Touraine 	</ol>
+													<ol>	Tursan	</ol>
+													<ol>	Vacqueyras 	</ol>
+													<ol>	Val de Loire 	</ol>
+													<ol>	Val de Montferrand 	</ol>
+													<ol>	Var 	</ol>
+													<ol>	Ventoux 	</ol>
+													<ol>	Vin de France 	</ol>
+													<ol>	Vin de Savoie 	</ol>
+													<ol>	Vin Mousseux de Qualité 	</ol>
+													<ol>	Viré-Clessé	</ol>
+													<ol>	Vougeot 	</ol>
+													<ol>	Vougeot 1er Cru 	</ol>
+													<ol>	Vouvray 	</ol>
+													<ol>	Weinviertel DAC	</ol>
 												</div>																				
 											</div>	
 									</div><hr>
+									<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapsePays3" role="button" aria-expanded="false" aria-controls="collapsePays3">Pays</h3>
+										<div class="collapse" id="collapsePays3">
+											<div class="card-body">
+												<div class="row">
+														<div class="col">
+															<a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="#collapseRegionsBlanc" aria-expanded="false" aria-controls="collapseRegionsBlanc">France</a>
+															<div id="collapseRegionsBlanc" class="collapse" aria-labelledby="headingTree" data-parent="#accordion"><div class="list-group text-left">
+																<div class="row">
+																	<div class="col">															
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Bourgogne	">	Bourgogne	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Rhône 	">	Rhône 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Loire 	">	Loire 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Languedoc-Roussillon 	">	Languedoc-Roussillon 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Alsace 	">	Alsace 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Bordeaux 	">	Bordeaux 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Sud-Ouest 	">	Sud-Ouest 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Savoie 	">	Savoie 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Jura 	">	Jura 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Provence 	">	Provence 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Marlborough 	">	Marlborough 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Vénétie 	">	Vénétie 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Mosel 	">	Mosel 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Weinviertel 	">	Weinviertel 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Normandie 	">	Normandie 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Napa Valley 	">	Napa Valley 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Coastal Region 	">	Coastal Region 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Vallée de Uco Mendoza 	">	Vallée de Uco Mendoza 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Mosel Saar 	">	Mosel Saar 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Corse 	">	Corse 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Pouilles 	">	Pouilles 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Douro 	">	Douro 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Galicia 	">	Galicia 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Canton de Vaud 	">	Canton de Vaud 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Catalogne 	">	Catalogne 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Burgenland 	">	Burgenland 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Californie 	">	Californie 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Central Valley 	">	Central Valley 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Tokaj 	">	Tokaj 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Beaujolais 	">	Beaujolais 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Sicile 	">	Sicile 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Marches 	">	Marches 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Rueda 	">	Rueda 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Baden 	">	Baden 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Castilla y Leon 	">	Castilla y Leon 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Stellenbosch 	">	Stellenbosch 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Vallée de Aconcagua 	">	Vallée de Aconcagua 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Plateau du Golan 	">	Plateau du Golan 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Vallée du Limari 	">	Vallée du Limari 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Kamptal 	">	Kamptal 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	West Sussex 	">	West Sussex 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Pfalz 	">	Pfalz 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Toscane 	">	Toscane 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Australie Méridionale 	">	Australie Méridionale 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Murcie 	">	Murcie 	</a>
+																		<a type="button" class="btn" data-toggle="modal" data-target="#region-France-	Lolol 	">	Lolol 	</a>															
+																	</div>
+																</div>
+															</div></div>																											
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="	#collapseRegions2	" aria-expanded="false" aria-controls="	collapseRegions2	">	Italie 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="	#collapseRegions3	" aria-expanded="false" aria-controls="	collapseRegions3	">	Nouvelle-Zélande 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="	#collapseRegions4	" aria-expanded="false" aria-controls="	collapseRegions4	">	Allemagne 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="	#collapseRegions5	" aria-expanded="false" aria-controls="	collapseRegions5	">	Espagne 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="	#collapseRegions6	" aria-expanded="false" aria-controls="	collapseRegions6	">	Autriche 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="	#collapseRegions7	" aria-expanded="false" aria-controls="	collapseRegions7	">	Etats-Unis 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="	#collapseRegions8	" aria-expanded="false" aria-controls="	collapseRegions8	">	Chili 	</a></ol>
+														</div><div class="col">	
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="	#collapseRegions9	" aria-expanded="false" aria-controls="	collapseRegions9	">	Afrique du Sud 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="	#collapseRegions10	" aria-expanded="false" aria-controls="	collapseRegions10	">	Portugal	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="	#collapseRegions11	" aria-expanded="false" aria-controls="	collapseRegions11	">	Argentine 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="	#collapseRegions12	" aria-expanded="false" aria-controls="	collapseRegions12	">	Hongrie 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="	#collapseRegions13	" aria-expanded="false" aria-controls="	collapseRegions13	">	Suisse 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="	#collapseRegions14	" aria-expanded="false" aria-controls="	collapseRegions14	">	Croatie 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="	#collapseRegions15	" aria-expanded="false" aria-controls="	collapseRegions15	">	Angleterre 	</a></ol>
+															<ol><a type="button" class="dropdown-item dropdown-toggle" data-toggle="collapse" data-target="	#collapseRegions16	" aria-expanded="false" aria-controls="	collapseRegions16	">	Australie	</a></ol>																																								
+													</div>										
+												</div>	
+											</div>
+										</div><hr>
 							</div>								
-								<!--BORDEAUX-CARD-->
-								<div class="tab-pane fade" id="region-france-Bordeaux" role="tabpanel" aria-labelledby="region-france-Bordeaux">
-								<img src="../images/Bordeaux.jpeg" class="float-left img-thumbnail" alt="Bordeaux" width="30%">
-								<h3>BORDEAUX</h3>
-									<p>Jouissant d&#39;une renommée internationale, le Bordelais constitue <span class="s1">le plus vaste vignoble d&#39;appellation de France </span>et l&#39;un des plus prestigieux grâce à ses célèbres <b>crus classés</b>. Ce vignoble contrasté aux sols variés s&#39;organise autour de trois axes fluviaux : la <b>Garonne</b>, la <b>Dordogne </b>et leur estuaire commun, la <b>Gironde</b>.<br/>
-									Il offre <span class="s1">tous les styles de vins</span>, issus de l&#39;<b>assemblage de plusieurs cépages</b>. En rouge, dominent le <b>merlot</b>, le <b>cabernet franc </b>et le <b>cabernet- sauvignon </b>; en blanc, le <b>sémillon </b>et le <b>sauvignon</b>.<br/>
-									Outre les <b>appellations régionales</b>, on distingue la <span class="s1">rive gauche de la Garonne </span>(le Médoc et les Graves) et la <span class="s1">rive droite </span>(le Libournais, le Blayais-Bourgeais et l&#39;Entre-deux-Mers), auxquelles il faut ajouter les vignobles des <b>vins doux </b>aux environs du Ciron, affluent de la Garonne.<br/>
-									L&#39;une des particularités des vins rouges, blancs et rosés du Bordelais est qu&#39;ils sont très souvent issus de l&#39;<span class="s1">assemblage de deux à cinq cépages </span>aux qualités complémentaires. En rouge, les <b>cabernets </b>– franc et sauvignon – et le <b>merlot </b>sont les principales variétés, le <b>petit verdot </b>ou encore le <b>malbec </b>parfois en complément. Pour les blancs, le cépage essentiel est le <b>sémillon</b>, complété surtout par le <b>sauvignon</b>, parfois par la <b>muscadelle </b>ou le <b>colombard</b>.<br/>
-									Dans la très large palette des vins bordelais, on distingue les <span class="s1">appellations régionales </span><b>(bordeaux, bordeaux supérieur, crémant</b>), dont les vins peuvent être issus de la quasi-totalité des communes viticoles. Celles-ci expriment une grande variété de terroirs et proposent un bel éventail de style de vins rouges, blancs (secs et doux), rosés, clairets et même effervescents. Base de la pyramide des appellations, elles n&#39;en constituent pas moins un réel gisement pour l&#39;amateur en quête de nouveautés.<br/>
-									Les autres appellations sont généralement classées en fonction de l&#39;organisation géographique et climatique du terroir, scindée en deux ensembles principaux.<br/>
-									Sur la <span class="s1">rive gauche de la Gironde et de Garonne</span>, on trouve les vins rouges du <b>Médoc</b>, puis en descendant, les rouges et les blancs des <b>Graves</b>, et tout à fait au sud les vins du <b>Sauternais</b>.<br/>
-									Sur la <span class="s1">rive droite de la Gironde et de la Dordogne</span>, s&#39;étendent le <b>Blayais et le Bourgeais</b>, et le <b>Libournais</b>, tandis que l&#39;<b>Entre-deux-Mers </b>se situe entre les deux fleuves Dordogne et Garonne.<br/>
-									</p>	
-								</div>
-								<!--BOURGOGNE-CARD-->
-								<div class="tab-pane fade" id="region-france-Bourgogne" role="tabpanel" aria-labelledby="region-france-Bourgogne">
-								<img src="../images/Bourgogne.jpeg" class="float-left img-thumbnail" alt="Bourgogne" width="30%">
-								<h3>BOURGOGNE</h3>
-									<p>Un vignoble historique, l&#39;un des plus anciens de France, modelé au Moyen Age par les <b>moines</b>, puis les <b>Ducs de Bourgogne</b>, et riche de domaines aux apparences souvent modestes, mais de grand prestige.<br/>
-									Celui aussi qui, malgré sa petite taille (3 % du vignoble français), propose le <span class="s1">plus grand nombre d&#39;appellations </span>d&#39;origine : une centaine, du Chablisien au Mâconnais, en passant par la Côte de Nuits, la Côte de Beaune et la Côte chalonnaise.<br/>
-									L&#39;un des plus prestigieux également, synonyme de <b>vins fins</b>. La patrie du <b>pinot noir </b>et du <b>chardonnay</b>, qui y règnent en maître.<br/>
-									La Bourgogne, c&#39;est aussi la quintessence de la notion de <b>terroirs</b>, appelés ici <i><b>climats</b></i>, d&#39;une extrême diversité (plus de 600) et à l&#39;origine de l&#39;immense variété des vins bourguignons.<br/>
-									Reflet de ce vignoble morcelé et d&#39;une grande variété, la <span class="s1">hiérarchisation des vins </span>bourguignons, qui peut paraître complexe, est d&#39;une grande logique et définit quatre niveaux :<br>
-									les <b>appellations régionales </b>(plus de 50 % de la production), les <b>appellations communales</b>, dites aussi <i><b>villages </b></i>(plus de 30 % de la production), les <b>premiers crus </b>(environ 10 % de la production) et, en haut de la pyramide, les <b>grands crus</b>.<br/>
-									Les vins de Bourgogne sont, pour la quasi-totalité, issus de <b>deux cépages </b>: le <span class="s1">chardonnay </span>(vins blancs) et le <span class="s1">pinot noir </span>(vins rouges).<br>
-									On rencontre aussi l&#39;<b>aligoté</b>, cépage blanc produisant le bourgogne-aligoté, qui atteint son sommet qualitatif dans le petit pays de Bouzeron ; le <b>césar</b>, assemblé au pinot noir dans l&#39;irancy ; le <b>gamay </b>qui, associé au pinot, donne du bourgogne-passetoutgrain ; le <b>sauvignon</b>, cultivé dans la région de Saint-Bris-le-Vineux, dans l&#39;Yonne, où il donne l&#39;AOC saint-bris.<br/>
-									On distingue quatre secteurs géographiques. Le <span class="s1">Chablisien </span>est réputé surtout pour ses vins blancs secs élégants et leur <b>minéralité </b>si reconnaissable.<br>
-									La <span class="s1">Côte de Nuits</span>, de Marsannay à Corgoloin, majoritairement plantée de <b>pinot noir</b>, compte une trentaine d&#39;appellations avec des villages aux noms prestigieux (Gevrey-Chambertin, Vosne-Romanée, Nuits-Saint-Georges, Chambolle-Musigny,  Vougeot) et des crus illustres (romanée-conti, chambertin, musingy...).<br>
-									La <span class="s1">Côte de Beaune</span>, de Ladoix-Serrigny au nord à Chagny au sud, est le paradis des « <b>grands blancs </b>», avec des crus de grande renommée comme corton-charlemagne, meursault, montrachet..., mais elle propose aussi de très beaux vins rouges, en premier lieu les grands crus corton, pommard ou encore volnay.<br>
-									La <span class="s1">Côte chalonnaise</span>, entre Chagny et Saint-Gengoux-le-National,<br/>
-									propose des <b>blancs </b>et des <b>rouges </b>de belle qualité (rully, mercurey, givry, montagny). Le <span class="s1">Mâconnais</span>, entre Tournus et Mâcon, est réputé surtout pour ses <b>blancs de chardonnay</b>, notamment ses pouilly-fuissé.<br/>
-									Enfin, la Bourgogne classe ses vins selon une <span class="s1">hiérarchie à quatre niveaux</span>. À la base se trouvent les <b>appellations régionales</b>, dont les vins peuvent être issus de vignes établies sur l&#39;ensemble du territoire de la Bourgogne : AOC bourgogne, bourgogne-aligoté, crémant-de-bourgogne, bourgogne-passetoutgrain...<br>
-									Puis viennent les <b>appellations communales ou </b><i><b>villages </b></i>: le vin porte le nom de la commune (un ou plusieurs villages) où sont plantées les vignes d&#39;où il est issu (Volnay, Nuits-Saint-Georges...).<br>
-									Au troisième étage, on trouve les <b>premiers crus </b>provenant de <i>climats </i>délimités au sein d&#39;un village. Enfin, tout en haut de la pyramide, on trouve les <b>grands crus</b>, sélectionnés parmi les meilleurs <i>climats</i>.<br/>
+								<!--ModalBox-->
+								<div class="modal fade" id="region-France-	Rhône 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Rhône 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Rhône 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">
+									<img src="../images/VDR.jpeg" class="float-left img-thumbnail" alt="Vallée du Rhône" width="30%">
+										<p>L&#39;un des <span class="s1">plus anciens vignobles de France </span>et la seconde région viticole de l&#39;Hexagone après le Bordelais, traversé par le Rhône, fleuve fougueux qui file vers le Midi et voit fleurir la vigne sur chaque rive.<br/>
+										On distingue <b>deux grands secteurs </b>très différenciés : la <span class="s1">vallée du Rhône septentrionale </span>et la <span class="s1">vallée du Rhône méridionale</span>. D&#39;autres secteurs un peu en retrait du Rhône se rattachent à la région, du Vivarais au Luberon, en passant par le Diois.<br/>
+										Dans cette vaste région, naissent des <span class="s1">vins de tous les types</span>, des vins secs dans les trois couleurs, des vins doux naturels et des effervescents.<br/>
+										Des vins rouges en majorité, longtemps assimilés à la « p&#39;tite côte », ce gentil vin de comptoir qu&#39;une brève cuvaison rendait léger et peu tannique, qui figurent aujourd&#39;hui <b>parmi les plus remarquables de France </b>(côte-rôtie, hermitage, châteauneuf-du-pape...).<br/>
+										On trouve dans la Vallée du Rhône <span class="s1">toute la palette des vins </span>: des vins secs dans les trois couleurs (avec une dominante de vins rouges : 80 %), des vins doux naturels et des effervescents.<br/>
+										Dans la <b>partie méridionale</b>, règne le <span class="s1">grenache</span>, à l&#39;origine de vins rouges &quot;solaires&quot;, corsés et chaleureux, d&#39;une rondeur généreuse, mais les excès climatiques obligent les viticulteurs à utiliser plusieurs cépages pour obtenir des vins équilibrés, notamment la syrah, le mourvèdre, le cinsault ou encore le carignan.<br>
+										En blanc, les vins sont en général issus d&#39;assemblage, des vins généreux, gras et expressifs, issus notamment du <b>grenache blanc</b>, de la <b>clairette, </b>du <b>bourboulenc, </b>de la <b>roussanne</b>, de la <b>marsanne </b>ou encore du maccabeo ou du vermentino (ou rolle), du<br/>
+										piquepoul et autres picardan. Côté <b>rosés</b>, issus des mêmes cépages que les vins rouges, se montrent généralement savoureux, à la fois ronds et frais ; avec Tavel, la région détient la plus ancienne AOC de France dédiée exclusivement à ce type de vin.<br/>
+										Dans la <b>partie septentrionnale</b>, la <span class="s1">syrah </span>s&#39;impose dans les vins rouges, à l&#39;origine de vins de garde charpentés mais fins, profonds et épicés. Les vins blancs aromatiques et bien équilibrés entre gras et vivacité, sont quant à eux majoritairement issus des cépages <b>roussanne, marsanne et viognier</b>.<br/>
+										Le <b>Diois </b>et sa fraîcheur montagnarde favorise les vins blancs, secs et effervescents (clairette-de-die, crémant-de-die), issus des cépages <b>clairette et muscat à petits grains</b>.<br/>
+										Enfin, la tradition rhodanienne des <b>vins doux naturels </b>se retrouve dans les AOC rasteau et muscat-beaume-de-venise.<br/>
+										A la base de la <span class="s1">hiérarchie des vins </span>rhodaniens, on trouve l&#39;<b>appellation régionale </b>côte-du-rhône (171 communes, presque toutes situées au Sud), puis les <b>côtes-du-rhône-villages</b>, avec ou sans nom de communes, et, au sommet, les <b>AOC communales </b>(côte-rôtie, condrieu, châteauneuf-du- pape, lirac...). On rattache au vignoble rhodanien des <b>AOC indépendantes </b>(ventoux, luberon, grignan-lès-adhémar...) qui complètent cette large gamme de vins.<br/>
 									</p>
-								</div>
-								<!--RHONE-CARD-->
-								<div class="tab-pane fade" id="region-france-Rhône" role="tabpanel" aria-labelledby="region-france-Rhône">
-								<img src="../images/VDR.jpeg" class="float-left img-thumbnail" alt="Vallée du Rhône" width="30%">
-								<h3>VALLÉE DU RHÔNE</h3>
-									<p>L&#39;un des <span class="s1">plus anciens vignobles de France </span>et la seconde région viticole de l&#39;Hexagone après le Bordelais, traversé par le Rhône, fleuve fougueux qui file vers le Midi et voit fleurir la vigne sur chaque rive.<br/>
-									On distingue <b>deux grands secteurs </b>très différenciés : la <span class="s1">vallée du Rhône septentrionale </span>et la <span class="s1">vallée du Rhône méridionale</span>. D&#39;autres secteurs un peu en retrait du Rhône se rattachent à la région, du Vivarais au Luberon, en passant par le Diois.<br/>
-									Dans cette vaste région, naissent des <span class="s1">vins de tous les types</span>, des vins secs dans les trois couleurs, des vins doux naturels et des effervescents.<br/>
-									Des vins rouges en majorité, longtemps assimilés à la « p&#39;tite côte », ce gentil vin de comptoir qu&#39;une brève cuvaison rendait léger et peu tannique, qui figurent aujourd&#39;hui <b>parmi les plus remarquables de France </b>(côte-rôtie, hermitage, châteauneuf-du-pape...).<br/>
-									On trouve dans la Vallée du Rhône <span class="s1">toute la palette des vins </span>: des vins secs dans les trois couleurs (avec une dominante de vins rouges : 80 %), des vins doux naturels et des effervescents.<br/>
-									Dans la <b>partie méridionale</b>, règne le <span class="s1">grenache</span>, à l&#39;origine de vins rouges &quot;solaires&quot;, corsés et chaleureux, d&#39;une rondeur généreuse, mais les excès climatiques obligent les viticulteurs à utiliser plusieurs cépages pour obtenir des vins équilibrés, notamment la syrah, le mourvèdre, le cinsault ou encore le carignan.<br>
-									En blanc, les vins sont en général issus d&#39;assemblage, des vins généreux, gras et expressifs, issus notamment du <b>grenache blanc</b>, de la <b>clairette, </b>du <b>bourboulenc, </b>de la <b>roussanne</b>, de la <b>marsanne </b>ou encore du maccabeo ou du vermentino (ou rolle), du<br/>
-									piquepoul et autres picardan. Côté <b>rosés</b>, issus des mêmes cépages que les vins rouges, se montrent généralement savoureux, à la fois ronds et frais ; avec Tavel, la région détient la plus ancienne AOC de France dédiée exclusivement à ce type de vin.<br/>
-									Dans la <b>partie septentrionnale</b>, la <span class="s1">syrah </span>s&#39;impose dans les vins rouges, à l&#39;origine de vins de garde charpentés mais fins, profonds et épicés. Les vins blancs aromatiques et bien équilibrés entre gras et vivacité, sont quant à eux majoritairement issus des cépages <b>roussanne, marsanne et viognier</b>.<br/>
-									Le <b>Diois </b>et sa fraîcheur montagnarde favorise les vins blancs, secs et effervescents (clairette-de-die, crémant-de-die), issus des cépages <b>clairette et muscat à petits grains</b>.<br/>
-									Enfin, la tradition rhodanienne des <b>vins doux naturels </b>se retrouve dans les AOC rasteau et muscat-beaume-de-venise.<br/>
-									A la base de la <span class="s1">hiérarchie des vins </span>rhodaniens, on trouve l&#39;<b>appellation régionale </b>côte-du-rhône (171 communes, presque toutes situées au Sud), puis les <b>côtes-du-rhône-villages</b>, avec ou sans nom de communes, et, au sommet, les <b>AOC communales </b>(côte-rôtie, condrieu, châteauneuf-du- pape, lirac...). On rattache au vignoble rhodanien des <b>AOC indépendantes </b>(ventoux, luberon, grignan-lès-adhémar...) qui complètent cette large gamme de vins.<br/>
+								</div></div></div></div>
+								<div class="modal fade" id="region-France-	Bordeaux 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Bordeaux 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Bordeaux 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">
+									<img src="../images/Bordeaux.jpeg" class="float-left img-thumbnail" alt="Bordeaux" width="30%">
+										<p>Jouissant d&#39;une renommée internationale, le Bordelais constitue <span class="s1">le plus vaste vignoble d&#39;appellation de France </span>et l&#39;un des plus prestigieux grâce à ses célèbres <b>crus classés</b>. Ce vignoble contrasté aux sols variés s&#39;organise autour de trois axes fluviaux : la <b>Garonne</b>, la <b>Dordogne </b>et leur estuaire commun, la <b>Gironde</b>.<br/>
+										Il offre <span class="s1">tous les styles de vins</span>, issus de l&#39;<b>assemblage de plusieurs cépages</b>. En rouge, dominent le <b>merlot</b>, le <b>cabernet franc </b>et le <b>cabernet- sauvignon </b>; en blanc, le <b>sémillon </b>et le <b>sauvignon</b>.<br/>
+										Outre les <b>appellations régionales</b>, on distingue la <span class="s1">rive gauche de la Garonne </span>(le Médoc et les Graves) et la <span class="s1">rive droite </span>(le Libournais, le Blayais-Bourgeais et l&#39;Entre-deux-Mers), auxquelles il faut ajouter les vignobles des <b>vins doux </b>aux environs du Ciron, affluent de la Garonne.<br/>
+										L&#39;une des particularités des vins rouges, blancs et rosés du Bordelais est qu&#39;ils sont très souvent issus de l&#39;<span class="s1">assemblage de deux à cinq cépages </span>aux qualités complémentaires. En rouge, les <b>cabernets </b>– franc et sauvignon – et le <b>merlot </b>sont les principales variétés, le <b>petit verdot </b>ou encore le <b>malbec </b>parfois en complément. Pour les blancs, le cépage essentiel est le <b>sémillon</b>, complété surtout par le <b>sauvignon</b>, parfois par la <b>muscadelle </b>ou le <b>colombard</b>.<br/>
+										Dans la très large palette des vins bordelais, on distingue les <span class="s1">appellations régionales </span><b>(bordeaux, bordeaux supérieur, crémant</b>), dont les vins peuvent être issus de la quasi-totalité des communes viticoles. Celles-ci expriment une grande variété de terroirs et proposent un bel éventail de style de vins rouges, blancs (secs et doux), rosés, clairets et même effervescents. Base de la pyramide des appellations, elles n&#39;en constituent pas moins un réel gisement pour l&#39;amateur en quête de nouveautés.<br/>
+										Les autres appellations sont généralement classées en fonction de l&#39;organisation géographique et climatique du terroir, scindée en deux ensembles principaux.<br/>
+										Sur la <span class="s1">rive gauche de la Gironde et de Garonne</span>, on trouve les vins rouges du <b>Médoc</b>, puis en descendant, les rouges et les blancs des <b>Graves</b>, et tout à fait au sud les vins du <b>Sauternais</b>.<br/>
+										Sur la <span class="s1">rive droite de la Gironde et de la Dordogne</span>, s&#39;étendent le <b>Blayais et le Bourgeais</b>, et le <b>Libournais</b>, tandis que l&#39;<b>Entre-deux-Mers </b>se situe entre les deux fleuves Dordogne et Garonne.<br/>
 									</p>
-								</div>
-								<!--LANGUEDOC-CARD-->
-								<div class="tab-pane fade" id="region-france-Languedoc-Roussillon" role="tabpanel" aria-labelledby="region-france-Languedoc-Roussillon">
-								<img src="../images/Languedoc.jpeg" class="float-left img-thumbnail" alt="Languedoc" width="30%">
-								<h3>LANGUEDOC</h3>
-									<p>Ce vignoble immense s&#39;étale le long du littoral méditerranéen, de Leucate, à l&#39;ouest, jusqu&#39;à Nîmes et la Camargue, à l&#39;est, puis couvre les contreforts des Cévennes aux portes de Carcassonne. Il parcourt trois départements : l&#39;Aude, le Gard et l&#39;Hérault.<br>
-									Il offre une diversité de paysages et une mosaïque de terroirs entre mer et montagne (Corbières), sous influence climatique méditerranéenne, à l&#39;origine d&#39;une vaste palette de vins rouges, blancs et rosés, de vins doux naturels et d&#39;effervescents. Des vins, qui après avoir été longtemps assimilés à la viticulture de masse, font l&#39;objet d&#39;un renouveau constant depuis près de trente ans.<br/>
-									Engagé depuis trente ans dans un vaste chantier visant à identifier les terroirs et à y adapter de nouveaux cépages, le Languedoc produit aujourd&#39;hui un panel très complet de vins blancs, rouges et rosés, de vins doux naturels et d&#39;effervescents. Les cépages rouges sont principalement le carignan, le grenache, la syrah, le mourvèdre et le cinsault. Les blancs sont issus du grenache, du picpoul, du bourboulenc, du<br/>
-									macabeu, de la clairette et depuis peu, de la marsanne, de la roussanne et du vermentino. Pour les effervescents, on fait appel au mauzac, au chardonnay et au chenin.<br/>
+								</div></div></div></div>
+								<div class="modal fade" id="region-France-	Bourgogne 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Bourgogne 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Bourgogne 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">
+									<img src="../images/Bourgogne.jpeg" class="float-left img-thumbnail" alt="Bourgogne" width="30%">
+										<p>Un vignoble historique, l&#39;un des plus anciens de France, modelé au Moyen Age par les <b>moines</b>, puis les <b>Ducs de Bourgogne</b>, et riche de domaines aux apparences souvent modestes, mais de grand prestige.<br/>
+										Celui aussi qui, malgré sa petite taille (3 % du vignoble français), propose le <span class="s1">plus grand nombre d&#39;appellations </span>d&#39;origine : une centaine, du Chablisien au Mâconnais, en passant par la Côte de Nuits, la Côte de Beaune et la Côte chalonnaise.<br/>
+										L&#39;un des plus prestigieux également, synonyme de <b>vins fins</b>. La patrie du <b>pinot noir </b>et du <b>chardonnay</b>, qui y règnent en maître.<br/>
+										La Bourgogne, c&#39;est aussi la quintessence de la notion de <b>terroirs</b>, appelés ici <i><b>climats</b></i>, d&#39;une extrême diversité (plus de 600) et à l&#39;origine de l&#39;immense variété des vins bourguignons.<br/>
+										Reflet de ce vignoble morcelé et d&#39;une grande variété, la <span class="s1">hiérarchisation des vins </span>bourguignons, qui peut paraître complexe, est d&#39;une grande logique et définit quatre niveaux :<br>
+										les <b>appellations régionales </b>(plus de 50 % de la production), les <b>appellations communales</b>, dites aussi <i><b>villages </b></i>(plus de 30 % de la production), les <b>premiers crus </b>(environ 10 % de la production) et, en haut de la pyramide, les <b>grands crus</b>.<br/>
+										Les vins de Bourgogne sont, pour la quasi-totalité, issus de <b>deux cépages </b>: le <span class="s1">chardonnay </span>(vins blancs) et le <span class="s1">pinot noir </span>(vins rouges).<br>
+										On rencontre aussi l&#39;<b>aligoté</b>, cépage blanc produisant le bourgogne-aligoté, qui atteint son sommet qualitatif dans le petit pays de Bouzeron ; le <b>césar</b>, assemblé au pinot noir dans l&#39;irancy ; le <b>gamay </b>qui, associé au pinot, donne du bourgogne-passetoutgrain ; le <b>sauvignon</b>, cultivé dans la région de Saint-Bris-le-Vineux, dans l&#39;Yonne, où il donne l&#39;AOC saint-bris.<br/>
+										On distingue quatre secteurs géographiques. Le <span class="s1">Chablisien </span>est réputé surtout pour ses vins blancs secs élégants et leur <b>minéralité </b>si reconnaissable.<br>
+										La <span class="s1">Côte de Nuits</span>, de Marsannay à Corgoloin, majoritairement plantée de <b>pinot noir</b>, compte une trentaine d&#39;appellations avec des villages aux noms prestigieux (Gevrey-Chambertin, Vosne-Romanée, Nuits-Saint-Georges, Chambolle-Musigny,  Vougeot) et des crus illustres (romanée-conti, chambertin, musingy...).<br>
+										La <span class="s1">Côte de Beaune</span>, de Ladoix-Serrigny au nord à Chagny au sud, est le paradis des « <b>grands blancs </b>», avec des crus de grande renommée comme corton-charlemagne, meursault, montrachet..., mais elle propose aussi de très beaux vins rouges, en premier lieu les grands crus corton, pommard ou encore volnay.<br>
+										La <span class="s1">Côte chalonnaise</span>, entre Chagny et Saint-Gengoux-le-National,<br/>
+										propose des <b>blancs </b>et des <b>rouges </b>de belle qualité (rully, mercurey, givry, montagny). Le <span class="s1">Mâconnais</span>, entre Tournus et Mâcon, est réputé surtout pour ses <b>blancs de chardonnay</b>, notamment ses pouilly-fuissé.<br/>
+										Enfin, la Bourgogne classe ses vins selon une <span class="s1">hiérarchie à quatre niveaux</span>. À la base se trouvent les <b>appellations régionales</b>, dont les vins peuvent être issus de vignes établies sur l&#39;ensemble du territoire de la Bourgogne : AOC bourgogne, bourgogne-aligoté, crémant-de-bourgogne, bourgogne-passetoutgrain...<br>
+										Puis viennent les <b>appellations communales ou </b><i><b>villages </b></i>: le vin porte le nom de la commune (un ou plusieurs villages) où sont plantées les vignes d&#39;où il est issu (Volnay, Nuits-Saint-Georges...).<br>
+										Au troisième étage, on trouve les <b>premiers crus </b>provenant de <i>climats </i>délimités au sein d&#39;un village. Enfin, tout en haut de la pyramide, on trouve les <b>grands crus</b>, sélectionnés parmi les meilleurs <i>climats</i>.<br/>
 									</p>
-								</div>
-								<!--LOIRE-CARD-->
-								<div class="tab-pane fade" id="region-france-Loire" role="tabpanel" aria-labelledby="region-france-Loire">
-								<h3>VALLÉE DE LA LOIRE ET CENTRE</h3>
+								</div></div></div></div>
+								<div class="modal fade" id="region-France-	Languedoc-Roussillon 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Languedoc-Roussillon 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Languedoc-Roussillon 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">
+									<img src="../images/Languedoc.jpeg" class="float-left img-thumbnail" alt="Languedoc" width="30%">
+										<p>Ce vignoble immense s&#39;étale le long du littoral méditerranéen, de Leucate, à l&#39;ouest, jusqu&#39;à Nîmes et la Camargue, à l&#39;est, puis couvre les contreforts des Cévennes aux portes de Carcassonne. Il parcourt trois départements : l&#39;Aude, le Gard et l&#39;Hérault.<br>
+										Il offre une diversité de paysages et une mosaïque de terroirs entre mer et montagne (Corbières), sous influence climatique méditerranéenne, à l&#39;origine d&#39;une vaste palette de vins rouges, blancs et rosés, de vins doux naturels et d&#39;effervescents. Des vins, qui après avoir été longtemps assimilés à la viticulture de masse, font l&#39;objet d&#39;un renouveau constant depuis près de trente ans.<br/>
+										Engagé depuis trente ans dans un vaste chantier visant à identifier les terroirs et à y adapter de nouveaux cépages, le Languedoc produit aujourd&#39;hui un panel très complet de vins blancs, rouges et rosés, de vins doux naturels et d&#39;effervescents. Les cépages rouges sont principalement le carignan, le grenache, la syrah, le mourvèdre et le cinsault. Les blancs sont issus du grenache, du picpoul, du bourboulenc, du<br/>
+										macabeu, de la clairette et depuis peu, de la marsanne, de la roussanne et du vermentino. Pour les effervescents, on fait appel au mauzac, au chardonnay et au chenin.<br/>
+									</p>
+								</div></div></div></div>
+								<div class="modal fade" id="region-France-	Beaujolais 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Beaujolais 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Beaujolais 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">
+									<img src="../images/Beaujolais.jpeg" class="float-left img-thumbnail" alt="Beaujolais" width="30%">
+										<p>Prolongeant la Bourgogne au sud de Mâcon et s&#39;étendant sur 50 km jusqu&#39;aux <a href="https://www.hachette-vins.com/tout-sur-le-vin/appellations-vins/112/coteaux-du-lyonnais" class="a" target="_blank">coteaux du Lyonnais</a>, le Beaujolais est officiellement rattaché à la Bourgogne viticole.<br>
+										La région, de caractère déjà méridional, doit son nom aux sires de Beaujeu qui en furent les détenteurs jusqu&#39;en 140%.<br>
+										L&#39;appellation beaujolais produit essentiellement des vins rouges à partir du gamay vinifié en grains entiers, selon les principes de la vinification beaujolaise qui apporte des arômes floraux et fruités.<br>
+										Les reliefs anciens aux formes arrondies du nord-ouest de l&#39;aire géographique sont les terrains privilégiés des dix crus du Beaujolais et de <a href="https://www.hachette-vins.com/tout-sur-le-vin/appellations-vins/101/beaujolais-villages" class="a" target="_blank">l&#39;appellation beaujolais-villages</a>.<br>
+										Le vignoble de l&#39;AOC beaujolais est implanté sur des terrains sédimentaires. Ici, la vigne couvre les coteaux en bordure du Massif central, jusqu&#39;à 500 m d&#39;altitude.<br/>
+									</p>
+								</div></div></div></div>
+								<div class="modal fade" id="region-France-	Loire 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Loire 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Loire 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">
 									<p>La très étendue région viticole de la vallée de la Loire est unie par le fleuve que l&#39;on dit royal et ses affluents, la vigne n&#39;étant jamais bien éloignée de l&#39;eau et des châteaux Renaissance.<br>
 									Les vignobles du pays nantais, de l&#39;Anjou et du Saumurois, de la Touraine et du Centre forment ainsi un vaste ensemble aux terroirs et aux climats variés, où la plupart des types de vins sont déclinés.<br/>
 									Dans le pays nantais, le melon donne naissance au muscadet, vin blanc sec, la folle blanche au gros-plant, autre vin blanc sec, tandis que la région d&#39;Ancenis est colonisée par le gamay noir.<br>
@@ -1205,93 +1196,116 @@
 									En Touraine ouest, on trouve des vins rouges de caractère nés de cabernet franc. En blanc, le chenin donne des vins remarquables, comme à Vouvray ou à Montlouis.<br>
 									À l&#39;est, le sauvignon (en blanc) et le gamay (en rouge et rosé) produisent des vins légers et fruités. On trouvera aussi dans les coteaux-du-loir des rouges épicés nés du pineau d&#39;Aunis, ou encore des rouges originaux issus de pinot meunier dans l&#39;Orléanais.<br>
 									Dans les vignobles du Centre, le sauvignon règne à Sancerre, Reuilly, Quincy, Menetou-Salon, Pouilly. En rouge et en rosé, on trouve essentiellement des vins nés de gamay et de pinot noir.<br/>
+								</p>
+								</div></div></div></div>
+								<div class="modal fade" id="region-France-	Provence 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Provence 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Provence 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">
+									<img src="../images/Provence.jpeg" class="float-left img-thumbnail" alt="Provence" width="30%">
+										<p>Le vaste vignoble provençal s&#39;étend sur près de 200 km de long, d&#39;est en ouest, de Nice au sud d&#39;Avignon, et sur 60 km de large entre les Alpilles et la Méditerranée.<br>
+										Aux côtés des pins et des oliviers, la vigne occupe des îlots très diversifiés, et si l&#39;on trouve les trois couleurs de vins dans ce pays de soleil et de vents, c&#39;est le rosé qui règne en maître.<br/>
+										À l&#39;image des autres vignobles méridionaux, la Provence offre une large palette de cépages : grenache, cinsault, carignan, mourvèdre, syrah, tibouren, cabernet-sauvignon... en rouge et rosé, ugni blanc, rolle, grenache blanc, clairette, marsanne, sémillon, bourboulenc... en blanc. On y<br/>
+										produit ainsi toute la gamme des couleurs, mais ce sont les rosés qui dominent largement. La Provence s&#39;impose comme la première région en France : près de 90?% de sa production viticole sont dédiés à cette couleur, avec une production annuelle en moyenne de 150 millions de bouteilles.<br/>
 									</p>
-								</div>
-								<!--ASLSACE-CARD-->
-								<div class="tab-pane fade" id="region-france-Alsace" role="tabpanel" aria-labelledby="region-france-Alsace">
-								<h3>ALSACE</h3>						
-									<p>Le vignoble alsacien est un long ruban de 170 km de long, situé au pied du massif vosgien, qui s&#39;étire de Marlenheim au nord à Thann au sud, complété par un îlot viticole à la limite de l&#39;Allemagne, autour de Wissembourg et de Cleebourg.<br>
-									Les nombreuses sinuosités du relief et la variété des sols permettent à l&#39;Alsace de proposer une vaste gamme de vins, secs et doux, tranquilles et effervescents.<br>
-									Mais, grâce à son climat tempéré et frais, le principal atout du vignoble réside dans la maturation optimale des raisins blancs, le pinot noir étant l&#39;exception.<br>
-									L&#39;identification des vins par leur cépage – riesling, gewurztraminer, sylvaner... – est l&#39;une des autres spécificités alsaciennes, ainsi que la présence de grands crus.<br/>
-									La majorité des vins alsaciens sont des blancs secs (environ 80 %), aromatiques, fruités et floraux, bien typés par leur cépage.<br>
-									Des caractéristiques renforcées par le fait que l&#39;élevage ne se fait pas en fût, mais généralement en foudre, gros tonneau ovale qui ne confère pas d&#39;arômes boisés du fait de sa dimension imposante et de son grand âge.<br>
-									La plupart des vins sont issus d&#39;un seul cépage, à l&#39;exception de quelques grands crus (Kaefferkopf ou Altenberg par exemple), du crémant et de l&#39;edelzwicker.<br>
-									Fréquente sur l&#39;étiquette, la mention du cépage n&#39;est toutefois pas obligatoire.<br>
-									Reconnus en 1984, les alsaces « vendanges tardives » et « sélections de grains nobles » sont des vins doux issus de vendanges surmûries et soumis à des conditions de production très strictes, notamment en ce qui concerne le taux de sucre des raisins.<br>
-									On distingue également 51 grands crus en Alsace, correspondant à des terroirs délimités selon des critères géologiques et climatiques, et répondant à des critères stricts de production et d&#39;élaboration (rendements limités, vendanges manuelles, utilisation de cépages limités).<br>
-									Enfin, l&#39;Alsace se situe en tête de la production de crémants en France.<br/>
-									</p>
-								</div>
-								<!--BEAUJOLAIS-CARD-->
-								<div class="tab-pane fade" id="region-france-Beaujolais" role="tabpanel" aria-labelledby="region-france-Beaujolais">
-								<img src="../images/Beaujolais.jpeg" class="float-left img-thumbnail" alt="Beaujolais" width="30%">
-								<h3>AOC BEAUJOLAIS</h3>
-									<p>Prolongeant la Bourgogne au sud de Mâcon et s&#39;étendant sur 50 km jusqu&#39;aux <a href="https://www.hachette-vins.com/tout-sur-le-vin/appellations-vins/112/coteaux-du-lyonnais" class="a" target="_blank">coteaux du Lyonnais</a>, le Beaujolais est officiellement rattaché à la Bourgogne viticole.<br>
-									La région, de caractère déjà méridional, doit son nom aux sires de Beaujeu qui en furent les détenteurs jusqu&#39;en 140%.<br>
-									L&#39;appellation beaujolais produit essentiellement des vins rouges à partir du gamay vinifié en grains entiers, selon les principes de la vinification beaujolaise qui apporte des arômes floraux et fruités.<br>
-									Les reliefs anciens aux formes arrondies du nord-ouest de l&#39;aire géographique sont les terrains privilégiés des dix crus du Beaujolais et de <a href="https://www.hachette-vins.com/tout-sur-le-vin/appellations-vins/101/beaujolais-villages" class="a" target="_blank">l&#39;appellation beaujolais-villages</a>.<br>
-									Le vignoble de l&#39;AOC beaujolais est implanté sur des terrains sédimentaires. Ici, la vigne couvre les coteaux en bordure du Massif central, jusqu&#39;à 500 m d&#39;altitude.<br/>
-									</p>
-								</div>
-								<!--JURA-CARD-->
-								<div class="tab-pane fade" id="region-france-Jura" role="tabpanel" aria-labelledby="region-france-Jura">
-								<img src="../images/Jura.jpeg" class="float-left img-thumbnail" alt="Jura" width="30%">
-								<h3>JURA</h3>
-									<p>Ce vignoble à la géologie tourmentée, pendant de celui de la haute Bourgogne, de l&#39;autre côté de la vallée de la Saône, occupe les pentes qui descendent du premier plateau des monts du Jura vers la plaine.<br>
-									Une bande de 80 km de long, traversant tout le département du Jura, de Salins- les-Bains, au nord, à Saint-Amour, au sud.<br>$
-									Les terroirs les plus favorables se situent en coteaux entre 250 et 40% m d&#39;altitude. Plantés de cépages locaux et d&#39;autres, issus de Bourgogne, ces terroirs voient naître des vins atypiques, à l&#39;image du célèbre vin jaune, du vin de paille ou encore du macvin.<br/>
-									Les cépages locaux sont parfaitement adaptés aux terrains argileux du Jura. On trouve ainsi le poulsard, cépage rouge peu tannique à l&#39;origine de rosés et de rouges légers.<br>
-									Le trousseau, autre cépage local, donne des vins rouges plus colorés et riches en tanins. On trouve aussi le pinot noir, souvent associé au trousseau, dans les rouges ainsi que dans les mousseux blancs de noirs.<br>
-									Autre cépage bourguignon, le chardonnay apporte son riche bouquet aux vins blancs, secs et mousseux. Le savagnin, cépage blanc local, donne naissance au célèbre vin jaune, spécialité jurassienne avec le vin de paille.<br/>
-									</p>
-								</div>
-								<!--SAVOIE-CARD-->
-								<div class="tab-pane fade" id="region-france-Savoie" role="tabpanel" aria-labelledby="region-france-Savoie">
-								<img src="../images/Savoie et Bugey.jpeg" class="float-left img-thumbnail" alt="Savoie et Bugey" width="30%">
-								<h3>SAVOIE ET BUGEY</h3>
-									<p>Du lac Léman au sud de Chambéry, le vignoble savoyard occupe les premières pentes alpines, entre 300 et 600 m.<br>
-									Entre lacs, alpages, chalets et vergers, les vignes forment une mosaïque complexe de microclimats et de terroirs aux caractères montagnards plus ou moins accentués, où s&#39;épanouissent une multitude de cépages, majoritairement blancs.<br>
-									Le vignoble du Bugey, quant à lui, s&#39;étend sur les éboulis calcaires abrupts du département de l&#39;Ain. On y produit des vins rouges, rosés et blancs, ainsi que le fameux rouge effervescent de Cerdon.<br/>
-									Du lac Léman à la rive droite de l&#39;Isère, des îlots de vignes, exposés au sud, ponctuent les vallées de la Savoie et de la Haute-Savoie.<br>
-									Le climat est ici tempéré par la proximité des lacs. Sur les premiers coteaux des Alpes sont produits des vins vifs comme l&#39;air de montagne :<br>
-									des vins blancs issus le plus souvent d&#39;un cépage local, la <b>jacquère</b>; des vins rouges à base de mondeuse, du <b>gamay </b>importé du Beaujolais ou même du <b>pinot noir </b>bourguignon; des vins rosés issus de gamay, ou blancs, pétillants à Ayze.<br/>
-									</p>
-								</div>
-								<!--PROVENCE-CARD-->
-								<div class="tab-pane fade" id="region-france-Provence" role="tabpanel" aria-labelledby="region-france-Provence">
-								<img src="../images/Provence.jpeg" class="float-left img-thumbnail" alt="Provence" width="30%">
-								<h3>PROVENCE</h3>
-									<p>Le vaste vignoble provençal s&#39;étend sur près de 200 km de long, d&#39;est en ouest, de Nice au sud d&#39;Avignon, et sur 60 km de large entre les Alpilles et la Méditerranée.<br>
-									Aux côtés des pins et des oliviers, la vigne occupe des îlots très diversifiés, et si l&#39;on trouve les trois couleurs de vins dans ce pays de soleil et de vents, c&#39;est le rosé qui règne en maître.<br/>
-									À l&#39;image des autres vignobles méridionaux, la Provence offre une large palette de cépages : grenache, cinsault, carignan, mourvèdre, syrah, tibouren, cabernet-sauvignon... en rouge et rosé, ugni blanc, rolle, grenache blanc, clairette, marsanne, sémillon, bourboulenc... en blanc. On y<br/>
-									produit ainsi toute la gamme des couleurs, mais ce sont les rosés qui dominent largement. La Provence s&#39;impose comme la première région en France : près de 90?% de sa production viticole sont dédiés à cette couleur, avec une production annuelle en moyenne de 150 millions de bouteilles.<br/>
-									</p>
-								</div>
-								<!--SUD-OUEST-CARD-->
-								<div class="tab-pane fade" id="region-france-Sud-Ouest" role="tabpanel" aria-labelledby="region-france-Sud-Ouest">
-								<img src="../images/Sud-Ouest.jpeg" class="float-left img-thumbnail" alt="Sud-Ouest" width="30%">
-								<h3>SUD-OUEST</h3>
+								</div></div></div></div>
+								<div class="modal fade" id="region-France-	Sud-Ouest 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Sud-Ouest 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Sud-Ouest 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">
+									<img src="../images/Sud-Ouest.jpeg" class="float-left img-thumbnail" alt="Sud-Ouest" width="30%">
 									<p>Vaste et varié, le vignoble du Sud-Ouest couvre quatre zones principales :<br>
-									le piémont du Massif Central, la moyenne Garonne, le Bergeracois et Duras, et le piémont pyrénéen. Les vignobles du Sud-Ouest devrait-on dire : on en recense plus d&#39;une vingtaine, avec des terroirs, des cépages et des histoires distinctes.<br>
-									Le point commun entre les appellations, aussi éloignées qu&#39;irouléguy, gaillac ou marcillac, réside dans des vins de caractère et dans une incomparable palette de cépages locaux (manseng, tannat, négrette, loin-de-l&#39;œil...).<br/>
-									Le Sud-Ouest est un véritable musée ampélographique des cépages d&#39;autrefois, et nulle part ailleurs on ne trouve une telle diversité de variétés, dont certaines sont sorties de la nuit des temps viticoles :<br>
-									manseng, tannat, négrette, duras, len-de-l&#39;el (loin-de-l&#39;œil), mauzac, fer-servadou, arrufiac et baroque, ou encore raffiat de Moncade et camaralet de Lasseube.<br>
-									Ces cépages donnent aux vins des accents d&#39;authenticité et de typicité inimitable?; des vins de tous types et de toutes les couleurs, à même de combler tous les amateurs : blancs secs ou liquoreux, effervescents, rosés tendres ou vineux, rouges légers ou de garde.<br>
-									Des vins qui côtoient les produits fermiers avec lesquels ils se marient tout naturellement, pour faire du Sud-Ouest une région privilégiée de gastronomie de tradition.<br/>
+										le piémont du Massif Central, la moyenne Garonne, le Bergeracois et Duras, et le piémont pyrénéen. Les vignobles du Sud-Ouest devrait-on dire : on en recense plus d&#39;une vingtaine, avec des terroirs, des cépages et des histoires distinctes.<br>
+										Le point commun entre les appellations, aussi éloignées qu&#39;irouléguy, gaillac ou marcillac, réside dans des vins de caractère et dans une incomparable palette de cépages locaux (manseng, tannat, négrette, loin-de-l&#39;œil...).<br/>
+										Le Sud-Ouest est un véritable musée ampélographique des cépages d&#39;autrefois, et nulle part ailleurs on ne trouve une telle diversité de variétés, dont certaines sont sorties de la nuit des temps viticoles :<br>
+										manseng, tannat, négrette, duras, len-de-l&#39;el (loin-de-l&#39;œil), mauzac, fer-servadou, arrufiac et baroque, ou encore raffiat de Moncade et camaralet de Lasseube.<br>
+										Ces cépages donnent aux vins des accents d&#39;authenticité et de typicité inimitable?; des vins de tous types et de toutes les couleurs, à même de combler tous les amateurs : blancs secs ou liquoreux, effervescents, rosés tendres ou vineux, rouges légers ou de garde.<br>
+										Des vins qui côtoient les produits fermiers avec lesquels ils se marient tout naturellement, pour faire du Sud-Ouest une région privilégiée de gastronomie de tradition.<br/>
 									</p>
-								</div>
-								<!--CORSE-CARD-->
-								<div class="tab-pane fade" id="region-france-Corse" role="tabpanel" aria-labelledby="region-france-Corse">
+								</div></div></div></div>
+								<div class="modal fade" id="region-France-	Toscane 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Toscane 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Toscane 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Vallée de Uco Mendoza	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Vallée de Uco Mendoza	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Vallée de Uco Mendoza	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Californie 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Californie 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Californie 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Piémont 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Piémont 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Piémont 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Savoie 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Savoie 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Savoie 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">
+									<img src="../images/Savoie et Bugey.jpeg" class="float-left img-thumbnail" alt="Savoie et Bugey" width="30%">
+										<p>Du lac Léman au sud de Chambéry, le vignoble savoyard occupe les premières pentes alpines, entre 300 et 600 m.<br>
+										Entre lacs, alpages, chalets et vergers, les vignes forment une mosaïque complexe de microclimats et de terroirs aux caractères montagnards plus ou moins accentués, où s&#39;épanouissent une multitude de cépages, majoritairement blancs.<br>
+										Le vignoble du Bugey, quant à lui, s&#39;étend sur les éboulis calcaires abrupts du département de l&#39;Ain. On y produit des vins rouges, rosés et blancs, ainsi que le fameux rouge effervescent de Cerdon.<br/>
+										Du lac Léman à la rive droite de l&#39;Isère, des îlots de vignes, exposés au sud, ponctuent les vallées de la Savoie et de la Haute-Savoie.<br>
+										Le climat est ici tempéré par la proximité des lacs. Sur les premiers coteaux des Alpes sont produits des vins vifs comme l&#39;air de montagne :<br>
+										des vins blancs issus le plus souvent d&#39;un cépage local, la <b>jacquère</b>; des vins rouges à base de mondeuse, du <b>gamay </b>importé du Beaujolais ou même du <b>pinot noir </b>bourguignon; des vins rosés issus de gamay, ou blancs, pétillants à Ayze.<br/>
+									</p>
+									</div></div></div></div>
+								<div class="modal fade" id="region-France-	Castilla y Leon 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Castilla y Leon 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Castilla y Leon 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Murcie 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Murcie 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Murcie 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Sonoma Valley 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Sonoma Valley 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Sonoma Valley 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Rioja 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Rioja 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Rioja 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Jura 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Jura 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Jura 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">
+									<img src="../images/Jura.jpeg" class="float-left img-thumbnail" alt="Jura" width="30%">
+										<p>Ce vignoble à la géologie tourmentée, pendant de celui de la haute Bourgogne, de l&#39;autre côté de la vallée de la Saône, occupe les pentes qui descendent du premier plateau des monts du Jura vers la plaine.<br>
+										Une bande de 80 km de long, traversant tout le département du Jura, de Salins- les-Bains, au nord, à Saint-Amour, au sud.<br>$
+										Les terroirs les plus favorables se situent en coteaux entre 250 et 40% m d&#39;altitude. Plantés de cépages locaux et d&#39;autres, issus de Bourgogne, ces terroirs voient naître des vins atypiques, à l&#39;image du célèbre vin jaune, du vin de paille ou encore du macvin.<br/>
+										Les cépages locaux sont parfaitement adaptés aux terrains argileux du Jura. On trouve ainsi le poulsard, cépage rouge peu tannique à l&#39;origine de rosés et de rouges légers.<br>
+										Le trousseau, autre cépage local, donne des vins rouges plus colorés et riches en tanins. On trouve aussi le pinot noir, souvent associé au trousseau, dans les rouges ainsi que dans les mousseux blancs de noirs.<br>
+										Autre cépage bourguignon, le chardonnay apporte son riche bouquet aux vins blancs, secs et mousseux. Le savagnin, cépage blanc local, donne naissance au célèbre vin jaune, spécialité jurassienne avec le vin de paille.<br/>
+									</p>
+								</div></div></div></div>
+								<div class="modal fade" id="region-France-	Catalogne	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Catalogne	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Catalogne	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Douro 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Douro 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Douro 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Pouilles 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Pouilles 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Pouilles 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Napa Valley 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Napa Valley 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Napa Valley 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Sicile 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Sicile 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Sicile 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Alsace 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Alsace 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Alsace 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">
+									<p>Le vignoble alsacien est un long ruban de 170 km de long, situé au pied du massif vosgien, qui s&#39;étire de Marlenheim au nord à Thann au sud, complété par un îlot viticole à la limite de l&#39;Allemagne, autour de Wissembourg et de Cleebourg.<br>
+										Les nombreuses sinuosités du relief et la variété des sols permettent à l&#39;Alsace de proposer une vaste gamme de vins, secs et doux, tranquilles et effervescents.<br>
+										Mais, grâce à son climat tempéré et frais, le principal atout du vignoble réside dans la maturation optimale des raisins blancs, le pinot noir étant l&#39;exception.<br>
+										L&#39;identification des vins par leur cépage – riesling, gewurztraminer, sylvaner... – est l&#39;une des autres spécificités alsaciennes, ainsi que la présence de grands crus.<br/>
+										La majorité des vins alsaciens sont des blancs secs (environ 80 %), aromatiques, fruités et floraux, bien typés par leur cépage.<br>
+										Des caractéristiques renforcées par le fait que l&#39;élevage ne se fait pas en fût, mais généralement en foudre, gros tonneau ovale qui ne confère pas d&#39;arômes boisés du fait de sa dimension imposante et de son grand âge.<br>
+										La plupart des vins sont issus d&#39;un seul cépage, à l&#39;exception de quelques grands crus (Kaefferkopf ou Altenberg par exemple), du crémant et de l&#39;edelzwicker.<br>
+										Fréquente sur l&#39;étiquette, la mention du cépage n&#39;est toutefois pas obligatoire.<br>
+										Reconnus en 1984, les alsaces « vendanges tardives » et « sélections de grains nobles » sont des vins doux issus de vendanges surmûries et soumis à des conditions de production très strictes, notamment en ce qui concerne le taux de sucre des raisins.<br>
+										On distingue également 51 grands crus en Alsace, correspondant à des terroirs délimités selon des critères géologiques et climatiques, et répondant à des critères stricts de production et d&#39;élaboration (rendements limités, vendanges manuelles, utilisation de cépages limités).<br>
+										Enfin, l&#39;Alsace se situe en tête de la production de crémants en France.<br/>
+									</p>
+								</div></div></div></div>
+								<div class="modal fade" id="region-France-	South Australia 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	South Australia 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	South Australia 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Central Valley 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Central Valley 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Central Valley 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Bierzo 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Bierzo 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Bierzo 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Victoria	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Victoria	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Victoria	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Marches 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Marches 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Marches 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Canton de Vaud 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Canton de Vaud 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Canton de Vaud 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Marlborough 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Marlborough 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Marlborough 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Corse 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Corse 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Corse 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">
 								<img src="../images/Corse.jpeg" class="float-left img-thumbnail" alt="Corse" width="30%">
-								<h3>CORSE</h3>
 									<p>Montagne dans la mer, l&#39;île de Beauté et sa topographie tourmentée offre une multiplication de pentes et de coteaux, de microclimats favorisés par la proximité des montagnes et des vallées et une pauvreté des sols bénéfiques à la vigne.<br>
-									Le vignoble court tout autour de l&#39;île, à proximité des côtes. On y cultive, aux côtés de variétés importées, des cépages introuvables sur le continent, comme le sciaccarello et le nielluccio, à l&#39;origine de vins rouges et rosés typés, très majoritaires, ou comme le vermentino en blanc.<br/>
-									La Corse, largement dominée par les rouges et les rosés, se distingue par sa trentaine de cépages autochtones très diversifiés, qui côtoient des cépages importés.<br>
-									Pour les rouges et les rosés, les cépages phares sont le nielluccio (connu en Italie sous le nom de sangiovese) et le sciacarello, parfois associés aux « locaux » barbarossa et aleatico, au carignan, au cinsault, au grenache, au mourvèdre ou à la syrah?; pour les blancs, le vermentino (malvoisie de Corse) domine, accompagné parfois de l&#39;ugni blanc (ou rossola), du bianco gentile, du codivarta...<br>
-									Le muscat à petit grains engendre le muscat-du-cap-corse.<br/>
+										Le vignoble court tout autour de l&#39;île, à proximité des côtes. On y cultive, aux côtés de variétés importées, des cépages introuvables sur le continent, comme le sciaccarello et le nielluccio, à l&#39;origine de vins rouges et rosés typés, très majoritaires, ou comme le vermentino en blanc.<br/>
+										La Corse, largement dominée par les rouges et les rosés, se distingue par sa trentaine de cépages autochtones très diversifiés, qui côtoient des cépages importés.<br>
+										Pour les rouges et les rosés, les cépages phares sont le nielluccio (connu en Italie sous le nom de sangiovese) et le sciacarello, parfois associés aux « locaux » barbarossa et aleatico, au carignan, au cinsault, au grenache, au mourvèdre ou à la syrah?; pour les blancs, le vermentino (malvoisie de Corse) domine, accompagné parfois de l&#39;ugni blanc (ou rossola), du bianco gentile, du codivarta...<br>
+										Le muscat à petit grains engendre le muscat-du-cap-corse.<br/>
 									</p>
-								</div>
+								</div></div></div></div>
+								<div class="modal fade" id="region-France-	Barossa Valley 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Barossa Valley 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Barossa Valley 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Galicia 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Galicia 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Galicia 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Rueda 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Rueda 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Rueda 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Meknés 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Meknés 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Meknés 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Kamptal	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Kamptal	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Kamptal	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Vénétie 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Vénétie 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Vénétie 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Vallée de Curico 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Vallée de Curico 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Vallée de Curico 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Bot River Valley 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Bot River Valley 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Bot River Valley 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Mancha 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Mancha 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Mancha 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Alicante 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Alicante 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Alicante 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Stellenbosch 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Stellenbosch 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Stellenbosch 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Punta del Este, Garzon 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Punta del Este, Garzon 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Punta del Este, Garzon 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Cuenca 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Cuenca 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Cuenca 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Aconcagua Valley 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Aconcagua Valley 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Aconcagua Valley 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Mendoza	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Mendoza	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Mendoza	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Oregon 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Oregon 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Oregon 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Cafayate 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Cafayate 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Cafayate 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Coastal Region 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Coastal Region 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Coastal Region 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Vallée de Casablanca 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Vallée de Casablanca 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Vallée de Casablanca 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Lolol 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Lolol 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Lolol 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Puento Alto 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Puento Alto 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Puento Alto 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Vallée de Itata 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Vallée de Itata 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Vallée de Itata 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Tierra de Castilla 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Tierra de Castilla 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Tierra de Castilla 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Maule Valley	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Maule Valley	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Maule Valley	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Abruzzes 	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Abruzzes 	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Abruzzes 	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
+								<div class="modal fade" id="region-France-	Valencia	" tabindex="-1" role="dialog" aria-labelledby="region-france-	Valencia	" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">	Valencia	</h5><button type=button class=close data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">	DESC	</div></div></div></div>
 						</div>
 					</div>
 					<!--DESC-CARD-->
