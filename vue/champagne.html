@@ -2,403 +2,251 @@
 <html lang="fr">
 <head>
 	<!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../css/style.css" media="all" type="text/css"> 
-	<title>MVF | Nos Champagne</title>
+	<link rel="stylesheet" href="../css/style.css" media="all" type="text/css">
+	<title>MVF | Nos Champagnes</title>
 </head>
 <body>
-	<div class="container textviolet">
+	<div class="container-fluid textviolet"><br>
 		<!--CARD-->
-		<br><div class="card borderviolet">
-			<!--CORP-CARD-->
+		<div class="card borderviolet">
 			<div class="card-body">
 				<!--HEAD-CARD-->
 				<div class="row">
-					<div class="col-3">
-						<nav aria-label="breadcrumb">
-							<ol class="breadcrumb bg-white">
-								<li class="breadcrumb-item"><a href="/MVF/home.html">Acceuil</a></li>
-								<li class="breadcrumb-item active" aria-current="page">Champagne</li>
-							</ol>
-						</nav>
+					<div class="col">
+						<a class="navbar-brand" href="/MVF/home.html"><img src="../images/MVF.png" width="30%" class="d-inline-block align-left border" alt=""></a>
+					</div><div class="col">
+						<h1>Champagnes</h1>
 					</div>
-					<div class="col-8"><h1 class="text-center">Champagne</h1></div>
 				</div>
+				<!--NAV-CARD-->
+				<div class="col">
+					<div class="nav nav-fill rounded">
+						<a class="nav-item nav-link active" onclick=window.location.href='/MVF/vue/champagne.html'>Découvrir</a>
+						<a class="nav-item nav-link" id="list-champagne-list" data-toggle="tab" href="#champagne" role="tab" aria-controls="champagne" aria-selected="false">Nos Champagne</a>
+					</div>
+				</div><hr><br>
+				<!--NAV-CARD-->
 				<!--HEAD-CARD-->
-				<div class="row no-gutters">
-					<!--NAV-CARD-->
-					<div class="col-3">
-						<div class="list-group border rounded p-3">
-							<button type="button" class="btn btn-primary violet" onclick=window.location.href='/MVF/vue/champagne.html'>Découvrir</button><hr>
-							<!--CHAMPAGNE LIST-->
-							<h4 type="button" class="btn text-center" id="list-champagne-list" data-toggle="tab" href="#champagne" role="tab" aria-controls="champagne" aria-selected="false">Nos Champagne</h4>
-							<button type="button" class="btn btn-primary dropdown-toggle violet" data-toggle="collapse" data-target="#collapseType" aria-expanded="true" aria-controls="collapseType">Type de champagne</button>
-							<div id="collapseType" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">																				
-								<div id="list-example" class="list-group">																
-									<a class="dropdown-item" href="#type-Brut">Brut</a>
-									<a class="dropdown-item" href="#type-Millésimé">Millésimé</a>
-									<a class="dropdown-item" href="#type-Blanc de Blancs">Blanc de Blancs</a>
-									<a class="dropdown-item" href="#type-Brut Rosé">Brut Rosé</a>
-									<a class="dropdown-item" href="#type-Brut Demi-sec">Brut Demi-sec</a>
-									<a class="dropdown-item" href="#type-Brut Grand Cru">Brut Grand Cru</a>
-									<a class="dropdown-item" href="#type-Brut Nature">Brut Nature</a>
-									<a class="dropdown-item" href="#type-Blanc de Noirs">Blanc de Noirs </a>
-									<a class="dropdown-item" href="#type-Brut 1er Cru">Brut 1er Cru</a>
-									<a class="dropdown-item" href="#type-Extra Brut">Extra Brut</a>
-									<a class="dropdown-item" href="#type-Bio">Bio</a>																															   
+				<!--CORP-CARD-->
+				<!--DESC-CARD-->
+				<div class="tab-content" id="nav-tabContent">
+					<!--ASAVOIR-->
+					<div class="tab-pane fade show active" id="listsavoir" role="tabpanel" aria-labelledby="type-Savoir-list">
+						<div class="row">
+							<div class="col card mx-3 p-4">
+								<img src="../images/champagnes/Champagne.jpeg" class="card-img-top" alt="Champagne"><br><br>
+								<p>Synonyme de fête, le champagne symbolise dans le monde entier l'élégance à la française.<br/>
+								Il est aussi le modèle de la plupart des effervescents de qualité, dont l'élaboration repose également sur la double fermentation en bouteilles.<br/>
+								Mais si l'on parle généralement du champagne, au singulier, son visage est pluriel et il offre une grande variété de styles : blanc de blancs, blanc de noirs, millésimé ou non, dosé ou non...<br/>
+								Autre particularité : la plupart des viticulteurs cèdent tout ou partie de leurs raisins aux grandes maisons, qui se chargent d'élaborer le vin et de le vendre sous leur marque.<br/>
+								On n'oubliera pas enfin les deux autres appellations de Champagne, en vins tranquilles : coteaux-champenois et rosé-des-riceys.<br/>
+								Trois principaux cépages sont cultivés ici : pinot noir, pinot meunier et chardonnay.<br/>
+								Ils donnent naissance à de multiples champagnes, qui associent plusieurs vins de base (l'art de l'assemblage).<br/>
+								On trouve ainsi des blancs et des rosés, des blancs de blancs (issus du chardonnay seul), des blancs de noirs (de pinot meunier, de pinot noir ou des deux variétés), ou des blancs issus de l'assemblage des trois cépages.<br/>
+								Par ailleurs, le dosage différencie les bruts zéro (extra-secs), les bruts, les demi-secs, voire les doux.<br/>
+								Il existe aussi des vins non millésimés (majorité) et des millésimés, ainsi que des cuvées de prestige – ou cuvées spéciales – au prix de vente très élevé dans les grandes marques.<br/>
+								Quel que soit son type, on s'accorde à penser que le meilleur champagne est celui qui a mûri le plus longtemps sur ses lies (cinq à dix ans)?; il doit être consommé dans les six mois suivant son dégorgement.<br/>
+								Outre les champagnes, on trouvera dans la région deux autres appellations, en vins tranquilles :<br>
+								le rosé-des-riceys et son fameux « goût des Riceys » (amande et fruits rouges), et le coteaux-champenois, essentiellement produit en rouge à partir des pinots noir et meunier.<br/>
+								</p>
+							</div>
+						</div><br>
+						<div class="row text-center">
+							<div class="col card mx-3 p-4">
+								<img src="../images/champagnes/Champagne1.jpg" class="card-img-top" alt="Champagne"><br>
+								<p><b>Bouteille de champagne par contenance</b>
+								De la demi bouteille jusqu’au Nabuchodonosor en passant par le Magnum ou le Jéroboam, <br>
+								Retrouvez notre gamme complète de bouteilles de champagne.<br>
+								</p>
+							</div>
+						</div><br>
+						<div class="row text-center">
+							<div class="col card mx-3 p-4">
+								<img src="../images/champagnes/Champagne2.jpg" class="card-img-top" alt="Champagne"><br>
+								<p><b>Idées cadeaux Champagne</b>
+								Offrir du champagne est une excellente idée cadeaux.<br>
+								Notre sélection de cadeaux autour du champagne va vous permettre de faire le bon choix...<br>
+								</p>
+							</div>
+						</div><br>
+						<div class="row text-center">
+							<div class="col card mx-3 p-4">
+								<img src="../images/champagnes/Champagne3.jpg" class="card-img-top" alt="Champagne"><br>
+								<p><b>CHAMPAGNE MILLÉSIMÉ, BRUT GRAND CRU & Cie</b>
+								La Maison des Vins de France vous propose une des offres les plus complètes de champagnes.<br>
+								Vous recherchez un champagne blanc de blancs ou un magnum de champagne ? Ruinart, Dom Pérignon, Veuve Clicquot ou Moët et Chandon ? <br>
+								Retrouvez toutes les plus grandes maisons de champagne dans nos caves. <br>
+								A découvrir également, notre offre Prosecco, Moscato, Lambrusco, Crémant, Cava, Cerdon, Clairette de Die.<br>
+								</p>
+							</div>
+						</div><br>
+						<div class="row text-center">
+							<div class="col card mx-3 p-4">
+								<img src="../images/champagnes/Champagne4.jpg" class="card-img-top" alt="Champagne"><br>
+								<p><b>Des idées cadeaux autour du vin ou du champagne</b>
+								Notre espace cadeau vous propose de découvrir notre sélection de cadeau vin ou champagne.<br>
+								Plus d’excuses pour être à court d’idées cadeaux ! Accessoires, coffrets vins, coffrets champagnes ou coffrets spiritueux,<br>
+								offrez un cadeau original en fonction de votre budget.<br>
+								Laissez-vous guider par un vaste choix de coffrets. <br>
+								Une sélection pour faire plaisir en fonction des profils de chacun !<br>
+								</p>
+							</div>
+						</div><br>
+						<div class="row text-center">
+							<div class="col card mx-3 p-4">
+								<img src="../images/champagnes/Champagne5.jpg" class="card-img-top" alt="Champagne"><br>
+								<p><b>Vous recherchez un vin d’honneur ou un Champagne pour votre mariage ?</b>
+								Futurs Mariés ! Vous êtes en pleine préparation du plus bel évènement de votre vie ?<br>
+								Dur de choisir le bon vin ? Ne laissez pas au hasard le choix des vins avec votre menu, La Maison des Vins de France vous accompagne dans la réussite de votre sélection.<br>
+								</p>
+							</div>
+						</div><br>
+					</div>	
+					<!--CHAMPAGNE-->
+					<div class="tab-pane fade" id="champagne" role="tabpanel" aria-labelledby="champagne">
+						<div class="card mx-3 p-4">
+						<p><h3>Bons Plans Champagnes</h3><br>
+						pour acheter du champagne les yeux fermés<br>
+						Déstockage, meilleures ventes, coups de cœur, soldes, ventes privées…<br>
+						La Maison des Vins de France vous propose une foire aux vins permanente.<br>
+						Achetez votre champagne en toute confiance et épatez vos amis lors de vos réceptions.<br></p>
+						</div><br>
+							<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseGout1" role="button" aria-expanded="false" aria-controls="collapseGout1">Goût</h3>
+							<div class="collapse" id="collapseGout1">
+								<div class="card-body">
+									<div class="row">
+											<div class="col">
+												<ol>	Fruité 	</ol>
+											</div><div class="col">
+												<ol>	Floral 	</ol>
+											</div><div class="col">
+												<ol>	Minéral	</ol>													
+										</div>										
+									</div>	
 								</div>
 							</div><hr>
-						</div>
-					</div>
-					<!--NAV-CARD-->
-					<!--DESC-CARD-->
-					<div class="col mx-2 px-4 card">
-						<div class="tab-content" id="nav-tabContent">
-								<!--CHAMPAGNE-->
-								<div class="tab-pane fade" id="champagne" role="tabpanel" aria-labelledby="champagne">
-											<p>Bons Plans Champagne<br>
-												pour acheter du champagne les yeux fermés<br>
-												Déstockage, meilleures ventes, coups de cœur, soldes, ventes privées… <br>
-												La Maison des Vins de France vous propose une foire aux vins permanente. <br>
-												Achetez votre champagne en toute confiance et épatez vos amis lors de vos réceptions.</p><br>
-									<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseGout1" role="button" aria-expanded="true" aria-controls="collapseGout1">Goût</h3>
-									<div class="collapse show" id="collapseGout1">
-										<div class="card-body">
-											<div class="row">
-													<div class="col">
-														<ol>	Fruité 	</ol>
-													</div><div class="col">
-														<ol>	Floral 	</ol>
-													</div><div class="col">
-														<ol>	Minéral	</ol>													
-												</div>										
-											</div>	
-										</div>
-									</div><hr>
-									<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseCouleur" role="button" aria-expanded="true" aria-controls="collapseCepage1">Couleur</h3>
-									<div class="collapse show" id="collapseCouleur">
-										<div class="card-body">
-											<div class="row">
-												<div class="col">
-														<ol>Blanc</ol>
-													</div><div class="col">
-														<ol>Rosé</ol>
-												</div>
-											</div>										
-										</div>	
-									</div><hr>
-									<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseCoeur" role="button" aria-expanded="true" aria-controls="collapseCoeur">Coup de coeur</h3>
-									<div class="collapse show" id="collapseCoeur">
-										<div class=" card-body">
-											<div class="row">
-												<div class="col">
-													<ol>	Champagnes Médaillés		</ol>
-													</div><div class="col">
-													<ol>	Petits Producteurs		</ol>
-													</div><div class="col">
-													<ol>	Les Cuvées Mythiques 		</ol>																							
-												</div>
-											</div>										
-										</div>	
-									</div><hr>
-									<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseMarque" role="button" aria-expanded="false" aria-controls="collapseMarque">Marque</h3>
-									<div class="collapse" id="collapseMarque">
-										<div class="card card-body">
-											<div class="row">
-												<div class="col">
-													<li>	Jacquesson	</li>
-													<li>	Armand de Brignac 	</li>
-													<li>	Ayala	</li>
-													<li>	Barons de Rothschild 	</li>
-													<li>	Besserat de Bellefon 	</li>
-													<li>	Billecart-Salmon	</li>
-													<li>	Bollinger	</li>
-													<li>	Canard-Duchêne 	</li>
-													<li>	Charles Heidsieck 	</li>
-													<li>	Cl de la Chapelle 	</li>
-													<li>	Delamotte 	</li>
-													<li>	Deutz	</li>
-													<li>	Perignon 	</li>
-													<li>	François-Brossolette	</li>
-													<li>	Gosset	</li>
-													<li>	H. Blin 	</li>
-													<li>	Haton & Filles 	</li>
-													<li>	Heidsieck & Co Monopole 	</li>
-													<li>	Henri Giraud	</li>
-													<li>	Henriot 	</li>
-													<li>	Lacourte Godbillon 	</li>
-													<li>	Lallier 	</li>
-													<li>	Lanson 	</li>
-													<li>	Laurent Perrier	</li>
-												</div><div class="col">
-													<li>	Le Brun de Neuville 	</li>
-													<li>	Louis Roederer 	</li>
-													<li>	Michel Furdyna 	</li>
-													<li>	Moutard Père et Fils 	</li>
-													<li>	Mumm	</li>
-													<li>	Nicolas Maillart 	</li>
-													<li>	Perrier-Jouët 	</li>
-													<li>	Pol Roger 	</li>
-													<li>	Pommery 	</li>
-													<li>	Soutiran 	</li>
-													<li>	Taittinger 	</li>
-													<li>	Thierry Massin 	</li>
-													<li>	Tsarine 	</li>
-													<li>	Veuve Clicquot 	</li>
-													<li>	Vranken 	</li>
-													<li>	Devaux 	</li>
-													<li>	Edouard Brun 	</li>
-													<li>	Gauthier 	</li>
-													<li>	Krug 	</li>
-													<li>	Marie Copinet 	</li>
-													<li>	Moët & Chandon 	</li>
-													<li>	Philipponnat 	</li>
-													<li>	Ruinart 	</li>
-													<li>	Thienot 	</li>											
-												</div>
-											</div>										
-										</div>	
-									</div><hr>										
-								</div>
-								<!--ASAVOIR OK-->
-								<div class="tab-pane fade  show active" id="type-Brut" role="tabpanel" aria-labelledby="type-Brut-list">								
-									<div class="row text-center">
+							<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseCouleur" role="button" aria-expanded="false" aria-controls="collapseCepage1">Couleur</h3>
+							<div class="collapse" id="collapseCouleur">
+								<div class="card-body">
+									<div class="row">
 										<div class="col">
-											<div class="row">
-												<div class="col">
-														<img src="../images/champagnes/Champagne.jpg" class="img-thumbnail" alt="Champagne" width="60%"><br>
-														<p>Synonyme de fête, le champagne symbolise dans le monde entier l'élégance à la française.<br/>
-															Il est aussi le modèle de la plupart des effervescents de qualité, dont l'élaboration repose également sur la double fermentation en bouteilles.<br/>
-															Mais si l'on parle généralement du champagne, au singulier, son visage est pluriel et il offre une grande variété de styles : blanc de blancs, blanc de noirs, millésimé ou non, dosé ou non...<br/>
-															Autre particularité : la plupart des viticulteurs cèdent tout ou partie de leurs raisins aux grandes maisons, qui se chargent d'élaborer le vin et de le vendre sous leur marque.<br/>
-															On n'oubliera pas enfin les deux autres appellations de Champagne, en vins tranquilles : coteaux-champenois et rosé-des-riceys.<br/>
-															Trois principaux cépages sont cultivés ici : pinot noir, pinot meunier et chardonnay.<br/>
-															Ils donnent naissance à de multiples champagnes, qui associent plusieurs vins de base (l'art de l'assemblage).<br/>
-															On trouve ainsi des blancs et des rosés, des blancs de blancs (issus du chardonnay seul), des blancs de noirs (de pinot meunier, de pinot noir ou des deux variétés), ou des blancs issus de l'assemblage des trois cépages.<br/>
-															Par ailleurs, le dosage différencie les bruts zéro (extra-secs), les bruts, les demi-secs, voire les doux.<br/>
-															Il existe aussi des vins non millésimés (majorité) et des millésimés, ainsi que des cuvées de prestige – ou cuvées spéciales – au prix de vente très élevé dans les grandes marques.<br/>
-															Quel que soit son type, on s'accorde à penser que le meilleur champagne est celui qui a mûri le plus longtemps sur ses lies (cinq à dix ans)?; il doit être consommé dans les six mois suivant son dégorgement.<br/>
-															Outre les champagnes, on trouvera dans la région deux autres appellations, en vins tranquilles : le rosé-des-riceys et son fameux « goût des Riceys » (amande et fruits rouges), et le coteaux-champenois, essentiellement produit en rouge à partir des pinots noir et meunier.<br/>
-															</p>
-												</div>
-											</div>
-											<div class="row">
-												<div class="col">
-													<img src="../images/champagnes/Champagne1.jpg" class="img-thumbnail" alt="Champagne" width="60%"><br>
-														<p><b>Bouteille de champagne par contenance</b>
-														De la demi bouteille jusqu’au Nabuchodonosor en passant par le Magnum ou le Jéroboam, <br>
-														Retrouvez notre gamme complète de bouteilles de champagne.<br>
-														</p>
-												</div>
-											</div>
-											<div class="row">
-												<div class="col">
-													<img src="../images/champagnes/Champagne2.jpg" class="img-thumbnail" alt="Champagne" width="60%"><br>
-														<p><b>Idées cadeaux Champagne</b>
-														Offrir du champagne est une excellente idée cadeaux.<br>
-														Notre sélection de cadeaux autour du champagne va vous permettre de faire le bon choix...<br>
-														</p>
-												</div>
-											</div>
-											<div class="row">
-												<div class="col">
-														<img src="../images/champagnes/Champagne3.jpg" class="img-thumbnail" alt="Champagne" width="60%"><br>
-														<p><b>CHAMPAGNE MILLÉSIMÉ, BRUT GRAND CRU & Cie</b>
-														La Maison des Vins de France vous propose une des offres les plus complètes de champagnes.<br>
-														Vous recherchez un champagne blanc de blancs ou un magnum de champagne ? Ruinart, Dom Pérignon, Veuve Clicquot ou Moët et Chandon ? <br>
-														Retrouvez toutes les plus grandes maisons de champagne dans nos caves. <br>
-														A découvrir également, notre offre Prosecco, Moscato, Lambrusco, Crémant, Cava, Cerdon, Clairette de Die.<br>
-														</p>
-												</div>
-											</div>
-											<div class="row">
-												<div class="col">
-													<img src="../images/champagnes/Champagne4.jpg" class="img-thumbnail" alt="Champagne" width="60%"><br>
-														<p><b>Des idées cadeaux autour du vin ou du champagne</b>
-														Notre espace cadeau vous propose de découvrir notre sélection de cadeau vin ou champagne.<br>
-														Plus d’excuses pour être à court d’idées cadeaux ! Accessoires, coffrets vins, coffrets champagnes ou coffrets spiritueux, 
-														offrez un cadeau original en fonction de votre budget.<br>
-														Laissez-vous guider par un vaste choix de coffrets. <br>
-														Une sélection pour faire plaisir en fonction des profils de chacun !<br>
-														</p>
-												</div>
-											</div>
-											<div class="row">
-												<div class="col">
-													<img src="../images/champagnes/Champagne5.jpg" class="img-thumbnail" alt="Champagne" width="60%"><br>
-														<p><b>Vous recherchez un vin d’honneur ou un Champagne pour votre mariage ?</b>
-														Futurs Mariés ! Vous êtes en pleine préparation du plus bel évènement de votre vie ?<br>
-														Dur de choisir le bon vin ? Ne laissez pas au hasard le choix des vins avec votre menu, La Maison des Vins de France vous accompagne dans la réussite de votre sélection.<br>
-														</p>
-												</div>
-											</div>
+											<ol>Blanc</ol>
+										</div><div class="col">
+											<ol>Rosé</ol>
 										</div>
 									</div>
-								</div>							
-								<!--BRUT-CARD-->
-								<div class="tab-pane fade" id="type-Brut" role="tabpanel" aria-labelledby="type-Brut-list-list">
-								<img src="../images/Bordeaux.jpeg" class="float-left img-thumbnail" alt="Bordeaux" width="30%">
-								<h3>BORDEAUX</h3>
-									<p>Jouissant d&#39;une renommée internationale, le Bordelais constitue <span class="s1">le plus vaste vignoble d&#39;appellation de France </span>et l&#39;un des plus prestigieux grâce à ses célèbres <b>crus classés</b>. Ce vignoble contrasté aux sols variés s&#39;organise autour de trois axes fluviaux : la <b>Garonne</b>, la <b>Dordogne </b>et leur estuaire commun, la <b>Gironde</b>.<br/>
-									Il offre <span class="s1">tous les styles de vins</span>, issus de l&#39;<b>assemblage de plusieurs cépages</b>. En rouge, dominent le <b>merlot</b>, le <b>cabernet franc </b>et le <b>cabernet- sauvignon </b>; en blanc, le <b>sémillon </b>et le <b>sauvignon</b>.<br/>
-									Outre les <b>appellations régionales</b>, on distingue la <span class="s1">rive gauche de la Garonne </span>(le Médoc et les Graves) et la <span class="s1">rive droite </span>(le Libournais, le Blayais-Bourgeais et l&#39;Entre-deux-Mers), auxquelles il faut ajouter les vignobles des <b>vins doux </b>aux environs du Ciron, affluent de la Garonne.<br/>
-									L&#39;une des particularités des vins rouges, blancs et rosés du Bordelais est qu&#39;ils sont très souvent issus de l&#39;<span class="s1">assemblage de deux à cinq cépages </span>aux qualités complémentaires. En rouge, les <b>cabernets </b>– franc et sauvignon – et le <b>merlot </b>sont les principales variétés, le <b>petit verdot </b>ou encore le <b>malbec </b>parfois en complément. Pour les blancs, le cépage essentiel est le <b>sémillon</b>, complété surtout par le <b>sauvignon</b>, parfois par la <b>muscadelle </b>ou le <b>colombard</b>.<br/>
-									Dans la très large palette des vins bordelais, on distingue les <span class="s1">appellations régionales </span><b>(bordeaux, bordeaux supérieur, crémant</b>), dont les vins peuvent être issus de la quasi-totalité des communes viticoles. Celles-ci expriment une grande variété de terroirs et proposent un bel éventail de style de vins rouges, blancs (secs et doux), rosés, clairets et même effervescents. Base de la pyramide des appellations, elles n&#39;en constituent pas moins un réel gisement pour l&#39;amateur en quête de nouveautés.<br/>
-									Les autres appellations sont généralement classées en fonction de l&#39;organisation géographique et climatique du terroir, scindée en deux ensembles principaux.<br/>
-									Sur la <span class="s1">rive gauche de la Gironde et de Garonne</span>, on trouve les vins rouges du <b>Médoc</b>, puis en descendant, les rouges et les blancs des <b>Graves</b>, et tout à fait au sud les vins du <b>Sauternais</b>.<br/>
-									Sur la <span class="s1">rive droite de la Gironde et de la Dordogne</span>, s&#39;étendent le <b>Blayais et le Bourgeais</b>, et le <b>Libournais</b>, tandis que l&#39;<b>Entre-deux-Mers </b>se situe entre les deux fleuves Dordogne et Garonne.<br/>
-									</p>	
-								</div>
-								<!--MILLESIME-CARD-->
-								<div class="tab-pane fade" id="type-Millésimé" role="tabpanel" aria-labelledby="type-Brut-list">
-								<img src="../images/Bourgogne.jpeg" class="float-left img-thumbnail" alt="Bourgogne" width="30%">
-								<h3>BOURGOGNE</h3>
-									<p>Un vignoble historique, l&#39;un des plus anciens de France, modelé au Moyen Age par les <b>moines</b>, puis les <b>Ducs de Bourgogne</b>, et riche de domaines aux apparences souvent modestes, mais de grand prestige.<br/>
-									Celui aussi qui, malgré sa petite taille (3 % du vignoble français), propose le <span class="s1">plus grand nombre d&#39;appellations </span>d&#39;origine : une centaine, du Chablisien au Mâconnais, en passant par la Côte de Nuits, la Côte de Beaune et la Côte chalonnaise.<br/>
-									L&#39;un des plus prestigieux également, synonyme de <b>vins fins</b>. La patrie du <b>pinot noir </b>et du <b>chardonnay</b>, qui y règnent en maître.<br/>
-									La Bourgogne, c&#39;est aussi la quintessence de la notion de <b>terroirs</b>, appelés ici <i><b>climats</b></i>, d&#39;une extrême diversité (plus de 600) et à l&#39;origine de l&#39;immense variété des vins bourguignons.<br/>
-									Reflet de ce vignoble morcelé et d&#39;une grande variété, la <span class="s1">hiérarchisation des vins </span>bourguignons, qui peut paraître complexe, est d&#39;une grande logique et définit quatre niveaux :<br>
-									les <b>appellations régionales </b>(plus de 50 % de la production), les <b>appellations communales</b>, dites aussi <i><b>villages </b></i>(plus de 30 % de la production), les <b>premiers crus </b>(environ 10 % de la production) et, en haut de la pyramide, les <b>grands crus</b>.<br/>
-									Les vins de Bourgogne sont, pour la quasi-totalité, issus de <b>deux cépages </b>: le <span class="s1">chardonnay </span>(vins blancs) et le <span class="s1">pinot noir </span>(vins rouges).<br>
-									On rencontre aussi l&#39;<b>aligoté</b>, cépage blanc produisant le bourgogne-aligoté, qui atteint son sommet qualitatif dans le petit pays de Bouzeron ; le <b>césar</b>, assemblé au pinot noir dans l&#39;irancy ; le <b>gamay </b>qui, associé au pinot, donne du bourgogne-passetoutgrain ; le <b>sauvignon</b>, cultivé dans la région de Saint-Bris-le-Vineux, dans l&#39;Yonne, où il donne l&#39;AOC saint-bris.<br/>
-									On distingue quatre secteurs géographiques. Le <span class="s1">Chablisien </span>est réputé surtout pour ses vins blancs secs élégants et leur <b>minéralité </b>si reconnaissable.<br>
-									La <span class="s1">Côte de Nuits</span>, de Marsannay à Corgoloin, majoritairement plantée de <b>pinot noir</b>, compte une trentaine d&#39;appellations avec des villages aux noms prestigieux (Gevrey-Chambertin, Vosne-Romanée, Nuits-Saint-Georges, Chambolle-Musigny,  Vougeot) et des crus illustres (romanée-conti, chambertin, musingy...).<br>
-									La <span class="s1">Côte de Beaune</span>, de Ladoix-Serrigny au nord à Chagny au sud, est le paradis des « <b>grands blancs </b>», avec des crus de grande renommée comme corton-charlemagne, meursault, montrachet..., mais elle propose aussi de très beaux vins rouges, en premier lieu les grands crus corton, pommard ou encore volnay.<br>
-									La <span class="s1">Côte chalonnaise</span>, entre Chagny et Saint-Gengoux-le-National,<br/>
-									propose des <b>blancs </b>et des <b>rouges </b>de belle qualité (rully, mercurey, givry, montagny). Le <span class="s1">Mâconnais</span>, entre Tournus et Mâcon, est réputé surtout pour ses <b>blancs de chardonnay</b>, notamment ses pouilly-fuissé.<br/>
-									Enfin, la Bourgogne classe ses vins selon une <span class="s1">hiérarchie à quatre niveaux</span>. À la base se trouvent les <b>appellations régionales</b>, dont les vins peuvent être issus de vignes établies sur l&#39;ensemble du territoire de la Bourgogne : AOC bourgogne, bourgogne-aligoté, crémant-de-bourgogne, bourgogne-passetoutgrain...<br>
-									Puis viennent les <b>appellations communales ou </b><i><b>villages </b></i>: le vin porte le nom de la commune (un ou plusieurs villages) où sont plantées les vignes d&#39;où il est issu (Volnay, Nuits-Saint-Georges...).<br>
-									Au troisième étage, on trouve les <b>premiers crus </b>provenant de <i>climats </i>délimités au sein d&#39;un village. Enfin, tout en haut de la pyramide, on trouve les <b>grands crus</b>, sélectionnés parmi les meilleurs <i>climats</i>.<br/>
-									</p>
-								</div>
-								<!--BLANC-CARD-->
-								<div class="tab-pane fade" id="type-Blanc de Blancs" role="tabpanel" aria-labelledby="type-Brut-list">
-								<img src="../images/VDR.jpeg" class="float-left img-thumbnail" alt="Vallée du Rhône" width="30%">
-								<h3>VALLÉE DU RHÔNE</h3>
-									<p>L&#39;un des <span class="s1">plus anciens vignobles de France </span>et la seconde région viticole de l&#39;Hexagone après le Bordelais, traversé par le Rhône, fleuve fougueux qui file vers le Midi et voit fleurir la vigne sur chaque rive.<br/>
-									On distingue <b>deux grands secteurs </b>très différenciés : la <span class="s1">vallée du Rhône septentrionale </span>et la <span class="s1">vallée du Rhône méridionale</span>. D&#39;autres secteurs un peu en retrait du Rhône se rattachent à la région, du Vivarais au Luberon, en passant par le Diois.<br/>
-									Dans cette vaste région, naissent des <span class="s1">vins de tous les types</span>, des vins secs dans les trois couleurs, des vins doux naturels et des effervescents.<br/>
-									Des vins rouges en majorité, longtemps assimilés à la « p&#39;tite côte », ce gentil vin de comptoir qu&#39;une brève cuvaison rendait léger et peu tannique, qui figurent aujourd&#39;hui <b>parmi les plus remarquables de France </b>(côte-rôtie, hermitage, châteauneuf-du-pape...).<br/>
-									On trouve dans la Vallée du Rhône <span class="s1">toute la palette des vins </span>: des vins secs dans les trois couleurs (avec une dominante de vins rouges : 80 %), des vins doux naturels et des effervescents.<br/>
-									Dans la <b>partie méridionale</b>, règne le <span class="s1">grenache</span>, à l&#39;origine de vins rouges &quot;solaires&quot;, corsés et chaleureux, d&#39;une rondeur généreuse, mais les excès climatiques obligent les viticulteurs à utiliser plusieurs cépages pour obtenir des vins équilibrés, notamment la syrah, le mourvèdre, le cinsault ou encore le carignan.<br>
-									En blanc, les vins sont en général issus d&#39;assemblage, des vins généreux, gras et expressifs, issus notamment du <b>grenache blanc</b>, de la <b>clairette, </b>du <b>bourboulenc, </b>de la <b>roussanne</b>, de la <b>marsanne </b>ou encore du maccabeo ou du vermentino (ou rolle), du<br/>
-									piquepoul et autres picardan. Côté <b>rosés</b>, issus des mêmes cépages que les vins rouges, se montrent généralement savoureux, à la fois ronds et frais ; avec Tavel, la région détient la plus ancienne AOC de France dédiée exclusivement à ce type de vin.<br/>
-									Dans la <b>partie septentrionnale</b>, la <span class="s1">syrah </span>s&#39;impose dans les vins rouges, à l&#39;origine de vins de garde charpentés mais fins, profonds et épicés. Les vins blancs aromatiques et bien équilibrés entre gras et vivacité, sont quant à eux majoritairement issus des cépages <b>roussanne, marsanne et viognier</b>.<br/>
-									Le <b>Diois </b>et sa fraîcheur montagnarde favorise les vins blancs, secs et effervescents (clairette-de-die, crémant-de-die), issus des cépages <b>clairette et muscat à petits grains</b>.<br/>
-									Enfin, la tradition rhodanienne des <b>vins doux naturels </b>se retrouve dans les AOC rasteau et muscat-beaume-de-venise.<br/>
-									A la base de la <span class="s1">hiérarchie des vins </span>rhodaniens, on trouve l&#39;<b>appellation régionale </b>côte-du-rhône (171 communes, presque toutes situées au Sud), puis les <b>côtes-du-rhône-villages</b>, avec ou sans nom de communes, et, au sommet, les <b>AOC communales </b>(côte-rôtie, condrieu, châteauneuf-du- pape, lirac...). On rattache au vignoble rhodanien des <b>AOC indépendantes </b>(ventoux, luberon, grignan-lès-adhémar...) qui complètent cette large gamme de vins.<br/>
-									</p>
-								</div>
-								<!--ROSE-CARD-->
-								<div class="tab-pane fade" id="type-Brut Rosé" role="tabpanel" aria-labelledby="type-Brut-list">
-								<img src="../images/Languedoc.jpeg" class="float-left img-thumbnail" alt="Languedoc" width="30%">
-								<h3>LANGUEDOC</h3>
-									<p>Ce vignoble immense s&#39;étale le long du littoral méditerranéen, de Leucate, à l&#39;ouest, jusqu&#39;à Nîmes et la Camargue, à l&#39;est, puis couvre les contreforts des Cévennes aux portes de Carcassonne. Il parcourt trois départements : l&#39;Aude, le Gard et l&#39;Hérault.<br>
-									Il offre une diversité de paysages et une mosaïque de terroirs entre mer et montagne (Corbières), sous influence climatique méditerranéenne, à l&#39;origine d&#39;une vaste palette de vins rouges, blancs et rosés, de vins doux naturels et d&#39;effervescents. Des vins, qui après avoir été longtemps assimilés à la viticulture de masse, font l&#39;objet d&#39;un renouveau constant depuis près de trente ans.<br/>
-									Engagé depuis trente ans dans un vaste chantier visant à identifier les terroirs et à y adapter de nouveaux cépages, le Languedoc produit aujourd&#39;hui un panel très complet de vins blancs, rouges et rosés, de vins doux naturels et d&#39;effervescents. Les cépages rouges sont principalement le carignan, le grenache, la syrah, le mourvèdre et le cinsault. Les blancs sont issus du grenache, du picpoul, du bourboulenc, du<br/>
-									macabeu, de la clairette et depuis peu, de la marsanne, de la roussanne et du vermentino. Pour les effervescents, on fait appel au mauzac, au chardonnay et au chenin.<br/>
-									</p>
-								</div>
-								<!--DEMISEC-CARD-->
-								<div class="tab-pane fade" id="type-Brut Demi-sec" role="tabpanel" aria-labelledby="type-Brut-list">
-								<h3>VALLÉE DE LA LOIRE ET CENTRE</h3>
-									<p>La très étendue région viticole de la vallée de la Loire est unie par le fleuve que l&#39;on dit royal et ses affluents, la vigne n&#39;étant jamais bien éloignée de l&#39;eau et des châteaux Renaissance.<br>
-									Les vignobles du pays nantais, de l&#39;Anjou et du Saumurois, de la Touraine et du Centre forment ainsi un vaste ensemble aux terroirs et aux climats variés, où la plupart des types de vins sont déclinés.<br/>
-									Dans le pays nantais, le melon donne naissance au muscadet, vin blanc sec, la folle blanche au gros-plant, autre vin blanc sec, tandis que la région d&#39;Ancenis est colonisée par le gamay noir.<br>
-									En Anjou et en Saumurois, la palette des vins est complète :<br>
-									blancs secs, demi-secs, liquoreux et mousseux, issus de chenin (ou pineau de la Loire), très majoritaire, récemment associé au sauvignon et au chardonnay?; des rosés demi-secs nés de grolleau noir?; des rouges fins et corsés issus de cabernet franc et de cabernet-sauvignon.<br>
-									En Touraine ouest, on trouve des vins rouges de caractère nés de cabernet franc. En blanc, le chenin donne des vins remarquables, comme à Vouvray ou à Montlouis.<br>
-									À l&#39;est, le sauvignon (en blanc) et le gamay (en rouge et rosé) produisent des vins légers et fruités. On trouvera aussi dans les coteaux-du-loir des rouges épicés nés du pineau d&#39;Aunis, ou encore des rouges originaux issus de pinot meunier dans l&#39;Orléanais.<br>
-									Dans les vignobles du Centre, le sauvignon règne à Sancerre, Reuilly, Quincy, Menetou-Salon, Pouilly. En rouge et en rosé, on trouve essentiellement des vins nés de gamay et de pinot noir.<br/>
-									</p>
-								</div>
-								<!--GRANDCRU-CARD-->
-								<div class="tab-pane fade" id="type-Brut Grand Cru" role="tabpanel" aria-labelledby="type-Brut-list">
-								<h3>ALSACE</h3>						
-									<p>Le vignoble alsacien est un long ruban de 170 km de long, situé au pied du massif vosgien, qui s&#39;étire de Marlenheim au nord à Thann au sud, complété par un îlot viticole à la limite de l&#39;Allemagne, autour de Wissembourg et de Cleebourg.<br>
-									Les nombreuses sinuosités du relief et la variété des sols permettent à l&#39;Alsace de proposer une vaste gamme de vins, secs et doux, tranquilles et effervescents.<br>
-									Mais, grâce à son climat tempéré et frais, le principal atout du vignoble réside dans la maturation optimale des raisins blancs, le pinot noir étant l&#39;exception.<br>
-									L&#39;identification des vins par leur cépage – riesling, gewurztraminer, sylvaner... – est l&#39;une des autres spécificités alsaciennes, ainsi que la présence de grands crus.<br/>
-									La majorité des vins alsaciens sont des blancs secs (environ 80 %), aromatiques, fruités et floraux, bien typés par leur cépage.<br>
-									Des caractéristiques renforcées par le fait que l&#39;élevage ne se fait pas en fût, mais généralement en foudre, gros tonneau ovale qui ne confère pas d&#39;arômes boisés du fait de sa dimension imposante et de son grand âge.<br>
-									La plupart des vins sont issus d&#39;un seul cépage, à l&#39;exception de quelques grands crus (Kaefferkopf ou Altenberg par exemple), du crémant et de l&#39;edelzwicker.<br>
-									Fréquente sur l&#39;étiquette, la mention du cépage n&#39;est toutefois pas obligatoire.<br>
-									Reconnus en 1984, les alsaces « vendanges tardives » et « sélections de grains nobles » sont des vins doux issus de vendanges surmûries et soumis à des conditions de production très strictes, notamment en ce qui concerne le taux de sucre des raisins.<br>
-									On distingue également 51 grands crus en Alsace, correspondant à des terroirs délimités selon des critères géologiques et climatiques, et répondant à des critères stricts de production et d&#39;élaboration (rendements limités, vendanges manuelles, utilisation de cépages limités).<br>
-									Enfin, l&#39;Alsace se situe en tête de la production de crémants en France.<br/>
-									</p>
-								</div>
-								<!--NATURE-CARD-->
-								<div class="tab-pane fade" id="type-Brut Nature" role="tabpanel" aria-labelledby="type-Brut-list">
-								<img src="../images/Beaujolais.jpeg" class="float-left img-thumbnail" alt="Beaujolais" width="30%">
-								<h3>AOC BEAUJOLAIS</h3>
-									<p>Prolongeant la Bourgogne au sud de Mâcon et s&#39;étendant sur 50 km jusqu&#39;aux <a href="https://www.hachette-vins.com/tout-sur-le-vin/appellations-vins/112/coteaux-du-lyonnais" class="a" target="_blank">coteaux du Lyonnais</a>, le Beaujolais est officiellement rattaché à la Bourgogne viticole.<br>
-									La région, de caractère déjà méridional, doit son nom aux sires de Beaujeu qui en furent les détenteurs jusqu&#39;en 140%.<br>
-									L&#39;appellation beaujolais produit essentiellement des vins rouges à partir du gamay vinifié en grains entiers, selon les principes de la vinification beaujolaise qui apporte des arômes floraux et fruités.<br>
-									Les reliefs anciens aux formes arrondies du nord-ouest de l&#39;aire géographique sont les terrains privilégiés des dix crus du Beaujolais et de <a href="https://www.hachette-vins.com/tout-sur-le-vin/appellations-vins/101/beaujolais-villages" class="a" target="_blank">l&#39;appellation beaujolais-villages</a>.<br>
-									Le vignoble de l&#39;AOC beaujolais est implanté sur des terrains sédimentaires. Ici, la vigne couvre les coteaux en bordure du Massif central, jusqu&#39;à 500 m d&#39;altitude.<br/>
-									</p>
-								</div>
-								<!--NOIR-CARD-->
-								<div class="tab-pane fade" id="type-Blanc de Noirs" role="tabpanel" aria-labelledby="type-Brut-list">
-								<img src="../images/Jura.jpeg" class="float-left img-thumbnail" alt="Jura" width="30%">
-								<h3>JURA</h3>
-									<p>Ce vignoble à la géologie tourmentée, pendant de celui de la haute Bourgogne, de l&#39;autre côté de la vallée de la Saône, occupe les pentes qui descendent du premier plateau des monts du Jura vers la plaine.<br>
-									Une bande de 80 km de long, traversant tout le département du Jura, de Salins- les-Bains, au nord, à Saint-Amour, au sud.<br>$
-									Les terroirs les plus favorables se situent en coteaux entre 250 et 40% m d&#39;altitude. Plantés de cépages locaux et d&#39;autres, issus de Bourgogne, ces terroirs voient naître des vins atypiques, à l&#39;image du célèbre vin jaune, du vin de paille ou encore du macvin.<br/>
-									Les cépages locaux sont parfaitement adaptés aux terrains argileux du Jura. On trouve ainsi le poulsard, cépage rouge peu tannique à l&#39;origine de rosés et de rouges légers.<br>
-									Le trousseau, autre cépage local, donne des vins rouges plus colorés et riches en tanins. On trouve aussi le pinot noir, souvent associé au trousseau, dans les rouges ainsi que dans les mousseux blancs de noirs.<br>
-									Autre cépage bourguignon, le chardonnay apporte son riche bouquet aux vins blancs, secs et mousseux. Le savagnin, cépage blanc local, donne naissance au célèbre vin jaune, spécialité jurassienne avec le vin de paille.<br/>
-									</p>
-								</div>
-								<!--1CRUE-CARD-->
-								<div class="tab-pane fade" id="type-Brut 1er Cru" role="tabpanel" aria-labelledby="type-Brut-list">
-								<img src="../images/Savoie et Bugey.jpeg" class="float-left img-thumbnail" alt="Savoie et Bugey" width="30%">
-								<h3>SAVOIE ET BUGEY</h3>
-									<p>Du lac Léman au sud de Chambéry, le vignoble savoyard occupe les premières pentes alpines, entre 300 et 600 m.<br>
-									Entre lacs, alpages, chalets et vergers, les vignes forment une mosaïque complexe de microclimats et de terroirs aux caractères montagnards plus ou moins accentués, où s&#39;épanouissent une multitude de cépages, majoritairement blancs.<br>
-									Le vignoble du Bugey, quant à lui, s&#39;étend sur les éboulis calcaires abrupts du département de l&#39;Ain. On y produit des vins rouges, rosés et blancs, ainsi que le fameux rouge effervescent de Cerdon.<br/>
-									Du lac Léman à la rive droite de l&#39;Isère, des îlots de vignes, exposés au sud, ponctuent les vallées de la Savoie et de la Haute-Savoie.<br>
-									Le climat est ici tempéré par la proximité des lacs. Sur les premiers coteaux des Alpes sont produits des vins vifs comme l&#39;air de montagne :<br>
-									des vins blancs issus le plus souvent d&#39;un cépage local, la <b>jacquère</b>; des vins rouges à base de mondeuse, du <b>gamay </b>importé du Beaujolais ou même du <b>pinot noir </b>bourguignon; des vins rosés issus de gamay, ou blancs, pétillants à Ayze.<br/>
-									</p>
-								</div>
-								<!--EXTRA-CARD-->
-								<div class="tab-pane fade" id="type-Extra Brut" role="tabpanel" aria-labelledby="type-Brut-list">
-								<img src="../images/Provence.jpeg" class="float-left img-thumbnail" alt="Provence" width="30%">
-								<h3>PROVENCE</h3>
-									<p>Le vaste vignoble provençal s&#39;étend sur près de 200 km de long, d&#39;est en ouest, de Nice au sud d&#39;Avignon, et sur 60 km de large entre les Alpilles et la Méditerranée.<br>
-									Aux côtés des pins et des oliviers, la vigne occupe des îlots très diversifiés, et si l&#39;on trouve les trois couleurs de vins dans ce pays de soleil et de vents, c&#39;est le rosé qui règne en maître.<br/>
-									À l&#39;image des autres vignobles méridionaux, la Provence offre une large palette de cépages : grenache, cinsault, carignan, mourvèdre, syrah, tibouren, cabernet-sauvignon... en rouge et rosé, ugni blanc, rolle, grenache blanc, clairette, marsanne, sémillon, bourboulenc... en blanc. On y<br/>
-									produit ainsi toute la gamme des couleurs, mais ce sont les rosés qui dominent largement. La Provence s&#39;impose comme la première région en France : près de 90?% de sa production viticole sont dédiés à cette couleur, avec une production annuelle en moyenne de 150 millions de bouteilles.<br/>
-									</p>
 								</div>	
-								<!--BIO-CARD-->
-								<div class="tab-pane fade" id="type-Bio" role="tabpanel" aria-labelledby="type-Bio">
-									<img src="../images/Provence.jpeg" class="float-left img-thumbnail" alt="Provence" width="30%">
-									<h3>PROVENCE</h3>
-										<p>Le vaste vignoble provençal s&#39;étend sur près de 200 km de long, d&#39;est en ouest, de Nice au sud d&#39;Avignon, et sur 60 km de large entre les Alpilles et la Méditerranée.<br>
-										Aux côtés des pins et des oliviers, la vigne occupe des îlots très diversifiés, et si l&#39;on trouve les trois couleurs de vins dans ce pays de soleil et de vents, c&#39;est le rosé qui règne en maître.<br/>
-										À l&#39;image des autres vignobles méridionaux, la Provence offre une large palette de cépages : grenache, cinsault, carignan, mourvèdre, syrah, tibouren, cabernet-sauvignon... en rouge et rosé, ugni blanc, rolle, grenache blanc, clairette, marsanne, sémillon, bourboulenc... en blanc. On y<br/>
-										produit ainsi toute la gamme des couleurs, mais ce sont les rosés qui dominent largement. La Provence s&#39;impose comme la première région en France : près de 90?% de sa production viticole sont dédiés à cette couleur, avec une production annuelle en moyenne de 150 millions de bouteilles.<br/>
-										</p>
-								</div>								
-						</div>
+							</div><hr>
+							<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseType" role="button" aria-expanded="false" aria-controls="collapseType">Type</h3>
+							<div class="collapse" id="collapseType">
+								<div class=" card-body">
+									<div class="row">
+										<div class="col">
+											<ol>	Brut	</ol>
+											<ol>	Millésimé	</ol>
+											<ol>	Blanc de Blancs	</ol>
+											<ol>	Brut Rosé	</ol>
+											<ol>	Brut Demi-sec	</ol>
+											<ol>	Brut Grand Cru	</ol>
+										</div><div class="col">
+											<ol>	Brut Nature	</ol>
+											<ol>	Blanc de Noirs 	</ol>
+											<ol>	Brut 1er Cru	</ol>
+											<ol>	Extra Brut	</ol>
+											<ol>	Bio	</ol>
+										</div>
+									</div>	
+								</div>
+							</div><hr>
+							<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseMarque" role="button" aria-expanded="false" aria-controls="collapseMarque">Marque</h3>
+							<div class="collapse" id="collapseMarque">
+								<div class="card card-body">
+									<div class="row">
+										<div class="col">
+											<ol>	Jacquesson	</ol>
+											<ol>	Armand de Brignac 	</ol>
+											<ol>	Ayala	</ol>
+											<ol>	Barons de Rothschild 	</ol>
+											<ol>	Besserat de Bellefon 	</ol>
+											<ol>	Billecart-Salmon	</ol>
+											<ol>	Bollinger	</ol>
+											<ol>	Canard-Duchêne 	</ol>
+											<ol>	Charles Heidsieck 	</ol>
+											<ol>	Cl de la Chapelle 	</ol>
+											<ol>	Delamotte 	</ol>
+											<ol>	Deutz	</ol>
+											<ol>	Perignon 	</ol>
+											<ol>	François-Brossolette	</ol>
+											<ol>	Gosset	</ol>
+											<ol>	H. Blin 	</ol>
+										</div><div class="col">
+											<ol>	Haton & Filles 	</ol>
+											<ol>	Heidsieck & Co Monopole 	</ol>
+											<ol>	Henri Giraud	</ol>
+											<ol>	Henriot 	</ol>
+											<ol>	Lacourte Godbillon 	</ol>
+											<ol>	Lallier 	</ol>
+											<ol>	Lanson 	</ol>
+											<ol>	Laurent Perrier	</ol>
+											<ol>	Le Brun de Neuville 	</ol>
+											<ol>	Louis Roederer 	</ol>
+											<ol>	Michel Furdyna 	</ol>
+											<ol>	Moutard Père et Fils 	</ol>
+											<ol>	Mumm	</ol>
+											<ol>	Nicolas Maillart 	</ol>
+											<ol>	Perrier-Jouët 	</ol>
+											<ol>	Pol Roger 	</ol>
+										</div><div class="col">
+											<ol>	Pommery 	</ol>
+											<ol>	Soutiran 	</ol>
+											<ol>	Taittinger 	</ol>
+											<ol>	Thierry Massin 	</ol>
+											<ol>	Tsarine 	</ol>
+											<ol>	Veuve Clicquot 	</ol>
+											<ol>	Vranken 	</ol>
+											<ol>	Devaux 	</ol>
+											<ol>	Edouard Brun 	</ol>
+											<ol>	Gauthier 	</ol>
+											<ol>	Krug 	</ol>
+											<ol>	Marie Copinet 	</ol>
+											<ol>	Moët & Chandon 	</ol>
+											<ol>	Philipponnat 	</ol>
+											<ol>	Ruinart 	</ol>
+											<ol>	Thienot 	</ol>
+										</div>
+									</div>
+								</div>
+							</div><hr>
+							<h3 class="text-center dropdown-toggle" data-toggle="collapse" data-target="#collapseCoeur" role="button" aria-expanded="false" aria-controls="collapseCoeur">Coup de coeur</h3>
+							<div class="collapse" id="collapseCoeur">
+								<div class=" card-body">
+									<div class="row">
+										<div class="col">
+											<ol>	Champagnes Médaillés		</ol>
+										</div><div class="col">
+											<ol>	Petits Producteurs		</ol>
+										</div><div class="col">
+											<ol>	Les Cuvées Mythiques 		</ol>
+										</div>
+									</div>
+								</div>	
+							</div><hr>
 					</div>
-				<!--DESC-CARD-->
 				</div>
-			</div>			
-			<!--CORP-CARD-->
+				<!--DESC-CARD-->
+				<!--CORP-CARD-->
+			</div>
 		</div>
 		<!--CARD-->
-				<!-- Optional JavaScript -->
-				<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-				<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	</div><br>
-		</body>
-		</html>
+</body>
+</html>
